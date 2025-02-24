@@ -369,17 +369,18 @@ class SequenceGenerator:
         self.model.eval()
 
     def generate(
-        self, prompt: str, temperature: float = 0.8
+        self, prompt: str, temperature: float = 0.8, verbose: bool = False
     ) -> str:
         with torch.no_grad():
             # 编码输入序列
             input_seq = self.tokenizer.encode(prompt)
             answer_start_pos = len(input_seq)
             
-            print("\n生成过程:")
-            print(f"初始提示: {prompt}")
-            print(f"编码后的提示: {input_seq}")
-            print(f"答案开始位置: {answer_start_pos}")
+            if verbose:
+                print("\n生成过程:")
+                print(f"初始提示: {prompt}")
+                print(f"编码后的提示: {input_seq}")
+                print(f"答案开始位置: {answer_start_pos}")
             
             # 确保不超过最大长度
             max_length = min(35, self.config.max_seq_len)
@@ -394,9 +395,10 @@ class SequenceGenerator:
                 current_input = padded_input + [self.tokenizer.pad_id] * (max_length - len(padded_input))
                 input_tensor = torch.tensor([current_input], dtype=torch.long, device=self.config.device)
                 
-                print("\n" + "-" * 50)
-                print(f"当前位置: {current_pos}")
-                print(f"当前序列: {self.tokenizer.decode(padded_input)}")
+                if verbose:
+                    print("\n" + "-" * 50)
+                    print(f"当前位置: {current_pos}")
+                    print(f"当前序列: {self.tokenizer.decode(padded_input)}")
                 
                 # 获取模型输出
                 logits = self.model(input_tensor)
@@ -405,18 +407,20 @@ class SequenceGenerator:
                 # 应用temperature并计算概率
                 probs = F.softmax(next_token_logits / temperature, dim=-1)
                 
-                # 获取top-5概率和对应的token
-                top_probs, top_indices = torch.topk(probs, min(5, len(probs)))
-                print("\nTop-5候选词:")
-                for prob, idx in zip(top_probs, top_indices):
-                    token = self.tokenizer.itos[idx.item()]
-                    print(f"Token: {token:<4} (id: {idx.item():<2}) 概率: {prob.item():.4f}")
+                if verbose:
+                    # 获取top-5概率和对应的token
+                    top_probs, top_indices = torch.topk(probs, min(5, len(probs)))
+                    print("\nTop-5候选词:")
+                    for prob, idx in zip(top_probs, top_indices):
+                        token = self.tokenizer.itos[idx.item()]
+                        print(f"Token: {token:<4} (id: {idx.item():<2}) 概率: {prob.item():.4f}")
                 
                 # 采样下一个token
                 next_token = torch.multinomial(probs, 1).item()
-                chosen_prob = probs[next_token].item()
-                chosen_token = self.tokenizer.itos[next_token]
-                print(f"\n选择的token: {chosen_token} (id: {next_token}) 概率: {chosen_prob:.4f}")
+                if verbose:
+                    chosen_prob = probs[next_token].item()
+                    chosen_token = self.tokenizer.itos[next_token]
+                    print(f"\n选择的token: {chosen_token} (id: {next_token}) 概率: {chosen_prob:.4f}")
                 
                 # 更新序列
                 padded_input.append(next_token)
@@ -424,18 +428,20 @@ class SequenceGenerator:
                 
                 # 如果生成了结束符，停止生成
                 if next_token == self.tokenizer.eoa_id:
-                    print("\n检测到结束符，停止生成")
+                    if verbose:
+                        print("\n检测到结束符，停止生成")
                     break
             
             # 解码最终序列
             final_output = self.tokenizer.decode(padded_input)
-            print("\n" + "=" * 50)
-            print(f"最终生成结果: {final_output}")
-            print("=" * 50)
+            if verbose:
+                print("\n" + "=" * 50)
+                print(f"最终生成结果: {final_output}")
+                print("=" * 50)
             return final_output
 
 
-def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int = 100):
+def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int = 100, verbose: bool = False):
     """评估模型性能"""
     tokenizer = EnhancedTokenizer(config)
     test_set = EnhancedMathDataset(tokenizer, config, num_samples, seed=44)
@@ -452,7 +458,7 @@ def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int 
         true_answer = question[len(q_part) :].rstrip(">")
 
         # 生成答案
-        generated = generator.generate(q_part)
+        generated = generator.generate(q_part, verbose=verbose)
         gen_answer = generated.rstrip(">")
 
         # 记录结果
@@ -471,7 +477,7 @@ def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int 
         )
 
         # 打印每10个样本的结果
-        if (idx + 1) % 10 == 0:
+        if (idx + 1) % 10 == 0 or verbose:
             print(f"\nBatch {(idx + 1) // 10} Results:")
             for r in results[-10:]:
                 status = "✓" if r["correct"] else "✗"
@@ -505,7 +511,12 @@ def main():
         default=100,
         help="Number of samples for evaluation (default: 100)",
     )
-
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Print detailed generation process",
+    )
+    
     args = parser.parse_args()
     config = Config()
     print(f"Using device: {config.device}")
@@ -526,7 +537,7 @@ def main():
         print(f"Loaded model from {model_path}")
 
         # 评估模型
-        accuracy, _ = evaluate_model(model, config, args.samples)
+        accuracy, _ = evaluate_model(model, config, args.samples, verbose=args.verbose)
 
 
 if __name__ == "__main__":
