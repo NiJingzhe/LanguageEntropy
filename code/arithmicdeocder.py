@@ -380,6 +380,7 @@ class SequenceGenerator:
             prompt += self.config.pad_token * (max_length - len(prompt))
             
             input_seq = self.tokenizer.encode(prompt)
+            answer_start_pos = len(prompt)
             input_tensor = torch.tensor(
                 [input_seq], dtype=torch.long, device=self.config.device
             )
@@ -391,7 +392,7 @@ class SequenceGenerator:
                 print(f"input: {input_tensor}\nlogits: {logits}")
 
                 # 获取 index 为 prompt length位置的logits
-                next_position_logits = logits[0, -1]
+                next_position_logits = logits[0, answer_start_pos]
 
                 # 使用temperature进行概率调整
                 probs = F.softmax(next_position_logits / temperature, dim=-1)
