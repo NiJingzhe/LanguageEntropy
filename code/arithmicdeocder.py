@@ -160,8 +160,7 @@ def enhanced_collate_fn(
             inputs = seq[:pos] + [tokenizer.pad_id] * (max_len - pos)
             targets = seq[: pos + 1] + [tokenizer.pad_id] * (max_len - (pos + 1))
             mask = (
-                [0.0] * (start_idx)
-                + [1.0] * (pos - start_idx + 1)
+                [1.0] * (pos + 1)
                 + [0.0] * (max_len - (pos + 1))
             )
 
