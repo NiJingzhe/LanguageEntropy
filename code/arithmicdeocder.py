@@ -159,10 +159,8 @@ def enhanced_collate_fn(
             # 生成每个时间步的输入/目标
             inputs = seq[:pos] + [tokenizer.pad_id] * (max_len - pos)
             targets = seq[: pos + 1] + [tokenizer.pad_id] * (max_len - (pos + 1))
-            mask = (
-                [1.0] * (pos + 1)
-                + [0.0] * (max_len - (pos + 1))
-            )
+            # 修改mask，只关注答案部分的loss
+            mask = [0.0] * start_idx + [1.0] * (pos - start_idx + 1) + [0.0] * (max_len - (pos + 1))
 
             all_inputs.append(inputs)
             all_targets.append(targets)
@@ -374,32 +372,35 @@ class SequenceGenerator:
         self, prompt: str, temperature: float = 0.8
     ) -> str:
         with torch.no_grad():
-            max_length = 35
+            # 编码输入序列
             input_seq = self.tokenizer.encode(prompt)
             answer_start_pos = len(input_seq)
             
             print("\n生成过程:")
             print(f"初始提示: {prompt}")
             print(f"编码后的提示: {input_seq}")
+            print(f"答案开始位置: {answer_start_pos}")
             
             # 确保不超过最大长度
-            max_length = min(max_length, self.config.max_seq_len)
+            max_length = min(35, self.config.max_seq_len)
             
             # 初始化输入张量，使用pad token填充到最大长度
-            padded_input = input_seq + [self.tokenizer.pad_id] * (max_length - len(input_seq))
-            input_tensor = torch.tensor([padded_input], dtype=torch.long, device=self.config.device)
-            
+            padded_input = input_seq.copy()  # 复制输入序列
             current_pos = answer_start_pos
             
             # 生成答案
-            while current_pos < max_length-1:  # 保留一个位置给结束符
+            while current_pos < max_length - 1:  # 保留一个位置给结束符
+                # 准备当前输入
+                current_input = padded_input + [self.tokenizer.pad_id] * (max_length - len(padded_input))
+                input_tensor = torch.tensor([current_input], dtype=torch.long, device=self.config.device)
+                
                 print("\n" + "-" * 50)
                 print(f"当前位置: {current_pos}")
-                print(f"当前序列: {self.tokenizer.decode(input_tensor[0, :current_pos].tolist())}")
+                print(f"当前序列: {self.tokenizer.decode(padded_input)}")
                 
                 # 获取模型输出
-                logits = self.model(input_tensor[:, :current_pos])
-                next_token_logits = logits[0, -1]
+                logits = self.model(input_tensor)
+                next_token_logits = logits[0, current_pos]  # 使用current_pos而不是-1
                 
                 # 应用temperature并计算概率
                 probs = F.softmax(next_token_logits / temperature, dim=-1)
@@ -417,8 +418,8 @@ class SequenceGenerator:
                 chosen_token = self.tokenizer.itos[next_token]
                 print(f"\n选择的token: {chosen_token} (id: {next_token}) 概率: {chosen_prob:.4f}")
                 
-                # 更新输入序列
-                input_tensor[0, current_pos] = next_token
+                # 更新序列
+                padded_input.append(next_token)
                 current_pos += 1
                 
                 # 如果生成了结束符，停止生成
@@ -427,8 +428,7 @@ class SequenceGenerator:
                     break
             
             # 解码最终序列
-            generated_seq = input_tensor[0, :current_pos].tolist()
-            final_output = self.tokenizer.decode(generated_seq)
+            final_output = self.tokenizer.decode(padded_input)
             print("\n" + "=" * 50)
             print(f"最终生成结果: {final_output}")
             print("=" * 50)
