@@ -372,12 +372,16 @@ class SequenceGenerator:
         self.model.eval()
 
     def generate(
-        self, prompt: str, max_length: int = 35, temperature: float = 0.8
+        self, prompt: str, temperature: float = 0.8
     ) -> str:
         with torch.no_grad():
-            # 编码输入序列
+            max_length = 35
             input_seq = self.tokenizer.encode(prompt)
             answer_start_pos = len(input_seq)
+            
+            print("\n生成过程:")
+            print(f"初始提示: {prompt}")
+            print(f"编码后的提示: {input_seq}")
             
             # 确保不超过最大长度
             max_length = min(max_length, self.config.max_seq_len)
@@ -389,18 +393,30 @@ class SequenceGenerator:
             current_pos = answer_start_pos
             
             # 生成答案
-            while current_pos < max_length - 1:  # 保留一个位置给结束符
+            while current_pos < max_length-1:  # 保留一个位置给结束符
+                print("\n" + "-" * 50)
+                print(f"当前位置: {current_pos}")
+                print(f"当前序列: {self.tokenizer.decode(input_tensor[0, :current_pos].tolist())}")
+                
                 # 获取模型输出
                 logits = self.model(input_tensor[:, :current_pos])
-                
-                # 获取最后一个位置的logits
                 next_token_logits = logits[0, -1]
                 
-                # 应用temperature
+                # 应用temperature并计算概率
                 probs = F.softmax(next_token_logits / temperature, dim=-1)
+                
+                # 获取top-5概率和对应的token
+                top_probs, top_indices = torch.topk(probs, min(5, len(probs)))
+                print("\nTop-5候选词:")
+                for prob, idx in zip(top_probs, top_indices):
+                    token = self.tokenizer.itos[idx.item()]
+                    print(f"Token: {token:<4} (id: {idx.item():<2}) 概率: {prob.item():.4f}")
                 
                 # 采样下一个token
                 next_token = torch.multinomial(probs, 1).item()
+                chosen_prob = probs[next_token].item()
+                chosen_token = self.tokenizer.itos[next_token]
+                print(f"\n选择的token: {chosen_token} (id: {next_token}) 概率: {chosen_prob:.4f}")
                 
                 # 更新输入序列
                 input_tensor[0, current_pos] = next_token
@@ -408,11 +424,16 @@ class SequenceGenerator:
                 
                 # 如果生成了结束符，停止生成
                 if next_token == self.tokenizer.eoa_id:
+                    print("\n检测到结束符，停止生成")
                     break
             
-            # 解码生成的序列，去除padding
+            # 解码最终序列
             generated_seq = input_tensor[0, :current_pos].tolist()
-            return self.tokenizer.decode(generated_seq)
+            final_output = self.tokenizer.decode(generated_seq)
+            print("\n" + "=" * 50)
+            print(f"最终生成结果: {final_output}")
+            print("=" * 50)
+            return final_output
 
 
 def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int = 100):
