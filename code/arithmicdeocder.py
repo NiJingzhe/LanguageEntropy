@@ -456,7 +456,7 @@ def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int 
         gen_answer = generated.rstrip(">")
 
         # 记录结果
-        is_correct = true_answer == gen_answer
+        is_correct = true_answer == gen_answer.split('=')[-1]
         if is_correct:
             correct += 1
         total += 1
