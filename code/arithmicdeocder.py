@@ -376,11 +376,10 @@ class SequenceGenerator:
     ) -> str:
         with torch.no_grad():
             
-            
-            input_seq = self.tokenizer.encode(prompt)
             answer_start_pos = len(prompt)
             # 补充pad token
             prompt += self.config.pad_token * (max_length - len(prompt))
+            input_seq = self.tokenizer.encode(prompt)
 
             input_tensor = torch.tensor(
                 [input_seq], dtype=torch.long, device=self.config.device
