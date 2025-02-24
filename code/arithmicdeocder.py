@@ -20,7 +20,7 @@ class Config:
     digits: str = "0123456789"
     operators: str = "+*"
     min_digits: int = 1
-    max_digits: int = 3  # 扩展位数范围
+    max_digits: int = 1  # 扩展位数范围
     max_seq_len: int = 35
     d_model: int = 256  # 增大模型维度
     nhead: int = 4
@@ -372,11 +372,14 @@ class SequenceGenerator:
         self.model.eval()
 
     def generate(
-        self, prompt: str, max_length: int = 20, temperature: float = 0.8
+        self, prompt: str, max_length: int = 35, temperature: float = 0.8
     ) -> str:
         with torch.no_grad():
+            
+            # 补充pad token
+            prompt += self.config.pad_token * (max_length - len(prompt))
+            
             input_seq = self.tokenizer.encode(prompt)
-            prompt_length = len(input_seq)  # 记录问题的长度
             input_tensor = torch.tensor(
                 [input_seq], dtype=torch.long, device=self.config.device
             )
@@ -385,8 +388,10 @@ class SequenceGenerator:
             for _ in range(max_length):
                 logits = self.model(input_tensor)
 
+                print(f"input: {input_tensor}\nlogits: {logits}")
+
                 # 获取 index 为 prompt length位置的logits
-                next_position_logits = logits[0, prompt_length]
+                next_position_logits = logits[0, -1]
 
                 # 使用temperature进行概率调整
                 probs = F.softmax(next_position_logits / temperature, dim=-1)
@@ -424,7 +429,7 @@ def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int 
 
         # 生成答案
         generated = generator.generate(q_part)
-        gen_answer = generated[len(q_part) :].rstrip(">")
+        gen_answer = generated.rstrip(">")
 
         # 记录结果
         is_correct = true_answer == gen_answer
