@@ -375,41 +375,44 @@ class SequenceGenerator:
         self, prompt: str, max_length: int = 35, temperature: float = 0.8
     ) -> str:
         with torch.no_grad():
-            
-            answer_start_pos = len(prompt)
-            # 补充pad token
-            prompt += self.config.pad_token * (max_length - len(prompt))
+            # 编码输入序列
             input_seq = self.tokenizer.encode(prompt)
-
-            input_tensor = torch.tensor(
-                [input_seq], dtype=torch.long, device=self.config.device
-            )
-
-            # 开始从提示的末尾生成答案
-            for _ in range(max_length):
-                logits = self.model(input_tensor)
-
-                print(f"input: {input_tensor}\nlogits: {logits}")
-
-                # 获取 index 为 prompt length位置的logits
-                next_position_logits = logits[0, answer_start_pos]
-
-                # 使用temperature进行概率调整
-                probs = F.softmax(next_position_logits / temperature, dim=-1)
-
+            answer_start_pos = len(input_seq)
+            
+            # 确保不超过最大长度
+            max_length = min(max_length, self.config.max_seq_len)
+            
+            # 初始化输入张量，使用pad token填充到最大长度
+            padded_input = input_seq + [self.tokenizer.pad_id] * (max_length - len(input_seq))
+            input_tensor = torch.tensor([padded_input], dtype=torch.long, device=self.config.device)
+            
+            current_pos = answer_start_pos
+            
+            # 生成答案
+            while current_pos < max_length - 1:  # 保留一个位置给结束符
+                # 获取模型输出
+                logits = self.model(input_tensor[:, :current_pos])
+                
+                # 获取最后一个位置的logits
+                next_token_logits = logits[0, -1]
+                
+                # 应用temperature
+                probs = F.softmax(next_token_logits / temperature, dim=-1)
+                
                 # 采样下一个token
-                next_token = torch.multinomial(probs, 1)
-
-                # 将新token添加到序列中
-                input_tensor = torch.cat([input_tensor, next_token.unsqueeze(0)], dim=1)
-
+                next_token = torch.multinomial(probs, 1).item()
+                
+                # 更新输入序列
+                input_tensor[0, current_pos] = next_token
+                current_pos += 1
+                
                 # 如果生成了结束符，停止生成
-                if next_token.item() == self.tokenizer.eoa_id:
+                if next_token == self.tokenizer.eoa_id:
                     break
-
-            # 解码完整序列
-            generated_sequence = self.tokenizer.decode(input_tensor[0].tolist())
-            return generated_sequence
+            
+            # 解码生成的序列，去除padding
+            generated_seq = input_tensor[0, :current_pos].tolist()
+            return self.tokenizer.decode(generated_seq)
 
 
 def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int = 100):
