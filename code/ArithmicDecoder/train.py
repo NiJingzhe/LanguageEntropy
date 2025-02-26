@@ -63,7 +63,6 @@ def train_enhanced_model(
         digit_tokens=config.digit_token_ids,
         entropy_weight=config.entropy_weight,
         entropy_temperature=config.entropy_temperature,
-        apply_entropy_to_digits_only=config.apply_entropy_to_digits_only
     )
     
     optimizer = torch.optim.AdamW(model.parameters(), lr=config.lr, weight_decay=1e-4)
