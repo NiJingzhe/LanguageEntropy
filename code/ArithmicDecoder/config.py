@@ -15,9 +15,9 @@ torch.set_printoptions(threshold=np.inf)
 
 # 配置类
 class Config:
-    pad_token: str = "<PAD>"
-    eos_token: str = "<EOS>"
-    sos_token: str = "<SOS>"
+    pad_token: str = "@PAD@"
+    eos_token: str = "@EOS@"
+    sos_token: str = "@SOS@"
     digits: str = "0123456789"
     alphabet: str = "abcdefghijklmnopqrstuvwxyz"
     operators: list[str] = ["+", "*"]
