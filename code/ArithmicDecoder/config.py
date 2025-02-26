@@ -30,8 +30,8 @@ class Config:
     batch_size: int = 256
     lr: float = 1e-4
     epochs: int = 1000
-    train_size: int = 500000
-    valid_size: int = 5000
+    train_size: int = 50000
+    valid_size: int = 500
     test_size: int = 10000
     log_interval: int = 20  # 日志间隔
     early_stop_patience: int = 5  # 早停耐心值
@@ -40,14 +40,14 @@ class Config:
     gpu_id: str = "0,1,2"
     
     # 嵌入连续性损失相关参数
-    continuity_weight: float = 0.05  # 连续性损失的权重
+    continuity_weight: float = 0.01  # 连续性损失的权重
     continuity_type: str = 'l2'      # 距离类型：'l1', 'l2', 或 'cosine'
     normalize_embeddings: bool = True  # 是否在计算连续性前归一化嵌入
     apply_to_digits_only: bool = True  # 是否只对数字token应用连续性损失
     
     # 熵惩罚相关参数
-    entropy_weight: float = 0.1     # 熵惩罚的权重系数
-    entropy_temperature: float = 1.0  # 熵计算的温度系数
+    entropy_weight: float = 1.0    # 熵惩罚的权重系数
+    entropy_temperature: float = 0.8  # 熵计算的温度系数
 
     @property
     def special_tokens(self) -> List[str]:
