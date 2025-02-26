@@ -224,20 +224,34 @@ class EmbeddingVisualizer:
         tokens = trajectory["tokens"]
         positions = trajectory["positions"]
 
+        # 安全检查：确保数据长度一致
+        if len(embeddings) != len(positions) or len(embeddings) != len(tokens):
+            print(f"警告: 数据长度不一致 - embeddings: {len(embeddings)}, positions: {len(positions)}, tokens: {len(tokens)}")
+            # 使用最小长度来截断数据
+            min_length = min(len(embeddings), len(positions), len(tokens))
+            embeddings = embeddings[:min_length]
+            positions = positions[:min_length]
+            tokens = tokens[:min_length]
+
         # 如果只显示答案部分
         if show_only_answer:
             # 找到答案开始的位置
             answer_start = len(prompt)
-            answer_indices = [
-                i for i, pos in enumerate(positions) if pos >= answer_start
-            ]
-
-            if not answer_indices:
-                print("没有找到答案部分的嵌入向量")
-                return None
-
-            embeddings = embeddings[answer_indices]
-            tokens = [tokens[i] for i in answer_indices]
+            
+            # 安全检查：确保索引在有效范围内
+            valid_answer_indices = [i for i, pos in enumerate(positions) 
+                                if pos >= answer_start and i < len(embeddings)]
+            
+            if not valid_answer_indices:
+                print(f"没有找到答案部分的嵌入向量。提示长度: {answer_start}, 位置: {positions}")
+                # 如果没有有效的答案索引，回退到使用所有数据
+                valid_answer_indices = list(range(len(embeddings)))
+                print(f"回退到使用所有 {len(valid_answer_indices)} 个嵌入向量")
+            
+            embeddings = embeddings[valid_answer_indices]
+            tokens = [tokens[i] for i in valid_answer_indices]
+            
+            print(f"提取了 {len(embeddings)} 个答案部分的嵌入向量")
 
         # 选择降维方法
         if method == "umap":
@@ -318,16 +332,23 @@ class EmbeddingVisualizer:
 
         # 提取答案部分的嵌入向量
         answer_start = len(prompt)
-        answer_indices = [
-            i for i, pos in enumerate(trajectory["positions"]) if pos >= answer_start
+        
+        # 安全检查：确保索引在有效范围内
+        valid_answer_indices = [
+            i for i, pos in enumerate(trajectory["positions"]) 
+            if pos >= answer_start and i < len(trajectory["token_embeddings"])
         ]
 
-        if not answer_indices:
-            print("没有找到答案部分的嵌入向量")
-            return None
-
-        embeddings = np.array(trajectory["token_embeddings"])[answer_indices]
-        tokens = [trajectory["tokens"][i] for i in answer_indices]
+        if not valid_answer_indices:
+            print(f"没有找到答案部分的嵌入向量。提示长度: {answer_start}")
+            # 如果没有有效的答案索引，回退到使用所有数据
+            valid_answer_indices = list(range(len(trajectory["token_embeddings"])))
+            print(f"回退到使用所有 {len(valid_answer_indices)} 个嵌入向量")
+            
+        embeddings = np.array(trajectory["token_embeddings"])[valid_answer_indices]
+        tokens = [trajectory["tokens"][i] for i in valid_answer_indices]
+        
+        print(f"提取了 {len(embeddings)} 个用于动画的嵌入向量")
 
         # 选择降维方法
         if method == "umap" and UMAP_AVAILABLE:
