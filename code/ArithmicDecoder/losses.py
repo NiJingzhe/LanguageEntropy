@@ -5,7 +5,7 @@ import torch.nn.functional as F
 
 class CombinedLoss:
     """
-    组合损失函数，包含交叉熵损失和嵌入连续性损失
+    组合损失函数，包含交叉熵损失、嵌入连续性损失和预测熵惩罚
     """
 
     def __init__(
@@ -15,6 +15,9 @@ class CombinedLoss:
         normalize_embeddings=True,
         apply_to_digits_only=True,
         digit_tokens=None,
+        entropy_weight=0.1,
+        entropy_temperature=1.0,
+        apply_entropy_to_digits_only=True,
     ):
         """
         初始化组合损失函数
@@ -25,12 +28,20 @@ class CombinedLoss:
         - normalize_embeddings: 是否在计算连续性时归一化嵌入向量
         - apply_to_digits_only: 是否仅对数字token应用连续性损失
         - digit_tokens: 数字token的ID列表
+        - entropy_weight: 熵惩罚的权重系数
+        - entropy_temperature: 熵计算的温度系数
+        - apply_entropy_to_digits_only: 是否只对数字token应用熵惩罚
         """
         self.continuity_weight = continuity_weight
         self.continuity_type = continuity_type
         self.normalize_embeddings = normalize_embeddings
         self.apply_to_digits_only = apply_to_digits_only
         self.digit_tokens = set(digit_tokens) if digit_tokens else None
+        
+        # 熵惩罚相关参数
+        self.entropy_weight = entropy_weight
+        self.entropy_temperature = entropy_temperature
+        self.apply_entropy_to_digits_only = apply_entropy_to_digits_only
 
     def compute_loss(self, logits, targets, masks, model, answer_masks=None):
         """
@@ -45,44 +56,85 @@ class CombinedLoss:
                        如果为None，则使用masks作为答案mask
 
         返回:
-        - 总损失、交叉熵损失和连续性损失
+        - 总损失、交叉熵损失、连续性损失和熵损失
         """
         # 计算交叉熵损失
         ce_loss = F.cross_entropy(
             logits.view(-1, logits.size(-1)), targets.view(-1), reduction="none"
         )
         masked_ce_loss = (ce_loss * masks.view(-1)).sum() / masks.sum()
-
-        # 如果连续性权重为0，直接返回交叉熵损失
-        if self.continuity_weight == 0:
-            return (
-                masked_ce_loss,
-                masked_ce_loss,
-                torch.tensor(0.0, device=logits.device),
+        
+        # 初始化连续性损失和熵损失为0
+        continuity_loss = torch.tensor(0.0, device=logits.device)
+        entropy_loss = torch.tensor(0.0, device=logits.device)
+        
+        # 计算连续性损失（如果需要）
+        if self.continuity_weight > 0:
+            # 使用answer_masks如果提供，否则使用masks
+            answer_masks = answer_masks if answer_masks is not None else masks
+    
+            # 获取模型的token嵌入层
+            token_embedding = (
+                model.module.token_embed if hasattr(model, "module") else model.token_embed
+            )
+    
+            # 获取目标token的嵌入
+            batch_size, seq_len = targets.shape
+            embeddings = token_embedding(targets)  # [batch_size, seq_len, d_model]
+    
+            # 计算连续性损失
+            continuity_loss = self._compute_continuity_loss(
+                embeddings, targets, answer_masks, batch_size, seq_len
+            )
+            
+        # 计算熵损失（如果需要）
+        if self.entropy_weight > 0:
+            entropy_loss = self._compute_entropy_loss(
+                logits, targets, masks
             )
 
-        # 使用answer_masks如果提供，否则使用masks
-        answer_masks = answer_masks if answer_masks is not None else masks
-
-        # 获取模型的token嵌入层
-        token_embedding = (
-            model.module.token_embed if hasattr(model, "module") else model.token_embed
-        )
-
-        # 获取目标token的嵌入
-        # 我们获取实际token的嵌入，而不是预测的概率分布
-        batch_size, seq_len = targets.shape
-        embeddings = token_embedding(targets)  # [batch_size, seq_len, d_model]
-
-        # 计算连续性损失
-        continuity_loss = self._compute_continuity_loss(
-            embeddings, targets, answer_masks, batch_size, seq_len
-        )
-
         # 组合损失
-        total_loss = masked_ce_loss + self.continuity_weight * continuity_loss
+        total_loss = (
+            masked_ce_loss 
+            + self.continuity_weight * continuity_loss 
+            + self.entropy_weight * entropy_loss
+        )
 
-        return total_loss, masked_ce_loss, continuity_loss
+        return total_loss, masked_ce_loss, continuity_loss, entropy_loss
+        
+    def _compute_entropy_loss(self, logits, targets, masks):
+        """
+        计算预测分布的熵，用于惩罚不确定性高的预测
+        
+        参数:
+        - logits: 模型输出的logits，形状为[batch_size, seq_len, vocab_size]
+        - targets: 目标序列，形状为[batch_size, seq_len]
+        - masks: 用于masking的张量，形状为[batch_size, seq_len]
+        
+        返回:
+        - 熵损失
+        """
+        batch_size, seq_len, vocab_size = logits.size()
+        
+        effective_mask = masks
+            
+        # 如果没有有效位置，返回0损失
+        if effective_mask.sum() == 0:
+            return torch.tensor(0.0, device=logits.device)
+            
+        # 应用温度系数
+        scaled_logits = logits / self.entropy_temperature
+            
+        # 计算每个位置上预测分布的熵
+        probs = F.softmax(scaled_logits, dim=-1)
+        log_probs = F.log_softmax(scaled_logits, dim=-1)
+        entropy_per_token = -(probs * log_probs).sum(dim=-1)  # [batch_size, seq_len]
+        
+        # 应用mask并计算平均熵损失
+        masked_entropy = entropy_per_token * effective_mask
+        entropy_loss = masked_entropy.sum() / (effective_mask.sum() + 1e-8)
+        
+        return entropy_loss
 
     def _compute_continuity_loss(self, embeddings, targets, masks, batch_size, seq_len):
         """计算嵌入连续性损失"""

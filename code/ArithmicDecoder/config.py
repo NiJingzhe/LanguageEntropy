@@ -44,6 +44,10 @@ class Config:
     continuity_type: str = 'l2'      # 距离类型：'l1', 'l2', 或 'cosine'
     normalize_embeddings: bool = True  # 是否在计算连续性前归一化嵌入
     apply_to_digits_only: bool = True  # 是否只对数字token应用连续性损失
+    
+    # 熵惩罚相关参数
+    entropy_weight: float = 0.1     # 熵惩罚的权重系数
+    entropy_temperature: float = 1.0  # 熵计算的温度系数
 
     @property
     def special_tokens(self) -> List[str]:

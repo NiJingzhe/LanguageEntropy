@@ -60,7 +60,10 @@ def train_enhanced_model(
         continuity_type=config.continuity_type,
         normalize_embeddings=config.normalize_embeddings,
         apply_to_digits_only=config.apply_to_digits_only,
-        digit_tokens=config.digit_token_ids
+        digit_tokens=config.digit_token_ids,
+        entropy_weight=config.entropy_weight,
+        entropy_temperature=config.entropy_temperature,
+        apply_entropy_to_digits_only=config.apply_entropy_to_digits_only
     )
     
     optimizer = torch.optim.AdamW(model.parameters(), lr=config.lr, weight_decay=1e-4)
@@ -78,6 +81,7 @@ def train_enhanced_model(
         train_loss = []
         train_ce_loss = []
         train_cont_loss = []
+        train_entropy_loss = []  # 新增熵损失记录
         progress_bar = tqdm(
             train_loader, desc=f"Epoch {epoch+1}/{config.epochs} [Train]", leave=False
         )
@@ -92,8 +96,8 @@ def train_enhanced_model(
 
             logits = model(inputs)
             
-            # 使用组合损失函数
-            total_loss, ce_loss, cont_loss = combined_loss.compute_loss(
+            # 使用更新后的组合损失函数，现在返回4个值
+            total_loss, ce_loss, cont_loss, entropy_loss = combined_loss.compute_loss(
                 logits, targets, masks, model
             )
 
@@ -101,10 +105,11 @@ def train_enhanced_model(
             nn.utils.clip_grad_norm_(model.parameters(), config.grad_clip)
             optimizer.step()
 
-            # 记录每个step的loss
+            # 记录每个step的loss，增加熵损失的记录
             writer.add_scalar("Train/total_loss", total_loss.item(), global_step)
             writer.add_scalar("Train/ce_loss", ce_loss.item(), global_step)
             writer.add_scalar("Train/continuity_loss", cont_loss.item(), global_step)
+            writer.add_scalar("Train/entropy_loss", entropy_loss.item(), global_step)
             writer.add_scalar(
                 "Train/learning_rate", optimizer.param_groups[0]["lr"], global_step
             )
@@ -112,6 +117,7 @@ def train_enhanced_model(
             train_loss.append(total_loss.item())
             train_ce_loss.append(ce_loss.item())
             train_cont_loss.append(cont_loss.item())
+            train_entropy_loss.append(entropy_loss.item())
             
             if batch_idx % config.log_interval == 0:
                 progress_bar.set_postfix(
@@ -119,6 +125,7 @@ def train_enhanced_model(
                         "loss": f"{np.mean(train_loss[-config.log_interval:]):.4f}",
                         "ce": f"{np.mean(train_ce_loss[-config.log_interval:]):.4f}",
                         "cont": f"{np.mean(train_cont_loss[-config.log_interval:]):.4f}",
+                        "ent": f"{np.mean(train_entropy_loss[-config.log_interval:]):.4f}",
                         "lr": f"{optimizer.param_groups[0]['lr']:.2e}",
                     }
                 )
@@ -130,6 +137,7 @@ def train_enhanced_model(
         val_loss = []
         val_ce_loss = []
         val_cont_loss = []
+        val_entropy_loss = []  # 新增熵损失记录
         display_samples = 5  # 展示的样本数量
         all_samples = []  # 存储所有样本
 
@@ -146,19 +154,21 @@ def train_enhanced_model(
 
                 logits = model(inputs)
                 
-                # 使用组合损失函数
-                total_loss, ce_loss, cont_loss = combined_loss.compute_loss(
+                # 使用更新后的组合损失函数
+                total_loss, ce_loss, cont_loss, entropy_loss = combined_loss.compute_loss(
                     logits, targets, masks, model
                 )
                 
                 val_loss.append(total_loss.item())
                 val_ce_loss.append(ce_loss.item())
                 val_cont_loss.append(cont_loss.item())
+                val_entropy_loss.append(entropy_loss.item())
                 
                 val_progress.set_postfix({
                     "val_loss": f"{np.mean(val_loss):.4f}",  # 将 '::' 修改为 ':'
                     "val_ce": f"{np.mean(val_ce_loss):.4f}",
-                    "val_cont": f"{np.mean(val_cont_loss):.4f}"
+                    "val_cont": f"{np.mean(val_cont_loss)::.4f}",
+                    "val_ent": f"{np.mean(val_entropy_loss)::.4f}"
                 })
 
                 # 收集所有样本
@@ -201,6 +211,8 @@ def train_enhanced_model(
         avg_val_ce = np.mean(val_ce_loss)
         avg_train_cont = np.mean(train_cont_loss) 
         avg_val_cont = np.mean(val_cont_loss)
+        avg_train_ent = np.mean(train_entropy_loss)
+        avg_val_ent = np.mean(val_entropy_loss)
         
         writer.add_scalars(
             "Loss/Total", {"train": avg_train_loss, "valid": avg_val_loss}, epoch
@@ -210,6 +222,9 @@ def train_enhanced_model(
         )
         writer.add_scalars(
             "Loss/Continuity", {"train": avg_train_cont, "valid": avg_val_cont}, epoch
+        )
+        writer.add_scalars(
+            "Loss/Entropy", {"train": avg_train_ent, "valid": avg_val_ent}, epoch
         )
 
         # 学习率调度和早停
@@ -230,6 +245,8 @@ def train_enhanced_model(
             f"Valid CE: {avg_val_ce:.4f} | "
             f"Train Cont: {avg_train_cont:.4f} | "
             f"Valid Cont: {avg_val_cont:.4f} | "
+            f"Train Ent: {avg_train_ent:.4f} | "
+            f"Valid Ent: {avg_val_ent:.4f} | "
             f"LR: {optimizer.param_groups[0]['lr']:.2e} | "
             f"Patience: {patience_counter}/{config.early_stop_patience}"
         )
