@@ -9,11 +9,11 @@ import numpy as np
 from tqdm.auto import tqdm
 import argparse
 import os
-from .models import EnhancedTransformer, SequenceGenerator
-from .config import Config
-from .tokenizer import EnhancedTokenizer
-from .eval import evaluate_model
-from .train import train_enhanced_model
+from models import EnhancedTransformer, SequenceGenerator
+from config import Config
+from tokenizer import EnhancedTokenizer
+from eval import evaluate_model
+from train import train_enhanced_model
 
 def main():
     parser = argparse.ArgumentParser(description="Arithmetic Expression Generator")

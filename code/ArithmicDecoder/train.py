@@ -9,10 +9,10 @@ import numpy as np
 from tqdm.auto import tqdm
 import argparse
 import os
-from .tokenizer import EnhancedTokenizer
-from .config import Config
-from .models import EnhancedTransformer
-from .datasets import EnhancedMathDataset, enhanced_collate_fn
+from tokenizer import EnhancedTokenizer
+from config import Config
+from models import EnhancedTransformer
+from datasets import EnhancedMathDataset, enhanced_collate_fn
 
 def train_enhanced_model(
     config: Config, base_model_path: Optional[str] = None

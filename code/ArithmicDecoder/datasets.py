@@ -9,8 +9,8 @@ import numpy as np
 from tqdm.auto import tqdm
 import argparse
 import os
-from .tokenizer import EnhancedTokenizer
-from .config import Config
+from tokenizer import EnhancedTokenizer
+from config import Config
 
 
 class EnhancedMathDataset(Dataset):

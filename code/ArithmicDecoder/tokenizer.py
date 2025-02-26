@@ -9,7 +9,7 @@ import numpy as np
 from tqdm.auto import tqdm
 import argparse
 import os
-from .config import Config
+from config import Config
 
 
 class EnhancedTokenizer:

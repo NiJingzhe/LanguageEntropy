@@ -9,10 +9,10 @@ import numpy as np
 from tqdm.auto import tqdm
 import argparse
 import os
-from .models import EnhancedTransformer, SequenceGenerator
-from .config import Config
-from .tokenizer import EnhancedTokenizer
-from .datasets import EnhancedMathDataset
+from models import EnhancedTransformer, SequenceGenerator
+from config import Config
+from tokenizer import EnhancedTokenizer
+from datasets import EnhancedMathDataset
 
 
 def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int = 100, verbose: bool = False):
