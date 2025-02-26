@@ -1,5 +1,0 @@
-Position,PlaceValue,Entropy(bits),Operation,NumDigits
-0,1000,2.7133,multiply,2
-1,100,3.2989,multiply,2
-2,10,3.3135,multiply,2
-3,1,3.0344,multiply,2
