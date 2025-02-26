@@ -103,8 +103,10 @@ class CombinedLoss:
             digit_mask_next = is_digit_next[:, 1:]
 
             # 只有当前位置和下一个位置都是数字时才应用损失
-            digit_pair_mask = digit_mask_current & digit_mask_next
-            valid_pos_mask = valid_pos_mask & digit_pair_mask
+            # 修复：将位运算符 & 替换为乘法运算符 *
+            # 将布尔张量转换为浮点型张量用于乘法操作
+            digit_pair_mask = digit_mask_current.float() * digit_mask_next.float()
+            valid_pos_mask = valid_pos_mask * digit_pair_mask
 
         # 如果没有有效位置，返回0损失
         if valid_pos_mask.sum() == 0:
