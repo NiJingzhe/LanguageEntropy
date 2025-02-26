@@ -20,7 +20,7 @@ class Config:
     sos_token: str = "<SOS>"
     digits: str = "0123456789"
     alphabet: str = "abcdefghijklmnopqrstuvwxyz"
-    operators: list[str] = ["+", "-", "*", "/"]
+    operators: list[str] = ["+", "*"]
     relation_operators: list[str] = ["==", "!=", ">", "<", ">=", "<="]
     logical_operators: list[str] = ["and", "or", "not"]
     saparator: list[str] = ["(", ")", "[", "]", "{", "}", ",", ":", ".", ";", " "]
