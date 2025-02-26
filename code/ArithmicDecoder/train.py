@@ -156,7 +156,7 @@ def train_enhanced_model(
                 val_cont_loss.append(cont_loss.item())
                 
                 val_progress.set_postfix({
-                    "val_loss": f"{np.mean(val_loss)::.4f}",
+                    "val_loss": f"{np.mean(val_loss):.4f}",  # 将 '::' 修改为 ':'
                     "val_ce": f"{np.mean(val_ce_loss):.4f}",
                     "val_cont": f"{np.mean(val_cont_loss):.4f}"
                 })
