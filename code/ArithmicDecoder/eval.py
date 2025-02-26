@@ -52,8 +52,8 @@ def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int 
         
         # 对于乘法的三位结果，添加前导0并处理为四位结果
         if operation == "*" and true_len == 3:
-            true_answer = "0" + true_answer
-            gen_answer = "0" + gen_answer if len(gen_answer) == 3 else gen_answer.rjust(4, "0")
+            true_answer = true_answer+"0"
+            gen_answer = gen_answer+"0" if len(gen_answer) == 3 else gen_answer.rjust(4, "0")
             true_len = 4  # 更新长度为4
         
         # 只考虑3位和4位的答案
@@ -144,7 +144,7 @@ def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int 
         print(f"\n长度为 {length} 的乘法结果 (样本数: {total_samples}):")
         for i in range(len(digit_correct)):
             pos_accuracy = digit_correct[i] / total_samples if total_samples > 0 else 0
-            pos_label = f"位置 {i+1} (或前导0)" if (length == "4" and i == 0) else f"位置 {i+1}"
+            pos_label = f"位置 {i+1} (或后补0)" if (length == "4" and i == 3) else f"位置 {i+1}"
             print(f"  {pos_label}: {pos_accuracy:.2%}")
     
     return accuracy, results
