@@ -32,7 +32,7 @@ class Config:
     epochs: int = 1000
     train_size: int = 500000
     valid_size: int = 5000
-    test_size: int = 1000
+    test_size: int = 10000
     log_interval: int = 20  # 日志间隔
     early_stop_patience: int = 5  # 早停耐心值
     grad_clip: float = 1.0  # 梯度裁剪

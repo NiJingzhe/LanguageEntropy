@@ -16,6 +16,7 @@ from eval import evaluate_model
 from train import train_enhanced_model
 
 def main():
+    config = Config()
     parser = argparse.ArgumentParser(description="Arithmetic Expression Generator")
     parser.add_argument(
         "--mode",
@@ -33,7 +34,7 @@ def main():
     parser.add_argument(
         "--samples",
         type=int,
-        default=100,
+        default=config.test_size,
         help="Number of samples for evaluation (default: 100)",
     )
     parser.add_argument(
@@ -45,7 +46,6 @@ def main():
     parser.add_argument("--local-rank", "--local_rank", type=int)
     
     args = parser.parse_args()
-    config = Config()
     print(f"Using device: {config.device}")
 
     os.environ['CUDA_VISIBLE_DEVICES'] = config.gpu_id
