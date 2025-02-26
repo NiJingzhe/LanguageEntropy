@@ -64,7 +64,7 @@ def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int 
         results.append({
             "question": q_part,
             "true_answer": true_answer,
-            "generated": generated,
+            "generated": gen_answer,
             "correct": is_correct,
         })
         
