@@ -35,7 +35,7 @@ class EnhancedMathDataset(Dataset):
         b = self._generate_number()
         question = f"{a}{operator}{b}="
         answer = str(self._calculate(a, b, operator))
-        full_seq = f"{question}{answer}{self.config.eoa_token}"
+        full_seq = f"{self.config.sos_token}{question}{answer}{self.config.eos_token}"
         answer_start = len(question)
         return full_seq, answer_start
 

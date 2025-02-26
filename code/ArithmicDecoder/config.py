@@ -15,13 +15,16 @@ torch.set_printoptions(threshold=np.inf)
 
 # 配置类
 class Config:
-    pad_token: str = " "
-    eoa_token: str = ">"
+    pad_token: str = "<PAD>"
+    eos_token: str = "<EOS>"
+    sos_token: str = "<SOS>"
     digits: str = "0123456789"
-    operators: str = "+*"
-    logic_operators: str = "&|!"
-    saparator: str = ",;."
-    min_digits: int = 2
+    alphabet: str = "abcdefghijklmnopqrstuvwxyz"
+    operators: list[str] = ["+", "-", "*", "/"]
+    relation_operators: list[str] = ["==", "!=", ">", "<", ">=", "<="]
+    logical_operators: list[str] = ["and", "or", "not"]
+    saparator: list[str] = ["(", ")", "[", "]", "{", "}", ",", ":", ".", ";", " "]
+    min_digits: int = 1
     max_digits: int = 2  # 扩展位数范围
     max_seq_len: int = 35
     d_model: int = 1024  # 增大模型维度
@@ -38,27 +41,31 @@ class Config:
     grad_clip: float = 1.0  # 梯度裁剪
     device: torch.device = torch.device("cuda")
     gpu_id: str = "0,1,2"
-    
+
     # 嵌入连续性损失相关参数
     continuity_weight: float = 0.01  # 连续性损失的权重
-    continuity_type: str = 'l2'      # 距离类型：'l1', 'l2', 或 'cosine'
-    normalize_embeddings: bool = True  # 是否在计算连续性前归一化嵌入
-    apply_to_digits_only: bool = True  # 是否只对数字token应用连续性损失
-    
+    continuity_type: str = "l2"  # 距离类型：'l1', 'l2', 或 'cosine'
+    normalize_embeddings: bool = False  # 是否在计算连续性前归一化嵌入
+    apply_to_digits_only: bool = False  # 是否只对数字token应用连续性损失
+
     # 熵惩罚相关参数
-    entropy_weight: float = 1.0    # 熵惩罚的权重系数
+    entropy_weight: float = 1.0  # 熵惩罚的权重系数
     entropy_temperature: float = 0.8  # 熵计算的温度系数
 
     @property
     def special_tokens(self) -> List[str]:
-        return [self.pad_token, self.eoa_token]
+        return [self.pad_token, self.eos_token, self.sos_token]
 
     @property
     def vocab(self) -> List[str]:
-        return self.special_tokens + list(self.digits + self.operators + "=")
-    
+        return self.special_tokens + list(
+            self.digits
+            + self.alphabet
+        ) + \
+        self.logical_operators + self.operators + self.relation_operators + self.saparator
+
     @property
     def digit_token_ids(self) -> List[int]:
         """获取数字token的ID列表"""
-        tokenizer_vocab = self.special_tokens + list(self.digits + self.operators + "=")
+        tokenizer_vocab = self.vocab
         return [i for i, token in enumerate(tokenizer_vocab) if token in self.digits]
