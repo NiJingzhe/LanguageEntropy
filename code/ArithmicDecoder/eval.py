@@ -144,7 +144,7 @@ def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int 
         print(f"\n长度为 {length} 的乘法结果 (样本数: {total_samples}):")
         for i in range(len(digit_correct)):
             pos_accuracy = digit_correct[i] / total_samples if total_samples > 0 else 0
-            pos_label = "前导0" if (length == "4" and i == 0) else f"位置 {i+1}"
+            pos_label = f"位置 {i+1} (或前导0)" if (length == "4" and i == 0) else f"位置 {i+1}"
             print(f"  {pos_label}: {pos_accuracy:.2%}")
     
     return accuracy, results
