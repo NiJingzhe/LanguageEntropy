@@ -39,6 +39,11 @@ class Config:
     device: torch.device = torch.device("cuda")
     gpu_id: str = "0,1,2"
     
+    # 嵌入连续性损失相关参数
+    continuity_weight: float = 0.05  # 连续性损失的权重
+    continuity_type: str = 'l2'      # 距离类型：'l1', 'l2', 或 'cosine'
+    normalize_embeddings: bool = True  # 是否在计算连续性前归一化嵌入
+    apply_to_digits_only: bool = True  # 是否只对数字token应用连续性损失
 
     @property
     def special_tokens(self) -> List[str]:
@@ -47,3 +52,9 @@ class Config:
     @property
     def vocab(self) -> List[str]:
         return self.special_tokens + list(self.digits + self.operators + "=")
+    
+    @property
+    def digit_token_ids(self) -> List[int]:
+        """获取数字token的ID列表"""
+        tokenizer_vocab = self.special_tokens + list(self.digits + self.operators + "=")
+        return [i for i, token in enumerate(tokenizer_vocab) if token in self.digits]

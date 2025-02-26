@@ -13,6 +13,7 @@ from tokenizer import EnhancedTokenizer
 from config import Config
 from models import EnhancedTransformer
 from datasets import EnhancedMathDataset, enhanced_collate_fn
+from losses import CombinedLoss
 
 def train_enhanced_model(
     config: Config, base_model_path: Optional[str] = None
@@ -53,6 +54,15 @@ def train_enhanced_model(
 
     print(f"Training on device: {config.device}")
 
+    # 初始化组合损失函数
+    combined_loss = CombinedLoss(
+        continuity_weight=config.continuity_weight,
+        continuity_type=config.continuity_type,
+        normalize_embeddings=config.normalize_embeddings,
+        apply_to_digits_only=config.apply_to_digits_only,
+        digit_tokens=config.digit_token_ids
+    )
+    
     optimizer = torch.optim.AdamW(model.parameters(), lr=config.lr, weight_decay=1e-4)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         optimizer, "min", factor=0.5, patience=2
@@ -66,6 +76,8 @@ def train_enhanced_model(
         # 训练阶段
         model.train()
         train_loss = []
+        train_ce_loss = []
+        train_cont_loss = []
         progress_bar = tqdm(
             train_loader, desc=f"Epoch {epoch+1}/{config.epochs} [Train]", leave=False
         )
@@ -79,27 +91,34 @@ def train_enhanced_model(
             optimizer.zero_grad()
 
             logits = model(inputs)
-
-            loss = F.cross_entropy(
-                logits.view(-1, logits.size(-1)), targets.view(-1), reduction="none"
+            
+            # 使用组合损失函数
+            total_loss, ce_loss, cont_loss = combined_loss.compute_loss(
+                logits, targets, masks, model
             )
-            masked_loss = (loss * masks.view(-1)).sum() / masks.sum()
 
-            masked_loss.backward()
+            total_loss.backward()
             nn.utils.clip_grad_norm_(model.parameters(), config.grad_clip)
             optimizer.step()
 
             # 记录每个step的loss
-            writer.add_scalar("Train/step_loss", masked_loss.item(), global_step)
+            writer.add_scalar("Train/total_loss", total_loss.item(), global_step)
+            writer.add_scalar("Train/ce_loss", ce_loss.item(), global_step)
+            writer.add_scalar("Train/continuity_loss", cont_loss.item(), global_step)
             writer.add_scalar(
                 "Train/learning_rate", optimizer.param_groups[0]["lr"], global_step
             )
 
-            train_loss.append(masked_loss.item())
+            train_loss.append(total_loss.item())
+            train_ce_loss.append(ce_loss.item())
+            train_cont_loss.append(cont_loss.item())
+            
             if batch_idx % config.log_interval == 0:
                 progress_bar.set_postfix(
                     {
                         "loss": f"{np.mean(train_loss[-config.log_interval:]):.4f}",
+                        "ce": f"{np.mean(train_ce_loss[-config.log_interval:]):.4f}",
+                        "cont": f"{np.mean(train_cont_loss[-config.log_interval:]):.4f}",
                         "lr": f"{optimizer.param_groups[0]['lr']:.2e}",
                     }
                 )
@@ -109,6 +128,8 @@ def train_enhanced_model(
         # 验证阶段
         model.eval()
         val_loss = []
+        val_ce_loss = []
+        val_cont_loss = []
         display_samples = 5  # 展示的样本数量
         all_samples = []  # 存储所有样本
 
@@ -124,12 +145,21 @@ def train_enhanced_model(
                 masks = masks.to(config.device)
 
                 logits = model(inputs)
-                loss = F.cross_entropy(
-                    logits.view(-1, logits.size(-1)), targets.view(-1), reduction="none"
+                
+                # 使用组合损失函数
+                total_loss, ce_loss, cont_loss = combined_loss.compute_loss(
+                    logits, targets, masks, model
                 )
-                masked_loss = (loss * masks.view(-1)).sum() / masks.sum()
-                val_loss.append(masked_loss.item())
-                val_progress.set_postfix({"val_loss": f"{np.mean(val_loss):.4f}"})
+                
+                val_loss.append(total_loss.item())
+                val_ce_loss.append(ce_loss.item())
+                val_cont_loss.append(cont_loss.item())
+                
+                val_progress.set_postfix({
+                    "val_loss": f"{np.mean(val_loss)::.4f}",
+                    "val_ce": f"{np.mean(val_ce_loss):.4f}",
+                    "val_cont": f"{np.mean(val_cont_loss):.4f}"
+                })
 
                 # 收集所有样本
                 predictions = torch.argmax(logits, dim=-1)
@@ -167,8 +197,19 @@ def train_enhanced_model(
         # 统计指标
         avg_train_loss = np.mean(train_loss)
         avg_val_loss = np.mean(val_loss)
+        avg_train_ce = np.mean(train_ce_loss)
+        avg_val_ce = np.mean(val_ce_loss)
+        avg_train_cont = np.mean(train_cont_loss) 
+        avg_val_cont = np.mean(val_cont_loss)
+        
         writer.add_scalars(
-            "Loss", {"train": avg_train_loss, "valid": avg_val_loss}, epoch
+            "Loss/Total", {"train": avg_train_loss, "valid": avg_val_loss}, epoch
+        )
+        writer.add_scalars(
+            "Loss/CrossEntropy", {"train": avg_train_ce, "valid": avg_val_ce}, epoch
+        )
+        writer.add_scalars(
+            "Loss/Continuity", {"train": avg_train_cont, "valid": avg_val_cont}, epoch
         )
 
         # 学习率调度和早停
@@ -183,8 +224,12 @@ def train_enhanced_model(
         # 打印日志
         print(
             f"Epoch {epoch+1:02d} | "
-            f"Train Loss: {avg_train_loss:.4f} | "
-            f"Valid Loss: {avg_val_loss:.4f} | "
+            f"Train Total: {avg_train_loss:.4f} | "
+            f"Valid Total: {avg_val_loss:.4f} | "
+            f"Train CE: {avg_train_ce:.4f} | "
+            f"Valid CE: {avg_val_ce:.4f} | "
+            f"Train Cont: {avg_train_cont:.4f} | "
+            f"Valid Cont: {avg_val_cont:.4f} | "
             f"LR: {optimizer.param_groups[0]['lr']:.2e} | "
             f"Patience: {patience_counter}/{config.early_stop_patience}"
         )

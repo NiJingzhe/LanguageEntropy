@@ -4,10 +4,12 @@ from .tokenizer import EnhancedTokenizer
 from .eval import evaluate_model
 from .train import train_enhanced_model
 from .datasets import EnhancedMathDataset, enhanced_collate_fn
+from .losses import CombinedLoss
 
 __all__ = [
     "EnhancedTransformer",
     "SequenceGenerator",
     "Config",
     "EnhancedTokenizer",
+    "CombinedLoss",
 ]
