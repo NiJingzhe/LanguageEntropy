@@ -1,0 +1,2404 @@
+Using device: cuda
+Loaded model from ./best_model_with_cont.pth
+
+Batch 1 Results:
+✗ $32*38=    True: 1216#    Pred: 1674#   
+✗ $38*82=    True: 3116#    Pred: 3074#   
+✗ $30+98=    True: 128#     Pred: 132#    
+✗ $98*55=    True: 5390#    Pred: 5085#   
+✗ $46+24=    True: 70#      Pred: 64#     
+✗ $44+23=    True: 67#      Pred: 72#     
+✗ $54*22=    True: 1188#    Pred: 1226#   
+✗ $34*26=    True: 884#     Pred: 772#    
+✗ $16*96=    True: 1536#    Pred: 1544#   
+✗ $98*57=    True: 5586#    Pred: 5135#   
+
+Batch 2 Results:
+✗ $85*39=    True: 3315#    Pred: 2780#   
+✗ $97*88=    True: 8536#    Pred: 8172#   
+✗ $30+38=    True: 68#      Pred: 54#     
+✗ $55+61=    True: 116#     Pred: 114#    
+✗ $53+38=    True: 91#      Pred: 89#     
+✗ $16+25=    True: 41#      Pred: 49#     
+✗ $92+89=    True: 181#     Pred: 174#    
+✗ $44*10=    True: 440#     Pred: 480#    
+✗ $32*17=    True: 544#     Pred: 508#    
+✗ $43*75=    True: 3225#    Pred: 3055#   
+
+Batch 3 Results:
+✗ $18*72=    True: 1296#    Pred: 1422#   
+✗ $61*80=    True: 4880#    Pred: 4160#   
+✗ $50*26=    True: 1300#    Pred: 1240#   
+✓ $19+60=    True: 79#      Pred: 79#     
+✗ $20*83=    True: 1660#    Pred: 1930#   
+✗ $78+41=    True: 119#     Pred: 127#    
+✓ $81+19=    True: 100#     Pred: 100#    
+✗ $98*67=    True: 6566#    Pred: 6764#   
+✗ $39*77=    True: 3003#    Pred: 2728#   
+✗ $51+28=    True: 79#      Pred: 74#     
+
+Batch 4 Results:
+✗ $61+58=    True: 119#     Pred: 116#    
+✗ $38*98=    True: 3724#    Pred: 3572#   
+✗ $52+11=    True: 63#      Pred: 67#     
+✗ $31+79=    True: 110#     Pred: 113#    
+✗ $25+60=    True: 85#      Pred: 87#     
+✗ $61+45=    True: 106#     Pred: 110#    
+✓ $51+93=    True: 144#     Pred: 144#    
+✗ $14*24=    True: 336#     Pred: 342#    
+✗ $31+32=    True: 63#      Pred: 60#     
+✗ $64+58=    True: 122#     Pred: 123#    
+
+Batch 5 Results:
+✗ $84*29=    True: 2436#    Pred: 2229#   
+✗ $61*94=    True: 5734#    Pred: 5794#   
+✓ $32+67=    True: 99#      Pred: 99#     
+✗ $46*98=    True: 4508#    Pred: 4196#   
+✗ $58*68=    True: 3944#    Pred: 3830#   
+✗ $84+42=    True: 126#     Pred: 123#    
+✗ $92+54=    True: 146#     Pred: 143#    
+✗ $38+64=    True: 102#     Pred: 108#    
+✗ $44*22=    True: 968#     Pred: 984#    
+✗ $78+12=    True: 90#      Pred: 91#     
+
+Batch 6 Results:
+✗ $95+94=    True: 189#     Pred: 185#    
+✗ $73*83=    True: 6059#    Pred: 6226#   
+✗ $31+82=    True: 113#     Pred: 110#    
+✗ $54*17=    True: 918#     Pred: 612#    
+✗ $98*49=    True: 4802#    Pred: 4858#   
+✗ $30*43=    True: 1290#    Pred: 1470#   
+✗ $77+55=    True: 132#     Pred: 134#    
+✗ $16+80=    True: 96#      Pred: 81#     
+✗ $24*67=    True: 1608#    Pred: 1922#   
+✗ $13+11=    True: 24#      Pred: 46#     
+
+Batch 7 Results:
+✗ $81*24=    True: 1944#    Pred: 2196#   
+✗ $81+59=    True: 140#     Pred: 145#    
+✗ $19*24=    True: 456#     Pred: 404#    
+✗ $22+45=    True: 67#      Pred: 74#     
+✗ $78*20=    True: 1560#    Pred: 2220#   
+✗ $52*63=    True: 3276#    Pred: 3484#   
+✗ $61+11=    True: 72#      Pred: 77#     
+✗ $35*82=    True: 2870#    Pred: 2730#   
+✗ $52*52=    True: 2704#    Pred: 2790#   
+✓ $51+91=    True: 142#     Pred: 142#    
+
+Batch 8 Results:
+✗ $30*71=    True: 2130#    Pred: 2280#   
+✗ $45*40=    True: 1800#    Pred: 1900#   
+✗ $68*88=    True: 5984#    Pred: 5624#   
+✗ $72+40=    True: 112#     Pred: 118#    
+✗ $30+10=    True: 40#      Pred: 45#     
+✗ $63+81=    True: 144#     Pred: 150#    
+✗ $78+72=    True: 150#     Pred: 158#    
+✗ $28*48=    True: 1344#    Pred: 1902#   
+✗ $76*57=    True: 4332#    Pred: 4706#   
+✗ $15*80=    True: 1200#    Pred: 1400#   
+
+Batch 9 Results:
+✗ $61*54=    True: 3294#    Pred: 3444#   
+✗ $30+72=    True: 102#     Pred: 100#    
+✗ $43*10=    True: 430#     Pred: 544#    
+✗ $92*11=    True: 1012#    Pred: 1442#   
+✗ $92+90=    True: 182#     Pred: 186#    
+✗ $49*14=    True: 686#     Pred: 582#    
+✗ $65+46=    True: 111#     Pred: 116#    
+✗ $48*62=    True: 2976#    Pred: 2828#   
+✗ $91+58=    True: 149#     Pred: 147#    
+✗ $34*57=    True: 1938#    Pred: 1705#   
+
+Batch 10 Results:
+✗ $29*76=    True: 2204#    Pred: 2146#   
+✗ $76*16=    True: 1216#    Pred: 1286#   
+✗ $46+98=    True: 144#     Pred: 148#    
+✗ $53*89=    True: 4717#    Pred: 4825#   
+✗ $96*25=    True: 2400#    Pred: 2795#   
+✓ $88+16=    True: 104#     Pred: 104#    
+✗ $33+26=    True: 59#      Pred: 62#     
+✗ $58*17=    True: 986#     Pred: 4960#   
+✗ $80+65=    True: 145#     Pred: 147#    
+✗ $31+68=    True: 99#      Pred: 100#    
+
+Batch 11 Results:
+✗ $78*56=    True: 4368#    Pred: 4615#   
+✗ $92*73=    True: 6716#    Pred: 7226#   
+✗ $61+44=    True: 105#     Pred: 107#    
+✗ $55*80=    True: 4400#    Pred: 4440#   
+✗ $69*56=    True: 3864#    Pred: 3874#   
+✗ $28+44=    True: 72#      Pred: 77#     
+✗ $22+94=    True: 116#     Pred: 120#    
+✗ $85*65=    True: 5525#    Pred: 5520#   
+✗ $26+66=    True: 92#      Pred: 127#    
+✗ $81+30=    True: 111#     Pred: 116#    
+
+Batch 12 Results:
+✗ $19+43=    True: 62#      Pred: 61#     
+✗ $93+87=    True: 180#     Pred: 182#    
+✗ $39*28=    True: 1092#    Pred: 1249#   
+✗ $89*30=    True: 2670#    Pred: 2750#   
+✗ $49+39=    True: 88#      Pred: 81#     
+✗ $77+14=    True: 91#      Pred: 96#     
+✗ $46*89=    True: 4094#    Pred: 4646#   
+✗ $17+60=    True: 77#      Pred: 82#     
+✗ $40*50=    True: 2000#    Pred: 2450#   
+✗ $33+38=    True: 71#      Pred: 79#     
+
+Batch 13 Results:
+✗ $88*28=    True: 2464#    Pred: 2342#   
+✗ $14+48=    True: 62#      Pred: 60#     
+✗ $63*64=    True: 4032#    Pred: 4269#   
+✗ $79*56=    True: 4424#    Pred: 4065#   
+✗ $64*61=    True: 3904#    Pred: 4286#   
+✗ $64*65=    True: 4160#    Pred: 4240#   
+✗ $97*96=    True: 9312#    Pred: 9624#   
+✗ $24+26=    True: 50#      Pred: 44#     
+✗ $77+91=    True: 168#     Pred: 172#    
+✓ $15+82=    True: 97#      Pred: 97#     
+
+Batch 14 Results:
+✗ $10*75=    True: 750#     Pred: 720#    
+✗ $91+33=    True: 124#     Pred: 121#    
+✗ $32*33=    True: 1056#    Pred: 1073#   
+✗ $21*98=    True: 2058#    Pred: 2531#   
+✗ $99+58=    True: 157#     Pred: 158#    
+✗ $34*24=    True: 816#     Pred: 804#    
+✗ $60*56=    True: 3360#    Pred: 3765#   
+✗ $70+68=    True: 138#     Pred: 130#    
+✗ $80+91=    True: 171#     Pred: 160#    
+✗ $12+63=    True: 75#      Pred: 76#     
+
+Batch 15 Results:
+✗ $67*50=    True: 3350#    Pred: 3800#   
+✗ $31*62=    True: 1922#    Pred: 2636#   
+✗ $97*67=    True: 6499#    Pred: 6664#   
+✗ $47*30=    True: 1410#    Pred: 1800#   
+✗ $79*20=    True: 1580#    Pred: 1400#   
+✗ $52*91=    True: 4732#    Pred: 5042#   
+✗ $40+40=    True: 80#      Pred: 87#     
+✗ $89+95=    True: 184#     Pred: 187#    
+✗ $33+10=    True: 43#      Pred: 45#     
+✗ $35+81=    True: 116#     Pred: 120#    
+
+Batch 16 Results:
+✗ $81+26=    True: 107#     Pred: 112#    
+✗ $13*11=    True: 143#     Pred: 144#    
+✗ $48*78=    True: 3744#    Pred: 3521#   
+✗ $24*52=    True: 1248#    Pred: 1654#   
+✗ $27+88=    True: 115#     Pred: 112#    
+✓ $71+56=    True: 127#     Pred: 127#    
+✗ $68*78=    True: 5304#    Pred: 5391#   
+✗ $48+32=    True: 80#      Pred: 70#     
+✗ $45*38=    True: 1710#    Pred: 1770#   
+✗ $73*68=    True: 4964#    Pred: 4796#   
+
+Batch 17 Results:
+✗ $85*51=    True: 4335#    Pred: 4795#   
+✗ $47+47=    True: 94#      Pred: 82#     
+✗ $53*91=    True: 4823#    Pred: 5085#   
+✗ $98+57=    True: 155#     Pred: 154#    
+✗ $86+11=    True: 97#      Pred: 105#    
+✗ $23+81=    True: 104#     Pred: 112#    
+✗ $92*21=    True: 1932#    Pred: 2076#   
+✗ $84+80=    True: 164#     Pred: 170#    
+✓ $69+96=    True: 165#     Pred: 165#    
+✗ $40+85=    True: 125#     Pred: 127#    
+
+Batch 18 Results:
+✗ $27*59=    True: 1593#    Pred: 1285#   
+✗ $23*68=    True: 1564#    Pred: 1506#   
+✗ $99*76=    True: 7524#    Pred: 7552#   
+✗ $23+37=    True: 60#      Pred: 63#     
+✗ $63*23=    True: 1449#    Pred: 1744#   
+✗ $14*37=    True: 518#     Pred: 542#    
+✗ $97*55=    True: 5335#    Pred: 5395#   
+✗ $15+69=    True: 84#      Pred: 87#     
+✗ $42+88=    True: 130#     Pred: 124#    
+✗ $16+17=    True: 33#      Pred: 27#     
+
+Batch 19 Results:
+✗ $53*65=    True: 3445#    Pred: 3342#   
+✗ $24+57=    True: 81#      Pred: 80#     
+✗ $45*11=    True: 495#     Pred: 470#    
+✗ $31*47=    True: 1457#    Pred: 1562#   
+✗ $50+46=    True: 96#      Pred: 98#     
+✗ $80*25=    True: 2000#    Pred: 1940#   
+✗ $62+80=    True: 142#     Pred: 144#    
+✗ $37+95=    True: 132#     Pred: 134#    
+✗ $90+19=    True: 109#     Pred: 112#    
+✗ $34*84=    True: 2856#    Pred: 2812#   
+
+Batch 20 Results:
+✗ $47*89=    True: 4183#    Pred: 4208#   
+✓ $44+83=    True: 127#     Pred: 127#    
+✗ $12+70=    True: 82#      Pred: 87#     
+✗ $65*47=    True: 3055#    Pred: 3075#   
+✗ $87+24=    True: 111#     Pred: 112#    
+✗ $61+77=    True: 138#     Pred: 134#    
+✗ $33+76=    True: 109#     Pred: 114#    
+✗ $25*48=    True: 1200#    Pred: 1040#   
+✗ $17*25=    True: 425#     Pred: 515#    
+✗ $20+82=    True: 102#     Pred: 103#    
+
+Batch 21 Results:
+✗ $28+31=    True: 59#      Pred: 64#     
+✗ $50*44=    True: 2200#    Pred: 2000#   
+✗ $35*21=    True: 735#     Pred: 700#    
+✗ $13*80=    True: 1040#    Pred: 1000#   
+✗ $81*26=    True: 2106#    Pred: 2522#   
+✗ $47*78=    True: 3666#    Pred: 3134#   
+✗ $60+95=    True: 155#     Pred: 152#    
+✗ $86*15=    True: 1290#    Pred: 820#    
+✗ $71*80=    True: 5680#    Pred: 5580#   
+✗ $51+43=    True: 94#      Pred: 99#     
+
+Batch 22 Results:
+✗ $37*22=    True: 814#     Pred: 822#    
+✗ $91*35=    True: 3185#    Pred: 3550#   
+✗ $69+77=    True: 146#     Pred: 144#    
+✗ $17*79=    True: 1343#    Pred: 1359#   
+✗ $32*43=    True: 1376#    Pred: 1314#   
+✗ $70*23=    True: 1610#    Pred: 1720#   
+✗ $84+89=    True: 173#     Pred: 168#    
+✗ $90*46=    True: 4140#    Pred: 3820#   
+✗ $26*39=    True: 1014#    Pred: 900#    
+✗ $54+29=    True: 83#      Pred: 84#     
+
+Batch 23 Results:
+✗ $90*21=    True: 1890#    Pred: 2250#   
+✗ $14*66=    True: 924#     Pred: 894#    
+✗ $53*10=    True: 530#     Pred: 560#    
+✗ $84*55=    True: 4620#    Pred: 4795#   
+✓ $16+91=    True: 107#     Pred: 107#    
+✗ $34*92=    True: 3128#    Pred: 3002#   
+✗ $10*43=    True: 430#     Pred: 450#    
+✗ $22*71=    True: 1562#    Pred: 1946#   
+✗ $60+40=    True: 100#     Pred: 106#    
+✗ $80+13=    True: 93#      Pred: 99#     
+
+Batch 24 Results:
+✗ $63*44=    True: 2772#    Pred: 2828#   
+✗ $32*31=    True: 992#     Pred: 1146#   
+✗ $65*91=    True: 5915#    Pred: 5795#   
+✗ $39*41=    True: 1599#    Pred: 1738#   
+✗ $85*67=    True: 5695#    Pred: 5794#   
+✗ $48+82=    True: 130#     Pred: 124#    
+✗ $78*95=    True: 7410#    Pred: 7430#   
+✗ $19+95=    True: 114#     Pred: 113#    
+✗ $37+89=    True: 126#     Pred: 122#    
+✗ $47+48=    True: 95#      Pred: 90#     
+
+Batch 25 Results:
+✗ $94+18=    True: 112#     Pred: 100#    
+✗ $56*86=    True: 4816#    Pred: 4464#   
+✗ $48*48=    True: 2304#    Pred: 1968#   
+✗ $10+25=    True: 35#      Pred: 37#     
+✗ $35*79=    True: 2765#    Pred: 2730#   
+✗ $50*50=    True: 2500#    Pred: 2050#   
+✗ $82*15=    True: 1230#    Pred: 1270#   
+✗ $69*97=    True: 6693#    Pred: 6072#   
+✗ $97*55=    True: 5335#    Pred: 5399#   
+✗ $73*77=    True: 5621#    Pred: 5557#   
+
+Batch 26 Results:
+✗ $84*13=    True: 1092#    Pred: 1473#   
+✗ $88*54=    True: 4752#    Pred: 4670#   
+✗ $60*34=    True: 2040#    Pred: 2930#   
+✗ $38*30=    True: 1140#    Pred: 920#    
+✗ $82+71=    True: 153#     Pred: 152#    
+✗ $93*11=    True: 1023#    Pred: 1274#   
+✗ $78+71=    True: 149#     Pred: 154#    
+✓ $79+25=    True: 104#     Pred: 104#    
+✗ $58+28=    True: 86#      Pred: 88#     
+✗ $71+43=    True: 114#     Pred: 117#    
+
+Batch 27 Results:
+✗ $12+34=    True: 46#      Pred: 54#     
+✗ $74+62=    True: 136#     Pred: 141#    
+✗ $80+32=    True: 112#     Pred: 115#    
+✗ $71+22=    True: 93#      Pred: 99#     
+✓ $61+46=    True: 107#     Pred: 107#    
+✗ $74*41=    True: 3034#    Pred: 3216#   
+✗ $60+63=    True: 123#     Pred: 126#    
+✗ $80+83=    True: 163#     Pred: 162#    
+✗ $38*71=    True: 2698#    Pred: 2736#   
+✗ $99*63=    True: 6237#    Pred: 6766#   
+
+Batch 28 Results:
+✗ $86+37=    True: 123#     Pred: 124#    
+✗ $85*74=    True: 6290#    Pred: 6230#   
+✗ $20*63=    True: 1260#    Pred: 1740#   
+✗ $73*86=    True: 6278#    Pred: 6224#   
+✗ $23+17=    True: 40#      Pred: 37#     
+✗ $82+69=    True: 151#     Pred: 147#    
+✗ $94+32=    True: 126#     Pred: 124#    
+✗ $61+71=    True: 132#     Pred: 133#    
+✗ $54+87=    True: 141#     Pred: 147#    
+✗ $34*94=    True: 3196#    Pred: 3112#   
+
+Batch 29 Results:
+✗ $82*20=    True: 1640#    Pred: 1720#   
+✗ $81*95=    True: 7695#    Pred: 8725#   
+✗ $17+51=    True: 68#      Pred: 70#     
+✗ $88*49=    True: 4312#    Pred: 4266#   
+✗ $81+98=    True: 179#     Pred: 182#    
+✗ $71+17=    True: 88#      Pred: 89#     
+✗ $86*42=    True: 3612#    Pred: 3926#   
+✗ $68+82=    True: 150#     Pred: 157#    
+✗ $69+36=    True: 105#     Pred: 108#    
+✗ $64+10=    True: 74#      Pred: 77#     
+
+Batch 30 Results:
+✗ $66*64=    True: 4224#    Pred: 4145#   
+✗ $47*27=    True: 1269#    Pred: 1886#   
+✗ $31*15=    True: 465#     Pred: 547#    
+✗ $61+46=    True: 107#     Pred: 104#    
+✗ $37*24=    True: 888#     Pred: 944#    
+✗ $99*70=    True: 6930#    Pred: 6820#   
+✗ $23+44=    True: 67#      Pred: 72#     
+✗ $72+11=    True: 83#      Pred: 87#     
+✗ $72*26=    True: 1872#    Pred: 1758#   
+✗ $80+41=    True: 121#     Pred: 122#    
+
+Batch 31 Results:
+✓ $31+32=    True: 63#      Pred: 63#     
+✗ $43*95=    True: 4085#    Pred: 4040#   
+✗ $12*97=    True: 1164#    Pred: 1333#   
+✗ $25+13=    True: 38#      Pred: 37#     
+✗ $83+77=    True: 160#     Pred: 156#    
+✗ $69+67=    True: 136#     Pred: 137#    
+✗ $77+31=    True: 108#     Pred: 100#    
+✗ $47+19=    True: 66#      Pred: 61#     
+✗ $61+74=    True: 135#     Pred: 148#    
+✗ $34*25=    True: 850#     Pred: 700#    
+
+Batch 32 Results:
+✗ $56+24=    True: 80#      Pred: 85#     
+✗ $84*53=    True: 4452#    Pred: 4666#   
+✗ $30*55=    True: 1650#    Pred: 1900#   
+✓ $95+23=    True: 118#     Pred: 118#    
+✗ $30*12=    True: 360#     Pred: 450#    
+✗ $12*34=    True: 408#     Pred: 471#    
+✗ $18+75=    True: 93#      Pred: 95#     
+✗ $70*39=    True: 2730#    Pred: 2200#   
+✗ $29*85=    True: 2465#    Pred: 2055#   
+✗ $14+67=    True: 81#      Pred: 82#     
+
+Batch 33 Results:
+✗ $81*29=    True: 2349#    Pred: 2542#   
+✗ $17*72=    True: 1224#    Pred: 1155#   
+✗ $83+57=    True: 140#     Pred: 132#    
+✗ $73*43=    True: 3139#    Pred: 2674#   
+✗ $36*36=    True: 1296#    Pred: 1813#   
+✗ $55+28=    True: 83#      Pred: 80#     
+✗ $35*33=    True: 1155#    Pred: 1000#   
+✗ $68+75=    True: 143#     Pred: 144#    
+✗ $60*34=    True: 2040#    Pred: 2240#   
+✗ $97*48=    True: 4656#    Pred: 4346#   
+
+Batch 34 Results:
+✗ $56*77=    True: 4312#    Pred: 4390#   
+✗ $82+85=    True: 167#     Pred: 172#    
+✗ $53+74=    True: 127#     Pred: 122#    
+✗ $42+47=    True: 89#      Pred: 90#     
+✗ $68+33=    True: 101#     Pred: 108#    
+✗ $33+88=    True: 121#     Pred: 124#    
+✗ $76*97=    True: 7372#    Pred: 6914#   
+✗ $41+44=    True: 85#      Pred: 90#     
+✗ $32+11=    True: 43#      Pred: 44#     
+✗ $38+70=    True: 108#     Pred: 106#    
+
+Batch 35 Results:
+✗ $63*68=    True: 4284#    Pred: 4076#   
+✗ $89*85=    True: 7565#    Pred: 7925#   
+✗ $10+73=    True: 83#      Pred: 87#     
+✗ $91+95=    True: 186#     Pred: 181#    
+✗ $26*51=    True: 1326#    Pred: 1292#   
+✗ $21*76=    True: 1596#    Pred: 1600#   
+✗ $54*80=    True: 4320#    Pred: 4400#   
+✗ $24*81=    True: 1944#    Pred: 1942#   
+✗ $89+93=    True: 182#     Pred: 187#    
+✗ $98+28=    True: 126#     Pred: 125#    
+
+Batch 36 Results:
+✗ $31+60=    True: 91#      Pred: 90#     
+✗ $92+99=    True: 191#     Pred: 182#    
+✗ $83+19=    True: 102#     Pred: 107#    
+✗ $94*99=    True: 9306#    Pred: 8824#   
+✗ $79*36=    True: 2844#    Pred: 2454#   
+✗ $82+52=    True: 134#     Pred: 131#    
+✗ $18*28=    True: 504#     Pred: 544#    
+✗ $75+20=    True: 95#      Pred: 99#     
+✗ $10+47=    True: 57#      Pred: 50#     
+✗ $46*94=    True: 4324#    Pred: 4157#   
+
+Batch 37 Results:
+✓ $50+79=    True: 129#     Pred: 129#    
+✗ $84*89=    True: 7476#    Pred: 7452#   
+✗ $57*74=    True: 4218#    Pred: 4676#   
+✗ $16+92=    True: 108#     Pred: 110#    
+✗ $17+30=    True: 47#      Pred: 50#     
+✗ $34*62=    True: 2108#    Pred: 2032#   
+✗ $62*13=    True: 806#     Pred: 607#    
+✗ $27+11=    True: 38#      Pred: 49#     
+✗ $28*96=    True: 2688#    Pred: 2576#   
+✗ $16*75=    True: 1200#    Pred: 1050#   
+
+Batch 38 Results:
+✗ $25+93=    True: 118#     Pred: 117#    
+✗ $83*36=    True: 2988#    Pred: 2746#   
+✗ $46+57=    True: 103#     Pred: 104#    
+✗ $15*36=    True: 540#     Pred: 475#    
+✗ $89+49=    True: 138#     Pred: 144#    
+✗ $22+46=    True: 68#      Pred: 74#     
+✗ $87+66=    True: 153#     Pred: 141#    
+✗ $68+83=    True: 151#     Pred: 158#    
+✗ $42+62=    True: 104#     Pred: 106#    
+✗ $51*63=    True: 3213#    Pred: 3954#   
+
+Batch 39 Results:
+✗ $88*73=    True: 6424#    Pred: 6344#   
+✗ $63*31=    True: 1953#    Pred: 2046#   
+✗ $76+74=    True: 150#     Pred: 148#    
+✗ $44*54=    True: 2376#    Pred: 2793#   
+✗ $14*90=    True: 1260#    Pred: 1545#   
+✗ $28*26=    True: 728#     Pred: 574#    
+✗ $90*44=    True: 3960#    Pred: 3300#   
+✗ $84*52=    True: 4368#    Pred: 4288#   
+✗ $31+95=    True: 126#     Pred: 123#    
+✗ $68*19=    True: 1292#    Pred: 1174#   
+
+Batch 40 Results:
+✗ $52+92=    True: 144#     Pred: 147#    
+✗ $72*59=    True: 4248#    Pred: 4925#   
+✗ $37*51=    True: 1887#    Pred: 2272#   
+✗ $35*12=    True: 420#     Pred: 540#    
+✗ $75*77=    True: 5775#    Pred: 5661#   
+✗ $39*50=    True: 1950#    Pred: 2150#   
+✗ $94*79=    True: 7426#    Pred: 7186#   
+✗ $73+29=    True: 102#     Pred: 106#    
+✗ $85*98=    True: 8330#    Pred: 8645#   
+✗ $65+90=    True: 155#     Pred: 160#    
+
+Batch 41 Results:
+✗ $48*64=    True: 3072#    Pred: 3984#   
+✗ $95+20=    True: 115#     Pred: 124#    
+✗ $59*45=    True: 2655#    Pred: 2794#   
+✗ $75*16=    True: 1200#    Pred: 1269#   
+✗ $74*58=    True: 4292#    Pred: 4704#   
+✗ $94+39=    True: 133#     Pred: 124#    
+✗ $38*97=    True: 3686#    Pred: 3082#   
+✗ $97+21=    True: 118#     Pred: 125#    
+✗ $48*88=    True: 4224#    Pred: 4766#   
+✗ $76+33=    True: 109#     Pred: 108#    
+
+Batch 42 Results:
+✗ $33*29=    True: 957#     Pred: 863#    
+✗ $64+96=    True: 160#     Pred: 165#    
+✗ $37*67=    True: 2479#    Pred: 2730#   
+✗ $43+30=    True: 73#      Pred: 74#     
+✗ $19+93=    True: 112#     Pred: 113#    
+✗ $83+95=    True: 178#     Pred: 184#    
+✗ $54*35=    True: 1890#    Pred: 1704#   
+✗ $42*78=    True: 3276#    Pred: 3174#   
+✗ $42+32=    True: 74#      Pred: 77#     
+✗ $30*97=    True: 2910#    Pred: 3310#   
+
+Batch 43 Results:
+✗ $47*30=    True: 1410#    Pred: 1740#   
+✗ $90+80=    True: 170#     Pred: 174#    
+✗ $25+40=    True: 65#      Pred: 74#     
+✗ $66+56=    True: 122#     Pred: 127#    
+✗ $66+41=    True: 107#     Pred: 106#    
+✓ $18+22=    True: 40#      Pred: 40#     
+✗ $82*79=    True: 6478#    Pred: 6046#   
+✗ $68*47=    True: 3196#    Pred: 3724#   
+✗ $89+50=    True: 139#     Pred: 144#    
+✓ $21+28=    True: 49#      Pred: 49#     
+
+Batch 44 Results:
+✗ $28+94=    True: 122#     Pred: 121#    
+✗ $31*77=    True: 2387#    Pred: 2276#   
+✗ $92+97=    True: 189#     Pred: 186#    
+✗ $25*93=    True: 2325#    Pred: 2255#   
+✗ $19+77=    True: 96#      Pred: 98#     
+✗ $84*80=    True: 6720#    Pred: 7120#   
+✓ $10+15=    True: 25#      Pred: 25#     
+✗ $59*45=    True: 2655#    Pred: 2366#   
+✗ $19*74=    True: 1406#    Pred: 1548#   
+✗ $35+18=    True: 53#      Pred: 54#     
+
+Batch 45 Results:
+✗ $98+32=    True: 130#     Pred: 125#    
+✗ $11+92=    True: 103#     Pred: 109#    
+✗ $63*29=    True: 1827#    Pred: 1924#   
+✗ $22*11=    True: 242#     Pred: 273#    
+✗ $63*43=    True: 2709#    Pred: 2623#   
+✗ $26+22=    True: 48#      Pred: 49#     
+✗ $31*77=    True: 2387#    Pred: 2237#   
+✗ $21+36=    True: 57#      Pred: 55#     
+✗ $47*12=    True: 564#     Pred: 426#    
+✗ $99+71=    True: 170#     Pred: 174#    
+
+Batch 46 Results:
+✗ $10*73=    True: 730#     Pred: 745#    
+✗ $17*57=    True: 969#     Pred: 1065#   
+✗ $40*27=    True: 1080#    Pred: 1480#   
+✗ $94+79=    True: 173#     Pred: 164#    
+✗ $30*52=    True: 1560#    Pred: 1800#   
+✗ $90*16=    True: 1440#    Pred: 1180#   
+✗ $15*22=    True: 330#     Pred: 450#    
+✗ $74*23=    True: 1702#    Pred: 2176#   
+✗ $44+86=    True: 130#     Pred: 126#    
+✗ $12+28=    True: 40#      Pred: 38#     
+
+Batch 47 Results:
+✗ $50*97=    True: 4850#    Pred: 4700#   
+✗ $71*37=    True: 2627#    Pred: 2204#   
+✗ $30*94=    True: 2820#    Pred: 2720#   
+✗ $97*49=    True: 4753#    Pred: 4088#   
+✗ $21+60=    True: 81#      Pred: 88#     
+✗ $69+75=    True: 144#     Pred: 147#    
+✗ $18*44=    True: 792#     Pred: 872#    
+✗ $53+10=    True: 63#      Pred: 67#     
+✗ $23*33=    True: 759#     Pred: 736#    
+✗ $29*20=    True: 580#     Pred: 560#    
+
+Batch 48 Results:
+✗ $36+75=    True: 111#     Pred: 118#    
+✗ $90+84=    True: 174#     Pred: 170#    
+✗ $33+90=    True: 123#     Pred: 125#    
+✗ $67+83=    True: 150#     Pred: 149#    
+✗ $83*53=    True: 4399#    Pred: 4262#   
+✗ $65+61=    True: 126#     Pred: 128#    
+✗ $47*87=    True: 4089#    Pred: 4223#   
+✗ $62*80=    True: 4960#    Pred: 5800#   
+✗ $23+53=    True: 76#      Pred: 77#     
+✗ $40*51=    True: 2040#    Pred: 2450#   
+
+Batch 49 Results:
+✗ $18+43=    True: 61#      Pred: 62#     
+✗ $26*93=    True: 2418#    Pred: 2572#   
+✗ $59+16=    True: 75#      Pred: 73#     
+✗ $95+26=    True: 121#     Pred: 126#    
+✗ $32*45=    True: 1440#    Pred: 1400#   
+✗ $36*13=    True: 468#     Pred: 508#    
+✓ $43+54=    True: 97#      Pred: 97#     
+✗ $24+29=    True: 53#      Pred: 59#     
+✗ $27+40=    True: 67#      Pred: 61#     
+✗ $77+57=    True: 134#     Pred: 138#    
+
+Batch 50 Results:
+✗ $70*70=    True: 4900#    Pred: 5200#   
+✗ $66*57=    True: 3762#    Pred: 3344#   
+✗ $94*98=    True: 9212#    Pred: 8712#   
+✗ $38+21=    True: 59#      Pred: 63#     
+✗ $53+57=    True: 110#     Pred: 115#    
+✗ $41+95=    True: 136#     Pred: 135#    
+✗ $94+74=    True: 168#     Pred: 169#    
+✗ $32*15=    True: 480#     Pred: 409#    
+✓ $18*86=    True: 1548#    Pred: 1548#   
+✗ $50+54=    True: 104#     Pred: 106#    
+
+Batch 51 Results:
+✓ $78+47=    True: 125#     Pred: 125#    
+✓ $46+62=    True: 108#     Pred: 108#    
+✗ $19*22=    True: 418#     Pred: 464#    
+✗ $17+38=    True: 55#      Pred: 50#     
+✓ $48+42=    True: 90#      Pred: 90#     
+✗ $35*10=    True: 350#     Pred: 400#    
+✗ $70*56=    True: 3920#    Pred: 4000#   
+✗ $73+30=    True: 103#     Pred: 100#    
+✗ $46+79=    True: 125#     Pred: 120#    
+✗ $50+99=    True: 149#     Pred: 147#    
+
+Batch 52 Results:
+✗ $39*16=    True: 624#     Pred: 572#    
+✗ $56+94=    True: 150#     Pred: 154#    
+✗ $89*19=    True: 1691#    Pred: 9114#   
+✗ $20*98=    True: 1960#    Pred: 1770#   
+✗ $34*40=    True: 1360#    Pred: 1930#   
+✗ $70+89=    True: 159#     Pred: 158#    
+✗ $67+94=    True: 161#     Pred: 164#    
+✗ $46+84=    True: 130#     Pred: 122#    
+✗ $67*21=    True: 1407#    Pred: 1742#   
+✗ $79+96=    True: 175#     Pred: 165#    
+
+Batch 53 Results:
+✗ $23*90=    True: 2070#    Pred: 2450#   
+✗ $89*73=    True: 6497#    Pred: 6928#   
+✗ $19+31=    True: 50#      Pred: 49#     
+✗ $75*28=    True: 2100#    Pred: 2620#   
+✗ $16+38=    True: 54#      Pred: 50#     
+✓ $33+66=    True: 99#      Pred: 99#     
+✗ $69*52=    True: 3588#    Pred: 3734#   
+✗ $80*98=    True: 7840#    Pred: 7730#   
+✗ $38+75=    True: 113#     Pred: 105#    
+✗ $25+26=    True: 51#      Pred: 49#     
+
+Batch 54 Results:
+✗ $13+43=    True: 56#      Pred: 58#     
+✗ $17+35=    True: 52#      Pred: 64#     
+✗ $82*11=    True: 902#     Pred: 1384#   
+✗ $33*64=    True: 2112#    Pred: 2739#   
+✗ $84*12=    True: 1008#    Pred: 1244#   
+✗ $96+23=    True: 119#     Pred: 123#    
+✗ $40*87=    True: 3480#    Pred: 3120#   
+✗ $73+38=    True: 111#     Pred: 103#    
+✗ $67*13=    True: 871#     Pred: 1242#   
+✗ $85+79=    True: 164#     Pred: 163#    
+
+Batch 55 Results:
+✗ $91*20=    True: 1820#    Pred: 2640#   
+✗ $22+91=    True: 113#     Pred: 124#    
+✓ $90*96=    True: 8640#    Pred: 8640#   
+✗ $38*80=    True: 3040#    Pred: 3060#   
+✗ $91+36=    True: 127#     Pred: 129#    
+✓ $34+20=    True: 54#      Pred: 54#     
+✗ $22+30=    True: 52#      Pred: 55#     
+✗ $88*24=    True: 2112#    Pred: 2642#   
+✗ $56*18=    True: 1008#    Pred: 4600#   
+✗ $43+96=    True: 139#     Pred: 137#    
+
+Batch 56 Results:
+✗ $76+38=    True: 114#     Pred: 110#    
+✗ $63+61=    True: 124#     Pred: 130#    
+✗ $25*61=    True: 1525#    Pred: 1570#   
+✗ $30*47=    True: 1410#    Pred: 1570#   
+✗ $26+46=    True: 72#      Pred: 74#     
+✗ $98+33=    True: 131#     Pred: 137#    
+✗ $44*88=    True: 3872#    Pred: 3726#   
+✗ $86*93=    True: 7998#    Pred: 8836#   
+✗ $95*16=    True: 1520#    Pred: 1240#   
+✗ $66+67=    True: 133#     Pred: 136#    
+
+Batch 57 Results:
+✗ $24+66=    True: 90#      Pred: 95#     
+✗ $93*83=    True: 7719#    Pred: 8114#   
+✗ $74+24=    True: 98#      Pred: 107#    
+✗ $26*95=    True: 2470#    Pred: 2725#   
+✗ $11*48=    True: 528#     Pred: 522#    
+✗ $25+36=    True: 61#      Pred: 64#     
+✗ $69*68=    True: 4692#    Pred: 4444#   
+✗ $97*70=    True: 6790#    Pred: 6230#   
+✗ $65+56=    True: 121#     Pred: 122#    
+✗ $59*68=    True: 4012#    Pred: 3594#   
+
+Batch 58 Results:
+✗ $26+57=    True: 83#      Pred: 81#     
+✗ $22*27=    True: 594#     Pred: 562#    
+✗ $99*48=    True: 4752#    Pred: 4044#   
+✗ $34*60=    True: 2040#    Pred: 2340#   
+✗ $35+69=    True: 104#     Pred: 106#    
+✗ $56*68=    True: 3808#    Pred: 3645#   
+✗ $88+18=    True: 106#     Pred: 105#    
+✓ $80+55=    True: 135#     Pred: 135#    
+✗ $66+49=    True: 115#     Pred: 118#    
+✗ $57+79=    True: 136#     Pred: 142#    
+
+Batch 59 Results:
+✗ $78*32=    True: 2496#    Pred: 3512#   
+✗ $23*52=    True: 1196#    Pred: 1225#   
+✗ $77+70=    True: 147#     Pred: 141#    
+✗ $20*74=    True: 1480#    Pred: 1960#   
+✗ $10*13=    True: 130#     Pred: 154#    
+✗ $15+85=    True: 100#     Pred: 104#    
+✗ $32+79=    True: 111#     Pred: 104#    
+✗ $18+20=    True: 38#      Pred: 44#     
+✗ $93*28=    True: 2604#    Pred: 2226#   
+✗ $91*64=    True: 5824#    Pred: 5943#   
+
+Batch 60 Results:
+✗ $60+61=    True: 121#     Pred: 126#    
+✗ $10+96=    True: 106#     Pred: 101#    
+✗ $90*41=    True: 3690#    Pred: 3180#   
+✗ $21*18=    True: 378#     Pred: 522#    
+✗ $43*35=    True: 1505#    Pred: 1570#   
+✗ $68*71=    True: 4828#    Pred: 5346#   
+✗ $95*33=    True: 3135#    Pred: 3230#   
+✗ $86+53=    True: 139#     Pred: 132#    
+✗ $33*16=    True: 528#     Pred: 582#    
+✗ $47+83=    True: 130#     Pred: 127#    
+
+Batch 61 Results:
+✗ $96+98=    True: 194#     Pred: 188#    
+✗ $41*73=    True: 2993#    Pred: 2856#   
+✗ $31+19=    True: 50#      Pred: 43#     
+✗ $18+92=    True: 110#     Pred: 106#    
+✗ $35*85=    True: 2975#    Pred: 3820#   
+✗ $69*35=    True: 2415#    Pred: 2525#   
+✗ $13*77=    True: 1001#    Pred: 912#    
+✗ $95+15=    True: 110#     Pred: 113#    
+✗ $42+85=    True: 127#     Pred: 123#    
+✗ $19*38=    True: 722#     Pred: 684#    
+
+Batch 62 Results:
+✗ $17+93=    True: 110#     Pred: 107#    
+✗ $47*43=    True: 2021#    Pred: 1978#   
+✗ $12+61=    True: 73#      Pred: 79#     
+✗ $95*82=    True: 7790#    Pred: 7645#   
+✗ $11*65=    True: 715#     Pred: 696#    
+✗ $13*60=    True: 780#     Pred: 796#    
+✗ $58+90=    True: 148#     Pred: 143#    
+✗ $33+58=    True: 91#      Pred: 87#     
+✗ $36+97=    True: 133#     Pred: 135#    
+✗ $98*29=    True: 2842#    Pred: 2976#   
+
+Batch 63 Results:
+✗ $73*63=    True: 4599#    Pred: 4479#   
+✗ $43*37=    True: 1591#    Pred: 1934#   
+✗ $54+37=    True: 91#      Pred: 97#     
+✗ $82*52=    True: 4264#    Pred: 4500#   
+✗ $84+52=    True: 136#     Pred: 148#    
+✗ $69+39=    True: 108#     Pred: 104#    
+✗ $10+60=    True: 70#      Pred: 66#     
+✗ $94*43=    True: 4042#    Pred: 4088#   
+✗ $60+41=    True: 101#     Pred: 106#    
+✗ $79*79=    True: 6241#    Pred: 5746#   
+
+Batch 64 Results:
+✗ $42+61=    True: 103#     Pred: 106#    
+✗ $57+50=    True: 107#     Pred: 117#    
+✗ $21+60=    True: 81#      Pred: 80#     
+✗ $55*17=    True: 935#     Pred: 700#    
+✗ $71+19=    True: 90#      Pred: 89#     
+✗ $81*18=    True: 1458#    Pred: 1824#   
+✗ $50*94=    True: 4700#    Pred: 4230#   
+✓ $95+57=    True: 152#     Pred: 152#    
+✗ $31+43=    True: 74#      Pred: 73#     
+✗ $12+68=    True: 80#      Pred: 78#     
+
+Batch 65 Results:
+✗ $80+57=    True: 137#     Pred: 130#    
+✗ $16+21=    True: 37#      Pred: 96#     
+✗ $14*88=    True: 1232#    Pred: 1128#   
+✗ $71+32=    True: 103#     Pred: 106#    
+✗ $48*38=    True: 1824#    Pred: 1999#   
+✗ $14+15=    True: 29#      Pred: 37#     
+✗ $16*23=    True: 368#     Pred: 432#    
+✗ $79+45=    True: 124#     Pred: 128#    
+✗ $62+71=    True: 133#     Pred: 137#    
+✗ $79+88=    True: 167#     Pred: 164#    
+
+Batch 66 Results:
+✗ $70+64=    True: 134#     Pred: 130#    
+✗ $24*72=    True: 1728#    Pred: 1936#   
+✗ $27*76=    True: 2052#    Pred: 2544#   
+✗ $74+51=    True: 125#     Pred: 134#    
+✗ $41*64=    True: 2624#    Pred: 2724#   
+✗ $21*24=    True: 504#     Pred: 572#    
+✗ $50+34=    True: 84#      Pred: 87#     
+✗ $55+80=    True: 135#     Pred: 133#    
+✗ $38+35=    True: 73#      Pred: 65#     
+✗ $51+94=    True: 145#     Pred: 142#    
+
+Batch 67 Results:
+✗ $37+55=    True: 92#      Pred: 97#     
+✓ $86+83=    True: 169#     Pred: 169#    
+✗ $84*71=    True: 5964#    Pred: 6244#   
+✗ $39*85=    True: 3315#    Pred: 3690#   
+✗ $11+94=    True: 105#     Pred: 107#    
+✗ $24*33=    True: 792#     Pred: 908#    
+✗ $57*20=    True: 1140#    Pred: 1600#   
+✗ $64*90=    True: 5760#    Pred: 5710#   
+✗ $14+43=    True: 57#      Pred: 64#     
+✗ $46*45=    True: 2070#    Pred: 2960#   
+
+Batch 68 Results:
+✗ $29*24=    True: 696#     Pred: 704#    
+✗ $35*81=    True: 2835#    Pred: 3020#   
+✗ $78+79=    True: 157#     Pred: 164#    
+✗ $54+25=    True: 79#      Pred: 83#     
+✗ $18+94=    True: 112#     Pred: 101#    
+✗ $16*65=    True: 1040#    Pred: 995#    
+✗ $18+16=    True: 34#      Pred: 27#     
+✗ $34*29=    True: 986#     Pred: 897#    
+✗ $56+59=    True: 115#     Pred: 112#    
+✗ $96*65=    True: 6240#    Pred: 6130#   
+
+Batch 69 Results:
+✗ $75+54=    True: 129#     Pred: 138#    
+✗ $37*15=    True: 555#     Pred: 542#    
+✗ $66*62=    True: 4092#    Pred: 4526#   
+✗ $54*72=    True: 3888#    Pred: 3814#   
+✗ $98+28=    True: 126#     Pred: 122#    
+✗ $11+56=    True: 67#      Pred: 64#     
+✗ $56*58=    True: 3248#    Pred: 3084#   
+✗ $66+53=    True: 119#     Pred: 120#    
+✗ $27*73=    True: 1971#    Pred: 2126#   
+✗ $33*10=    True: 330#     Pred: 340#    
+
+Batch 70 Results:
+✗ $44*31=    True: 1364#    Pred: 1598#   
+✓ $12+40=    True: 52#      Pred: 52#     
+✗ $11*13=    True: 143#     Pred: 242#    
+✗ $87*40=    True: 3480#    Pred: 3820#   
+✗ $36*91=    True: 3276#    Pred: 3062#   
+✗ $29*35=    True: 1015#    Pred: 910#    
+✗ $66*12=    True: 792#     Pred: 922#    
+✗ $23+25=    True: 48#      Pred: 52#     
+✗ $43*77=    True: 3311#    Pred: 3324#   
+✗ $93+77=    True: 170#     Pred: 169#    
+
+Batch 71 Results:
+✗ $92+54=    True: 146#     Pred: 144#    
+✗ $84*83=    True: 6972#    Pred: 7326#   
+✗ $79*77=    True: 6083#    Pred: 5151#   
+✗ $54*81=    True: 4374#    Pred: 4388#   
+✗ $82*48=    True: 3936#    Pred: 3346#   
+✗ $65*19=    True: 1235#    Pred: 1220#   
+✗ $18+36=    True: 54#      Pred: 59#     
+✗ $77+66=    True: 143#     Pred: 148#    
+✗ $55*86=    True: 4730#    Pred: 4462#   
+✗ $57*20=    True: 1140#    Pred: 1640#   
+
+Batch 72 Results:
+✗ $91+30=    True: 121#     Pred: 125#    
+✗ $76*62=    True: 4712#    Pred: 5376#   
+✗ $94*54=    True: 5076#    Pred: 4683#   
+✗ $47+50=    True: 97#      Pred: 102#    
+✗ $72*66=    True: 4752#    Pred: 4564#   
+✓ $15+92=    True: 107#     Pred: 107#    
+✗ $37*15=    True: 555#     Pred: 520#    
+✗ $31+12=    True: 43#      Pred: 46#     
+✗ $68+34=    True: 102#     Pred: 91#     
+✗ $66+35=    True: 101#     Pred: 106#    
+
+Batch 73 Results:
+✗ $91*73=    True: 6643#    Pred: 7722#   
+✗ $57+10=    True: 67#      Pred: 70#     
+✗ $15+79=    True: 94#      Pred: 90#     
+✗ $73+90=    True: 163#     Pred: 167#    
+✗ $99+30=    True: 129#     Pred: 134#    
+✗ $74+64=    True: 138#     Pred: 137#    
+✗ $58*55=    True: 3190#    Pred: 3040#   
+✓ $50+49=    True: 99#      Pred: 99#     
+✗ $66+97=    True: 163#     Pred: 160#    
+✗ $51+25=    True: 76#      Pred: 73#     
+
+Batch 74 Results:
+✗ $69*31=    True: 2139#    Pred: 2414#   
+✗ $18+47=    True: 65#      Pred: 64#     
+✗ $83+36=    True: 119#     Pred: 118#    
+✗ $31*63=    True: 1953#    Pred: 2026#   
+✗ $81+71=    True: 152#     Pred: 157#    
+✗ $88+36=    True: 124#     Pred: 129#    
+✗ $91+48=    True: 139#     Pred: 137#    
+✗ $68*92=    True: 6256#    Pred: 6046#   
+✗ $97+63=    True: 160#     Pred: 164#    
+✗ $85*94=    True: 7990#    Pred: 7735#   
+
+Batch 75 Results:
+✓ $43+55=    True: 98#      Pred: 98#     
+✗ $84*48=    True: 4032#    Pred: 3684#   
+✗ $75*34=    True: 2550#    Pred: 2522#   
+✗ $20*85=    True: 1700#    Pred: 840#    
+✗ $85*96=    True: 8160#    Pred: 8085#   
+✗ $38+79=    True: 117#     Pred: 114#    
+✗ $56*81=    True: 4536#    Pred: 4472#   
+✗ $36+87=    True: 123#     Pred: 124#    
+✗ $88*97=    True: 8536#    Pred: 7644#   
+✗ $68*26=    True: 1768#    Pred: 1822#   
+
+Batch 76 Results:
+✗ $22*21=    True: 462#     Pred: 574#    
+✓ $40*68=    True: 2720#    Pred: 2720#   
+✗ $67+43=    True: 110#     Pred: 114#    
+✗ $97*77=    True: 7469#    Pred: 6634#   
+✗ $83*12=    True: 996#     Pred: 1089#   
+✗ $87*83=    True: 7221#    Pred: 7844#   
+✓ $34+98=    True: 132#     Pred: 132#    
+✗ $89+35=    True: 124#     Pred: 128#    
+✗ $31+27=    True: 58#      Pred: 52#     
+✗ $85+78=    True: 163#     Pred: 164#    
+
+Batch 77 Results:
+✗ $41+64=    True: 105#     Pred: 101#    
+✗ $48+68=    True: 116#     Pred: 118#    
+✗ $21+97=    True: 118#     Pred: 125#    
+✗ $34+79=    True: 113#     Pred: 101#    
+✗ $50*53=    True: 2650#    Pred: 2040#   
+✗ $83+42=    True: 125#     Pred: 128#    
+✗ $84*59=    True: 4956#    Pred: 4682#   
+✗ $92+77=    True: 169#     Pred: 164#    
+✗ $76+42=    True: 118#     Pred: 124#    
+✗ $74*39=    True: 2886#    Pred: 3472#   
+
+Batch 78 Results:
+✗ $14+42=    True: 56#      Pred: 61#     
+✓ $31+21=    True: 52#      Pred: 52#     
+✗ $30+79=    True: 109#     Pred: 105#    
+✗ $22+91=    True: 113#     Pred: 119#    
+✗ $33*18=    True: 594#     Pred: 3382#   
+✗ $71*86=    True: 6106#    Pred: 5526#   
+✗ $13*57=    True: 741#     Pred: 805#    
+✗ $26+67=    True: 93#      Pred: 91#     
+✗ $42+97=    True: 139#     Pred: 144#    
+✗ $29+51=    True: 80#      Pred: 83#     
+
+Batch 79 Results:
+✗ $78+84=    True: 162#     Pred: 161#    
+✗ $46+93=    True: 139#     Pred: 132#    
+✗ $40+88=    True: 128#     Pred: 126#    
+✓ $10+32=    True: 42#      Pred: 42#     
+✗ $43+31=    True: 74#      Pred: 73#     
+✗ $84*91=    True: 7644#    Pred: 7982#   
+✗ $75+39=    True: 114#     Pred: 115#    
+✗ $86+34=    True: 120#     Pred: 116#    
+✗ $60+81=    True: 141#     Pred: 140#    
+✗ $10*50=    True: 500#     Pred: 550#    
+
+Batch 80 Results:
+✗ $32*75=    True: 2400#    Pred: 2185#   
+✗ $28*14=    True: 392#     Pred: 542#    
+✗ $83+47=    True: 130#     Pred: 121#    
+✗ $94+53=    True: 147#     Pred: 143#    
+✗ $87+90=    True: 177#     Pred: 174#    
+✗ $45*35=    True: 1575#    Pred: 1700#   
+✗ $19*11=    True: 209#     Pred: 264#    
+✗ $83*94=    True: 7802#    Pred: 7936#   
+✗ $21+41=    True: 62#      Pred: 60#     
+✗ $52*66=    True: 3432#    Pred: 3792#   
+
+Batch 81 Results:
+✗ $86+24=    True: 110#     Pred: 103#    
+✗ $73+29=    True: 102#     Pred: 104#    
+✗ $62+73=    True: 135#     Pred: 147#    
+✗ $20+84=    True: 104#     Pred: 100#    
+✗ $66*76=    True: 5016#    Pred: 5524#   
+✗ $62*28=    True: 1736#    Pred: 1949#   
+✗ $28+64=    True: 92#      Pred: 90#     
+✗ $83+93=    True: 176#     Pred: 184#    
+✗ $65+74=    True: 139#     Pred: 141#    
+✗ $48*82=    True: 3936#    Pred: 3124#   
+
+Batch 82 Results:
+✗ $92*22=    True: 2024#    Pred: 2274#   
+✓ $74+84=    True: 158#     Pred: 158#    
+✗ $14*20=    True: 280#     Pred: 204#    
+✗ $44*42=    True: 1848#    Pred: 1888#   
+✗ $65*72=    True: 4680#    Pred: 5175#   
+✗ $22*23=    True: 506#     Pred: 516#    
+✗ $19+82=    True: 101#     Pred: 104#    
+✗ $63+12=    True: 75#      Pred: 79#     
+✗ $68+99=    True: 167#     Pred: 162#    
+✗ $49*70=    True: 3430#    Pred: 3520#   
+
+Batch 83 Results:
+✗ $86+51=    True: 137#     Pred: 140#    
+✗ $17*14=    True: 238#     Pred: 1244#   
+✗ $50+40=    True: 90#      Pred: 94#     
+✗ $68+24=    True: 92#      Pred: 90#     
+✗ $62+80=    True: 142#     Pred: 141#    
+✗ $35*45=    True: 1575#    Pred: 1920#   
+✗ $26+73=    True: 99#      Pred: 101#    
+✗ $75*94=    True: 7050#    Pred: 7180#   
+✗ $96+32=    True: 128#     Pred: 132#    
+✗ $85+35=    True: 120#     Pred: 118#    
+
+Batch 84 Results:
+✗ $83*99=    True: 8217#    Pred: 8876#   
+✗ $21*48=    True: 1008#    Pred: 946#    
+✗ $75+91=    True: 166#     Pred: 160#    
+✗ $32*11=    True: 352#     Pred: 364#    
+✗ $84*73=    True: 6132#    Pred: 6166#   
+✗ $66+44=    True: 110#     Pred: 112#    
+✗ $56+38=    True: 94#      Pred: 91#     
+✗ $80+83=    True: 163#     Pred: 160#    
+✗ $59*38=    True: 2242#    Pred: 2708#   
+✗ $15*93=    True: 1395#    Pred: 1135#   
+
+Batch 85 Results:
+✗ $10*76=    True: 760#     Pred: 722#    
+✗ $48+82=    True: 130#     Pred: 126#    
+✗ $88+10=    True: 98#      Pred: 91#     
+✗ $67+27=    True: 94#      Pred: 84#     
+✗ $86*76=    True: 6536#    Pred: 6224#   
+✗ $39+41=    True: 80#      Pred: 87#     
+✗ $81*27=    True: 2187#    Pred: 2046#   
+✗ $89+95=    True: 184#     Pred: 183#    
+✗ $62*22=    True: 1364#    Pred: 1620#   
+✗ $37*58=    True: 2146#    Pred: 2759#   
+
+Batch 86 Results:
+✗ $55+25=    True: 80#      Pred: 87#     
+✗ $66*87=    True: 5742#    Pred: 5764#   
+✗ $17+41=    True: 58#      Pred: 61#     
+✗ $81*82=    True: 6642#    Pred: 6724#   
+✗ $52*68=    True: 3536#    Pred: 3650#   
+✓ $53+53=    True: 106#     Pred: 106#    
+✗ $87*75=    True: 6525#    Pred: 6335#   
+✗ $45*57=    True: 2565#    Pred: 2393#   
+✗ $29+96=    True: 125#     Pred: 135#    
+✗ $83+99=    True: 182#     Pred: 185#    
+
+Batch 87 Results:
+✗ $22*47=    True: 1034#    Pred: 918#    
+✗ $97+89=    True: 186#     Pred: 180#    
+✗ $76+12=    True: 88#      Pred: 93#     
+✗ $87+93=    True: 180#     Pred: 177#    
+✓ $18+69=    True: 87#      Pred: 87#     
+✗ $29*77=    True: 2233#    Pred: 2126#   
+✗ $21+45=    True: 66#      Pred: 67#     
+✗ $87*83=    True: 7221#    Pred: 7644#   
+✗ $80+67=    True: 147#     Pred: 142#    
+✗ $74+56=    True: 130#     Pred: 134#    
+
+Batch 88 Results:
+✗ $86+90=    True: 176#     Pred: 174#    
+✗ $23*14=    True: 322#     Pred: 338#    
+✗ $52+34=    True: 86#      Pred: 87#     
+✗ $23*58=    True: 1334#    Pred: 1449#   
+✗ $59*82=    True: 4838#    Pred: 4622#   
+✗ $87+94=    True: 181#     Pred: 182#    
+✗ $42+87=    True: 129#     Pred: 125#    
+✗ $89*16=    True: 1424#    Pred: 1520#   
+✗ $27+42=    True: 69#      Pred: 71#     
+✗ $38*89=    True: 3382#    Pred: 3412#   
+
+Batch 89 Results:
+✗ $23+33=    True: 56#      Pred: 64#     
+✗ $30*97=    True: 2910#    Pred: 2750#   
+✗ $76+79=    True: 155#     Pred: 158#    
+✗ $14+79=    True: 93#      Pred: 97#     
+✗ $11*95=    True: 1045#    Pred: 1035#   
+✗ $20+57=    True: 77#      Pred: 74#     
+✗ $53*18=    True: 954#     Pred: 4800#   
+✗ $52+38=    True: 90#      Pred: 87#     
+✗ $38+96=    True: 134#     Pred: 133#    
+✗ $63+82=    True: 145#     Pred: 148#    
+
+Batch 90 Results:
+✗ $44*82=    True: 3608#    Pred: 3888#   
+✗ $88*32=    True: 2816#    Pred: 2828#   
+✗ $91+31=    True: 122#     Pred: 121#    
+✗ $72*96=    True: 6912#    Pred: 6712#   
+✗ $92+13=    True: 105#     Pred: 110#    
+✗ $47*37=    True: 1739#    Pred: 1763#   
+✗ $22+77=    True: 99#      Pred: 96#     
+✗ $91+47=    True: 138#     Pred: 131#    
+✗ $75*14=    True: 1050#    Pred: 1395#   
+✗ $24+71=    True: 95#      Pred: 91#     
+
+Batch 91 Results:
+✗ $13*85=    True: 1105#    Pred: 1045#   
+✗ $80*60=    True: 4800#    Pred: 6720#   
+✗ $64*38=    True: 2432#    Pred: 2526#   
+✗ $13+73=    True: 86#      Pred: 95#     
+✗ $30+12=    True: 42#      Pred: 45#     
+✗ $99+48=    True: 147#     Pred: 187#    
+✗ $54*33=    True: 1782#    Pred: 1832#   
+✗ $22+19=    True: 41#      Pred: 38#     
+✗ $70*41=    True: 2870#    Pred: 3080#   
+✗ $72+75=    True: 147#     Pred: 148#    
+
+Batch 92 Results:
+✓ $69+45=    True: 114#     Pred: 114#    
+✗ $81+16=    True: 97#      Pred: 91#     
+✗ $25+77=    True: 102#     Pred: 105#    
+✗ $97*23=    True: 2231#    Pred: 2686#   
+✗ $50*22=    True: 1100#    Pred: 1200#   
+✗ $24+44=    True: 68#      Pred: 74#     
+✗ $71*94=    True: 6674#    Pred: 6794#   
+✗ $21*69=    True: 1449#    Pred: 1746#   
+✗ $53*74=    True: 3922#    Pred: 3464#   
+✗ $45+18=    True: 63#      Pred: 59#     
+
+Batch 93 Results:
+✗ $93*47=    True: 4371#    Pred: 3434#   
+✗ $36*19=    True: 684#     Pred: 579#    
+✗ $83*31=    True: 2573#    Pred: 2186#   
+✗ $20*66=    True: 1320#    Pred: 1340#   
+✗ $70+18=    True: 88#      Pred: 84#     
+✗ $54*55=    True: 2970#    Pred: 4900#   
+✗ $58*73=    True: 4234#    Pred: 4362#   
+✗ $80+69=    True: 149#     Pred: 144#    
+✗ $96+55=    True: 151#     Pred: 152#    
+✗ $63+57=    True: 120#     Pred: 126#    
+
+Batch 94 Results:
+✗ $23+67=    True: 90#      Pred: 94#     
+✗ $51+17=    True: 68#      Pred: 70#     
+✗ $69*17=    True: 1173#    Pred: 1204#   
+✗ $81+78=    True: 159#     Pred: 151#    
+✗ $14*14=    True: 196#     Pred: 144#    
+✗ $91+78=    True: 169#     Pred: 165#    
+✓ $61+25=    True: 86#      Pred: 86#     
+✗ $31*80=    True: 2480#    Pred: 2720#   
+✗ $42*68=    True: 2856#    Pred: 2824#   
+✗ $21*18=    True: 378#     Pred: 2724#   
+
+Batch 95 Results:
+✗ $32*16=    True: 512#     Pred: 572#    
+✗ $81*30=    True: 2430#    Pred: 2730#   
+✗ $69+71=    True: 140#     Pred: 149#    
+✗ $78*65=    True: 5070#    Pred: 4374#   
+✗ $12+59=    True: 71#      Pred: 70#     
+✗ $86+90=    True: 176#     Pred: 174#    
+✗ $85+20=    True: 105#     Pred: 101#    
+✗ $48*38=    True: 1824#    Pred: 1979#   
+✗ $85*56=    True: 4760#    Pred: 4876#   
+✗ $65+37=    True: 102#     Pred: 100#    
+
+Batch 96 Results:
+✗ $80*29=    True: 2320#    Pred: 2480#   
+✗ $52*68=    True: 3536#    Pred: 3755#   
+✗ $62+29=    True: 91#      Pred: 97#     
+✗ $81*15=    True: 1215#    Pred: 1025#   
+✗ $71+49=    True: 120#     Pred: 127#    
+✗ $89*99=    True: 8811#    Pred: 8342#   
+✗ $60+47=    True: 107#     Pred: 104#    
+✗ $78+44=    True: 122#     Pred: 124#    
+✓ $52+60=    True: 112#     Pred: 112#    
+✗ $15*43=    True: 645#     Pred: 770#    
+
+Batch 97 Results:
+✗ $27+63=    True: 90#      Pred: 95#     
+✗ $69+16=    True: 85#      Pred: 89#     
+✗ $41+99=    True: 140#     Pred: 134#    
+✓ $14+45=    True: 59#      Pred: 59#     
+✗ $14*91=    True: 1274#    Pred: 233#    
+✗ $95+14=    True: 109#     Pred: 114#    
+✗ $67+10=    True: 77#      Pred: 81#     
+✗ $36*51=    True: 1836#    Pred: 1795#   
+✗ $16+94=    True: 110#     Pred: 107#    
+✗ $69+56=    True: 125#     Pred: 123#    
+
+Batch 98 Results:
+✗ $31+52=    True: 83#      Pred: 87#     
+✗ $54+86=    True: 140#     Pred: 137#    
+✗ $93*39=    True: 3627#    Pred: 3458#   
+✗ $12+43=    True: 55#      Pred: 52#     
+✗ $33+78=    True: 111#     Pred: 103#    
+✗ $22*69=    True: 1518#    Pred: 1744#   
+✗ $75+93=    True: 168#     Pred: 165#    
+✗ $43*63=    True: 2709#    Pred: 2992#   
+✗ $30*89=    True: 2670#    Pred: 2910#   
+✗ $17*76=    True: 1292#    Pred: 1242#   
+
+Batch 99 Results:
+✗ $28*32=    True: 896#     Pred: 934#    
+✓ $29+87=    True: 116#     Pred: 116#    
+✗ $83+72=    True: 155#     Pred: 151#    
+✓ $52+98=    True: 150#     Pred: 150#    
+✗ $69+75=    True: 144#     Pred: 143#    
+✗ $98+85=    True: 183#     Pred: 186#    
+✗ $71*56=    True: 3976#    Pred: 4716#   
+✗ $15+77=    True: 92#      Pred: 87#     
+✗ $30*95=    True: 2850#    Pred: 2700#   
+✗ $43+29=    True: 72#      Pred: 75#     
+
+Batch 100 Results:
+✗ $78+79=    True: 157#     Pred: 163#    
+✗ $23*93=    True: 2139#    Pred: 2456#   
+✗ $14+78=    True: 92#      Pred: 99#     
+✗ $16*65=    True: 1040#    Pred: 1120#   
+✗ $63*11=    True: 693#     Pred: 672#    
+✗ $20*48=    True: 960#     Pred: 920#    
+✗ $32*75=    True: 2400#    Pred: 2270#   
+✗ $18+96=    True: 114#     Pred: 107#    
+✗ $24+40=    True: 64#      Pred: 72#     
+✗ $70*82=    True: 5740#    Pred: 5820#   
+
+Batch 101 Results:
+✗ $83*88=    True: 7304#    Pred: 7464#   
+✗ $10+40=    True: 50#      Pred: 56#     
+✗ $88+85=    True: 173#     Pred: 177#    
+✗ $34*33=    True: 1122#    Pred: 1184#   
+✗ $61+53=    True: 114#     Pred: 116#    
+✗ $17*66=    True: 1122#    Pred: 1222#   
+✗ $57*48=    True: 2736#    Pred: 2663#   
+✗ $96+48=    True: 144#     Pred: 148#    
+✗ $15+16=    True: 31#      Pred: 26#     
+✗ $85*79=    True: 6715#    Pred: 6865#   
+
+Batch 102 Results:
+✗ $53+75=    True: 128#     Pred: 132#    
+✗ $42+14=    True: 56#      Pred: 58#     
+✗ $65*86=    True: 5590#    Pred: 5465#   
+✗ $30+75=    True: 105#     Pred: 101#    
+✗ $58*11=    True: 638#     Pred: 511#    
+✗ $60+11=    True: 71#      Pred: 76#     
+✓ $69+57=    True: 126#     Pred: 126#    
+✗ $60+16=    True: 76#      Pred: 78#     
+✗ $17*56=    True: 952#     Pred: 855#    
+✗ $29+14=    True: 43#      Pred: 39#     
+
+Batch 103 Results:
+✗ $58+70=    True: 128#     Pred: 137#    
+✗ $92+72=    True: 164#     Pred: 167#    
+✗ $79*81=    True: 6399#    Pred: 6042#   
+✗ $22+33=    True: 55#      Pred: 54#     
+✗ $15*57=    True: 855#     Pred: 750#    
+✓ $25*24=    True: 600#     Pred: 600#    
+✗ $82+65=    True: 147#     Pred: 149#    
+✗ $19+69=    True: 88#      Pred: 81#     
+✗ $58*44=    True: 2552#    Pred: 2702#   
+✗ $53+67=    True: 120#     Pred: 124#    
+
+Batch 104 Results:
+✗ $81*82=    True: 6642#    Pred: 6724#   
+✗ $30*92=    True: 2760#    Pred: 2060#   
+✗ $15+60=    True: 75#      Pred: 74#     
+✗ $16+12=    True: 28#      Pred: 36#     
+✗ $17+90=    True: 107#     Pred: 105#    
+✗ $65+73=    True: 138#     Pred: 134#    
+✗ $95*50=    True: 4750#    Pred: 4800#   
+✗ $96+49=    True: 145#     Pred: 140#    
+✗ $66*69=    True: 4554#    Pred: 4456#   
+✗ $11*23=    True: 253#     Pred: 394#    
+
+Batch 105 Results:
+✗ $74+21=    True: 95#      Pred: 99#     
+✗ $28*12=    True: 336#     Pred: 404#    
+✗ $58+81=    True: 139#     Pred: 132#    
+✗ $66*21=    True: 1386#    Pred: 1742#   
+✓ $81+18=    True: 99#      Pred: 99#     
+✗ $89+23=    True: 112#     Pred: 125#    
+✗ $93+90=    True: 183#     Pred: 188#    
+✗ $37*63=    True: 2331#    Pred: 2462#   
+✗ $74*36=    True: 2664#    Pred: 2882#   
+✗ $41+84=    True: 125#     Pred: 120#    
+
+Batch 106 Results:
+✗ $46*22=    True: 1012#    Pred: 1098#   
+✗ $13*86=    True: 1118#    Pred: 1224#   
+✗ $65+98=    True: 163#     Pred: 164#    
+✗ $21+16=    True: 37#      Pred: 34#     
+✗ $33+93=    True: 126#     Pred: 123#    
+✗ $87*38=    True: 3306#    Pred: 3512#   
+✗ $37+41=    True: 78#      Pred: 87#     
+✗ $44*66=    True: 2904#    Pred: 2736#   
+✗ $67+12=    True: 79#      Pred: 81#     
+✗ $20*58=    True: 1160#    Pred: 1000#   
+
+Batch 107 Results:
+✗ $80*90=    True: 7200#    Pred: 7120#   
+✗ $89*35=    True: 3115#    Pred: 2730#   
+✗ $49+80=    True: 129#     Pred: 131#    
+✗ $94*16=    True: 1504#    Pred: 1490#   
+✗ $69*35=    True: 2415#    Pred: 2140#   
+✗ $12*87=    True: 1044#    Pred: 1394#   
+✗ $25*67=    True: 1675#    Pred: 1620#   
+✗ $62*34=    True: 2108#    Pred: 2044#   
+✗ $66+24=    True: 90#      Pred: 92#     
+✗ $54+77=    True: 131#     Pred: 120#    
+
+Batch 108 Results:
+✗ $12*92=    True: 1104#    Pred: 1057#   
+✓ $25+56=    True: 81#      Pred: 81#     
+✗ $69*99=    True: 6831#    Pred: 6044#   
+✗ $92*88=    True: 8096#    Pred: 7943#   
+✗ $90+63=    True: 153#     Pred: 154#    
+✗ $45+80=    True: 125#     Pred: 126#    
+✗ $30+14=    True: 44#      Pred: 47#     
+✗ $30*92=    True: 2760#    Pred: 2810#   
+✗ $61*34=    True: 2074#    Pred: 2936#   
+✓ $37+67=    True: 104#     Pred: 104#    
+
+Batch 109 Results:
+✗ $76*57=    True: 4332#    Pred: 3926#   
+✗ $71*71=    True: 5041#    Pred: 5142#   
+✗ $52*17=    True: 884#     Pred: 700#    
+✗ $14+27=    True: 41#      Pred: 44#     
+✗ $23+51=    True: 74#      Pred: 79#     
+✗ $92+76=    True: 168#     Pred: 160#    
+✗ $58*83=    True: 4814#    Pred: 5294#   
+✗ $41+92=    True: 133#     Pred: 134#    
+✗ $76*59=    True: 4484#    Pred: 4604#   
+✗ $66+55=    True: 121#     Pred: 124#    
+
+Batch 110 Results:
+✓ $24+49=    True: 73#      Pred: 73#     
+✗ $40+44=    True: 84#      Pred: 81#     
+✗ $61+15=    True: 76#      Pred: 75#     
+✗ $40+71=    True: 111#     Pred: 112#    
+✗ $55*59=    True: 3245#    Pred: 3799#   
+✗ $48+98=    True: 146#     Pred: 144#    
+✗ $41*52=    True: 2132#    Pred: 2356#   
+✗ $16+85=    True: 101#     Pred: 106#    
+✗ $62+48=    True: 110#     Pred: 108#    
+✗ $40*36=    True: 1440#    Pred: 1740#   
+
+Batch 111 Results:
+✗ $90*83=    True: 7470#    Pred: 7540#   
+✗ $24+23=    True: 47#      Pred: 43#     
+✗ $85*51=    True: 4335#    Pred: 4708#   
+✗ $91*49=    True: 4459#    Pred: 4662#   
+✗ $80*21=    True: 1680#    Pred: 1620#   
+✗ $56*45=    True: 2520#    Pred: 2796#   
+✗ $72+20=    True: 92#      Pred: 99#     
+✗ $94+12=    True: 106#     Pred: 115#    
+✗ $96*93=    True: 8928#    Pred: 9624#   
+✗ $97*91=    True: 8827#    Pred: 9124#   
+
+Batch 112 Results:
+✗ $25*85=    True: 2125#    Pred: 2745#   
+✗ $58*11=    True: 638#     Pred: 639#    
+✗ $79+49=    True: 128#     Pred: 120#    
+✗ $55+17=    True: 72#      Pred: 67#     
+✗ $13+75=    True: 88#      Pred: 97#     
+✗ $75+87=    True: 162#     Pred: 163#    
+✗ $85+10=    True: 95#      Pred: 91#     
+✗ $63*24=    True: 1512#    Pred: 1729#   
+✗ $47*25=    True: 1175#    Pred: 1590#   
+✗ $75*46=    True: 3450#    Pred: 3784#   
+
+Batch 113 Results:
+✗ $79*95=    True: 7505#    Pred: 8165#   
+✗ $39+84=    True: 123#     Pred: 124#    
+✗ $80*48=    True: 3840#    Pred: 3620#   
+✓ $37+49=    True: 86#      Pred: 86#     
+✗ $13*77=    True: 1001#    Pred: 912#    
+✗ $20*94=    True: 1880#    Pred: 1900#   
+✗ $39+87=    True: 126#     Pred: 124#    
+✗ $24+10=    True: 34#      Pred: 31#     
+✗ $96*26=    True: 2496#    Pred: 2736#   
+✗ $94*84=    True: 7896#    Pred: 7826#   
+
+Batch 114 Results:
+✗ $36*88=    True: 3168#    Pred: 3074#   
+✗ $64+58=    True: 122#     Pred: 121#    
+✗ $14+76=    True: 90#      Pred: 97#     
+✗ $45*94=    True: 4230#    Pred: 4165#   
+✗ $99*79=    True: 7821#    Pred: 7696#   
+✗ $25+25=    True: 50#      Pred: 47#     
+✗ $40+79=    True: 119#     Pred: 114#    
+✗ $16+22=    True: 38#      Pred: 48#     
+✗ $33*96=    True: 3168#    Pred: 3394#   
+✗ $49*78=    True: 3822#    Pred: 3022#   
+
+Batch 115 Results:
+✗ $76+65=    True: 141#     Pred: 134#    
+✗ $25*86=    True: 2150#    Pred: 2270#   
+✗ $19*65=    True: 1235#    Pred: 1784#   
+✗ $31+86=    True: 117#     Pred: 119#    
+✗ $14*61=    True: 854#     Pred: 804#    
+✗ $84+92=    True: 176#     Pred: 180#    
+✗ $19*63=    True: 1197#    Pred: 1454#   
+✗ $88+56=    True: 144#     Pred: 147#    
+✗ $26+28=    True: 54#      Pred: 56#     
+✗ $84*47=    True: 3948#    Pred: 3036#   
+
+Batch 116 Results:
+✗ $99*62=    True: 6138#    Pred: 6484#   
+✗ $18*41=    True: 738#     Pred: 826#    
+✗ $87+68=    True: 155#     Pred: 158#    
+✗ $93*19=    True: 1767#    Pred: 1614#   
+✗ $48*23=    True: 1104#    Pred: 1039#   
+✗ $33+86=    True: 119#     Pred: 116#    
+✗ $43*67=    True: 2881#    Pred: 2639#   
+✗ $76*25=    True: 1900#    Pred: 1270#   
+✗ $99*87=    True: 8613#    Pred: 8714#   
+✗ $95*95=    True: 9025#    Pred: 8005#   
+
+Batch 117 Results:
+✗ $93*54=    True: 5022#    Pred: 4698#   
+✗ $17*72=    True: 1224#    Pred: 1151#   
+✗ $38+27=    True: 65#      Pred: 63#     
+✗ $86+96=    True: 182#     Pred: 184#    
+✗ $22+89=    True: 111#     Pred: 112#    
+✗ $15+85=    True: 100#     Pred: 105#    
+✗ $89+35=    True: 124#     Pred: 125#    
+✗ $69*15=    True: 1035#    Pred: 1165#   
+✗ $65+34=    True: 99#      Pred: 102#    
+✓ $85*95=    True: 8075#    Pred: 8075#   
+
+Batch 118 Results:
+✗ $59*93=    True: 5487#    Pred: 5396#   
+✗ $81+35=    True: 116#     Pred: 112#    
+✓ $51+61=    True: 112#     Pred: 112#    
+✗ $35+42=    True: 77#      Pred: 76#     
+✗ $22*20=    True: 440#     Pred: 560#    
+✗ $65*70=    True: 4550#    Pred: 5360#   
+✗ $62*47=    True: 2914#    Pred: 3584#   
+✓ $27+44=    True: 71#      Pred: 71#     
+✗ $12+30=    True: 42#      Pred: 47#     
+✗ $82+43=    True: 125#     Pred: 126#    
+
+Batch 119 Results:
+✗ $49*95=    True: 4655#    Pred: 4076#   
+✓ $54+68=    True: 122#     Pred: 122#    
+✗ $70*13=    True: 910#     Pred: 912#    
+✓ $20+80=    True: 100#     Pred: 100#    
+✗ $62+33=    True: 95#      Pred: 101#    
+✗ $83*77=    True: 6391#    Pred: 6394#   
+✗ $17+45=    True: 62#      Pred: 61#     
+✗ $85+66=    True: 151#     Pred: 143#    
+✓ $53+34=    True: 87#      Pred: 87#     
+✗ $81*57=    True: 4617#    Pred: 4626#   
+
+Batch 120 Results:
+✗ $55+38=    True: 93#      Pred: 97#     
+✗ $52*64=    True: 3328#    Pred: 3294#   
+✗ $14+54=    True: 68#      Pred: 70#     
+✗ $37*28=    True: 1036#    Pred: 893#    
+✗ $39*82=    True: 3198#    Pred: 3172#   
+✗ $10*88=    True: 880#     Pred: 820#    
+✓ $87+50=    True: 137#     Pred: 137#    
+✗ $65*45=    True: 2925#    Pred: 2795#   
+✗ $23+42=    True: 65#      Pred: 74#     
+✗ $38*84=    True: 3192#    Pred: 3086#   
+
+Batch 121 Results:
+✗ $93+72=    True: 165#     Pred: 166#    
+✗ $31+11=    True: 42#      Pred: 45#     
+✗ $19+26=    True: 45#      Pred: 49#     
+✗ $78+36=    True: 114#     Pred: 117#    
+✗ $79*81=    True: 6399#    Pred: 6244#   
+✗ $45*30=    True: 1350#    Pred: 1600#   
+✗ $74*76=    True: 5624#    Pred: 5726#   
+✗ $30*94=    True: 2820#    Pred: 3000#   
+✗ $59+87=    True: 146#     Pred: 147#    
+✗ $71+68=    True: 139#     Pred: 144#    
+
+Batch 122 Results:
+✗ $70*78=    True: 5460#    Pred: 5820#   
+✗ $88*18=    True: 1584#    Pred: 1446#   
+✗ $78+45=    True: 123#     Pred: 124#    
+✗ $78+58=    True: 136#     Pred: 137#    
+✗ $74+61=    True: 135#     Pred: 131#    
+✗ $34+43=    True: 77#      Pred: 81#     
+✗ $44*63=    True: 2772#    Pred: 2806#   
+✗ $30+36=    True: 66#      Pred: 76#     
+✗ $89+17=    True: 106#     Pred: 102#    
+✗ $11*89=    True: 979#     Pred: 910#    
+
+Batch 123 Results:
+✗ $49*11=    True: 539#     Pred: 572#    
+✗ $75*63=    True: 4725#    Pred: 4360#   
+✗ $89*22=    True: 1958#    Pred: 2264#   
+✗ $84*95=    True: 7980#    Pred: 8375#   
+✗ $97*44=    True: 4268#    Pred: 4066#   
+✗ $98*50=    True: 4900#    Pred: 5120#   
+✗ $18*85=    True: 1530#    Pred: 1045#   
+✗ $37*23=    True: 851#     Pred: 794#    
+✗ $61*87=    True: 5307#    Pred: 5513#   
+✗ $51*21=    True: 1071#    Pred: 1320#   
+
+Batch 124 Results:
+✗ $25*59=    True: 1475#    Pred: 1622#   
+✗ $24*81=    True: 1944#    Pred: 1940#   
+✗ $92*80=    True: 7360#    Pred: 7610#   
+✗ $70*54=    True: 3780#    Pred: 4050#   
+✗ $27*18=    True: 486#     Pred: 572#    
+✗ $91+77=    True: 168#     Pred: 164#    
+✓ $37+77=    True: 114#     Pred: 114#    
+✗ $97*60=    True: 5820#    Pred: 5340#   
+✗ $53+35=    True: 88#      Pred: 89#     
+✗ $57*62=    True: 3534#    Pred: 3606#   
+
+Batch 125 Results:
+✗ $77+55=    True: 132#     Pred: 130#    
+✗ $39*21=    True: 819#     Pred: 1141#   
+✗ $49*15=    True: 735#     Pred: 688#    
+✗ $72*16=    True: 1152#    Pred: 1118#   
+✗ $51*67=    True: 3417#    Pred: 3574#   
+✗ $61+53=    True: 114#     Pred: 122#    
+✗ $12*10=    True: 120#     Pred: 100#    
+✗ $39*40=    True: 1560#    Pred: 1580#   
+✗ $55*82=    True: 4510#    Pred: 4298#   
+✗ $65*66=    True: 4290#    Pred: 4356#   
+
+Batch 126 Results:
+✗ $18+58=    True: 76#      Pred: 75#     
+✗ $76*68=    True: 5168#    Pred: 5369#   
+✗ $66+46=    True: 112#     Pred: 110#    
+✗ $44*29=    True: 1276#    Pred: 1931#   
+✗ $31*71=    True: 2201#    Pred: 2228#   
+✗ $98*79=    True: 7742#    Pred: 8122#   
+✗ $52+41=    True: 93#      Pred: 98#     
+✗ $17*63=    True: 1071#    Pred: 1079#   
+✗ $31+34=    True: 65#      Pred: 70#     
+✗ $87*63=    True: 5481#    Pred: 5916#   
+
+Batch 127 Results:
+✗ $94+99=    True: 193#     Pred: 180#    
+✗ $13*76=    True: 988#     Pred: 936#    
+✗ $72*76=    True: 5472#    Pred: 5629#   
+✗ $67*97=    True: 6499#    Pred: 6279#   
+✗ $51*47=    True: 2397#    Pred: 2332#   
+✗ $64*31=    True: 1984#    Pred: 2446#   
+✗ $18*19=    True: 342#     Pred: 279#    
+✗ $46*72=    True: 3312#    Pred: 3024#   
+✗ $61*64=    True: 3904#    Pred: 3742#   
+✗ $67+76=    True: 143#     Pred: 147#    
+
+Batch 128 Results:
+✗ $80*90=    True: 7200#    Pred: 7720#   
+✗ $94*33=    True: 3102#    Pred: 3202#   
+✗ $66*81=    True: 5346#    Pred: 5676#   
+✗ $55+46=    True: 101#     Pred: 99#     
+✗ $35+58=    True: 93#      Pred: 87#     
+✗ $94*14=    True: 1316#    Pred: 1776#   
+✗ $82+72=    True: 154#     Pred: 152#    
+✗ $61+88=    True: 149#     Pred: 141#    
+✗ $88*26=    True: 2288#    Pred: 2226#   
+✗ $35+66=    True: 101#     Pred: 106#    
+
+Batch 129 Results:
+✗ $86+17=    True: 103#     Pred: 104#    
+✗ $65+67=    True: 132#     Pred: 137#    
+✗ $27*37=    True: 999#     Pred: 882#    
+✗ $54*15=    True: 810#     Pred: 4760#   
+✗ $90+63=    True: 153#     Pred: 152#    
+✗ $98+40=    True: 138#     Pred: 132#    
+✓ $42+48=    True: 90#      Pred: 90#     
+✗ $42*89=    True: 3738#    Pred: 3568#   
+✗ $85+92=    True: 177#     Pred: 173#    
+✗ $40*77=    True: 3080#    Pred: 3020#   
+
+Batch 130 Results:
+✗ $59+94=    True: 153#     Pred: 152#    
+✗ $16*68=    True: 1088#    Pred: 1228#   
+✗ $96+20=    True: 116#     Pred: 122#    
+✗ $54+84=    True: 138#     Pred: 134#    
+✗ $66+90=    True: 156#     Pred: 164#    
+✗ $62+63=    True: 125#     Pred: 132#    
+✗ $59*49=    True: 2891#    Pred: 2793#   
+✗ $97*41=    True: 3977#    Pred: 3546#   
+✗ $70*93=    True: 6510#    Pred: 6070#   
+✗ $87+94=    True: 181#     Pred: 184#    
+
+Batch 131 Results:
+✗ $38*90=    True: 3420#    Pred: 2730#   
+✗ $54*20=    True: 1080#    Pred: 1600#   
+✗ $60*90=    True: 5400#    Pred: 4800#   
+✗ $98*67=    True: 6566#    Pred: 6726#   
+✗ $42+37=    True: 79#      Pred: 70#     
+✗ $35+83=    True: 118#     Pred: 117#    
+✓ $80+73=    True: 153#     Pred: 153#    
+✗ $86*75=    True: 6450#    Pred: 6350#   
+✗ $31+84=    True: 115#     Pred: 114#    
+✗ $52+79=    True: 131#     Pred: 120#    
+
+Batch 132 Results:
+✗ $68+97=    True: 165#     Pred: 164#    
+✗ $50+48=    True: 98#      Pred: 90#     
+✗ $28*83=    True: 2324#    Pred: 2406#   
+✗ $42*41=    True: 1722#    Pred: 1978#   
+✗ $65*99=    True: 6435#    Pred: 6075#   
+✗ $55*95=    True: 5225#    Pred: 5135#   
+✗ $98*76=    True: 7448#    Pred: 6464#   
+✗ $11+52=    True: 63#      Pred: 67#     
+✗ $79*61=    True: 4819#    Pred: 4686#   
+✗ $69*43=    True: 2967#    Pred: 2718#   
+
+Batch 133 Results:
+✗ $19*90=    True: 1710#    Pred: 1775#   
+✗ $20*82=    True: 1640#    Pred: 1722#   
+✗ $38+41=    True: 79#      Pred: 73#     
+✗ $28*77=    True: 2156#    Pred: 2322#   
+✗ $27*53=    True: 1431#    Pred: 1530#   
+✗ $54*99=    True: 5346#    Pred: 4959#   
+✓ $20+24=    True: 44#      Pred: 44#     
+✗ $79+52=    True: 131#     Pred: 132#    
+✗ $51*77=    True: 3927#    Pred: 3314#   
+✗ $36+74=    True: 110#     Pred: 114#    
+
+Batch 134 Results:
+✗ $23+29=    True: 52#      Pred: 54#     
+✗ $25*23=    True: 575#     Pred: 700#    
+✗ $61*53=    True: 3233#    Pred: 3595#   
+✗ $20+57=    True: 77#      Pred: 78#     
+✗ $65+10=    True: 75#      Pred: 80#     
+✗ $79+86=    True: 165#     Pred: 166#    
+✗ $82*39=    True: 3198#    Pred: 3072#   
+✗ $14+78=    True: 92#      Pred: 96#     
+✗ $89*92=    True: 8188#    Pred: 8274#   
+✗ $30*71=    True: 2130#    Pred: 2220#   
+
+Batch 135 Results:
+✗ $76+74=    True: 150#     Pred: 144#    
+✗ $86+33=    True: 119#     Pred: 116#    
+✗ $83*70=    True: 5810#    Pred: 6720#   
+✗ $60+67=    True: 127#     Pred: 126#    
+✗ $41+12=    True: 53#      Pred: 56#     
+✗ $73*84=    True: 6132#    Pred: 6144#   
+✗ $19*48=    True: 912#     Pred: 712#    
+✗ $64*24=    True: 1536#    Pred: 1488#   
+✗ $22+16=    True: 38#      Pred: 37#     
+✗ $52*31=    True: 1612#    Pred: 1704#   
+
+Batch 136 Results:
+✗ $41+74=    True: 115#     Pred: 114#    
+✓ $93+92=    True: 185#     Pred: 185#    
+✗ $50+85=    True: 135#     Pred: 134#    
+✗ $11+14=    True: 25#      Pred: 27#     
+✗ $42+32=    True: 74#      Pred: 73#     
+✗ $29*76=    True: 2204#    Pred: 2142#   
+✗ $11*97=    True: 1067#    Pred: 1046#   
+✗ $83*70=    True: 5810#    Pred: 6640#   
+✗ $29*19=    True: 551#     Pred: 579#    
+✓ $26*22=    True: 572#     Pred: 572#    
+
+Batch 137 Results:
+✗ $50*55=    True: 2750#    Pred: 3000#   
+✗ $83*76=    True: 6308#    Pred: 6224#   
+✗ $12+89=    True: 101#     Pred: 100#    
+✗ $12*42=    True: 504#     Pred: 442#    
+✗ $94*71=    True: 6674#    Pred: 6722#   
+✗ $12+51=    True: 63#      Pred: 73#     
+✗ $39+23=    True: 62#      Pred: 63#     
+✗ $74*67=    True: 4958#    Pred: 5372#   
+✗ $94+39=    True: 133#     Pred: 135#    
+✗ $40*62=    True: 2480#    Pred: 2720#   
+
+Batch 138 Results:
+✗ $85+31=    True: 116#     Pred: 118#    
+✗ $33*23=    True: 759#     Pred: 726#    
+✗ $46+14=    True: 60#      Pred: 59#     
+✗ $10+95=    True: 105#     Pred: 115#    
+✓ $60*22=    True: 1320#    Pred: 1320#   
+✗ $84*90=    True: 7560#    Pred: 7720#   
+✗ $84*37=    True: 3108#    Pred: 3032#   
+✗ $76+72=    True: 148#     Pred: 149#    
+✗ $68*44=    True: 2992#    Pred: 2794#   
+✗ $11+17=    True: 28#      Pred: 29#     
+
+Batch 139 Results:
+✗ $21*13=    True: 273#     Pred: 274#    
+✗ $18*56=    True: 1008#    Pred: 1044#   
+✗ $46*60=    True: 2760#    Pred: 2640#   
+✗ $49*58=    True: 2842#    Pred: 2670#   
+✗ $30*20=    True: 600#     Pred: 700#    
+✗ $13*66=    True: 858#     Pred: 867#    
+✗ $25*33=    True: 825#     Pred: 810#    
+✗ $93*73=    True: 6789#    Pred: 7544#   
+✗ $19+27=    True: 46#      Pred: 51#     
+✗ $95+41=    True: 136#     Pred: 135#    
+
+Batch 140 Results:
+✗ $18*65=    True: 1170#    Pred: 1060#   
+✗ $79*35=    True: 2765#    Pred: 2410#   
+✗ $51+93=    True: 144#     Pred: 146#    
+✗ $86*59=    True: 5074#    Pred: 4796#   
+✗ $33*85=    True: 2805#    Pred: 2075#   
+✗ $42*40=    True: 1680#    Pred: 1880#   
+✗ $23+18=    True: 41#      Pred: 31#     
+✗ $25+28=    True: 53#      Pred: 49#     
+✗ $98+37=    True: 135#     Pred: 131#    
+✗ $54+98=    True: 152#     Pred: 140#    
+
+Batch 141 Results:
+✗ $33*88=    True: 2904#    Pred: 2992#   
+✗ $93*35=    True: 3255#    Pred: 2230#   
+✗ $24*89=    True: 2136#    Pred: 2336#   
+✗ $69*61=    True: 4209#    Pred: 4176#   
+✗ $66*30=    True: 1980#    Pred: 2120#   
+✗ $15+52=    True: 67#      Pred: 70#     
+✗ $89+48=    True: 137#     Pred: 122#    
+✗ $39*76=    True: 2964#    Pred: 2473#   
+✗ $44*53=    True: 2332#    Pred: 2070#   
+✗ $24*91=    True: 2184#    Pred: 2442#   
+
+Batch 142 Results:
+✗ $14+44=    True: 58#      Pred: 57#     
+✗ $53*79=    True: 4187#    Pred: 4066#   
+✗ $34*72=    True: 2448#    Pred: 2772#   
+✗ $72+90=    True: 162#     Pred: 165#    
+✗ $58*60=    True: 3480#    Pred: 3700#   
+✗ $28+92=    True: 120#     Pred: 128#    
+✗ $14*32=    True: 448#     Pred: 445#    
+✗ $31*44=    True: 1364#    Pred: 1442#   
+✗ $88*97=    True: 8536#    Pred: 8264#   
+✗ $88+70=    True: 158#     Pred: 150#    
+
+Batch 143 Results:
+✗ $20+89=    True: 109#     Pred: 110#    
+✗ $49*10=    True: 490#     Pred: 480#    
+✗ $90+14=    True: 104#     Pred: 112#    
+✗ $74*54=    True: 3996#    Pred: 4676#   
+✗ $57*42=    True: 2394#    Pred: 2702#   
+✗ $30*99=    True: 2970#    Pred: 2370#   
+✗ $63+99=    True: 162#     Pred: 164#    
+✗ $76*28=    True: 2128#    Pred: 2496#   
+✗ $77*87=    True: 6699#    Pred: 6928#   
+✗ $60*85=    True: 5100#    Pred: 5170#   
+
+Batch 144 Results:
+✗ $27*48=    True: 1296#    Pred: 1220#   
+✗ $90*75=    True: 6750#    Pred: 6700#   
+✗ $66*33=    True: 2178#    Pred: 2344#   
+✗ $46+93=    True: 139#     Pred: 130#    
+✗ $15+13=    True: 28#      Pred: 34#     
+✗ $82+33=    True: 115#     Pred: 125#    
+✓ $11+28=    True: 39#      Pred: 39#     
+✗ $75*84=    True: 6300#    Pred: 6460#   
+✗ $73+83=    True: 156#     Pred: 164#    
+✗ $59+93=    True: 152#     Pred: 154#    
+
+Batch 145 Results:
+✗ $71+80=    True: 151#     Pred: 154#    
+✓ $52+27=    True: 79#      Pred: 79#     
+✗ $47+37=    True: 84#      Pred: 88#     
+✗ $96*50=    True: 4800#    Pred: 4700#   
+✗ $65*39=    True: 2535#    Pred: 2645#   
+✗ $31*48=    True: 1488#    Pred: 1678#   
+✗ $34+83=    True: 117#     Pred: 120#    
+✗ $45+48=    True: 93#      Pred: 90#     
+✗ $50+86=    True: 136#     Pred: 132#    
+✗ $80*49=    True: 3920#    Pred: 3400#   
+
+Batch 146 Results:
+✗ $51+21=    True: 72#      Pred: 73#     
+✗ $71*57=    True: 4047#    Pred: 4072#   
+✗ $44+64=    True: 108#     Pred: 114#    
+✗ $44*86=    True: 3784#    Pred: 3394#   
+✗ $87*93=    True: 8091#    Pred: 8862#   
+✗ $70+81=    True: 151#     Pred: 154#    
+✗ $24+63=    True: 87#      Pred: 90#     
+✗ $44*80=    True: 3520#    Pred: 3620#   
+✗ $45+70=    True: 115#     Pred: 118#    
+✗ $50*31=    True: 1550#    Pred: 1700#   
+
+Batch 147 Results:
+✗ $98+32=    True: 130#     Pred: 113#    
+✗ $53+84=    True: 137#     Pred: 132#    
+✗ $26+24=    True: 50#      Pred: 54#     
+✓ $10+49=    True: 59#      Pred: 59#     
+✗ $84*31=    True: 2604#    Pred: 3312#   
+✗ $12+88=    True: 100#     Pred: 105#    
+✗ $71+68=    True: 139#     Pred: 134#    
+✗ $14+39=    True: 53#      Pred: 59#     
+✗ $61*78=    True: 4758#    Pred: 5359#   
+✗ $41+25=    True: 66#      Pred: 65#     
+
+Batch 148 Results:
+✗ $96*33=    True: 3168#    Pred: 3763#   
+✗ $19*93=    True: 1767#    Pred: 1547#   
+✗ $18+69=    True: 87#      Pred: 82#     
+✗ $47*15=    True: 705#     Pred: 629#    
+✗ $44+48=    True: 92#      Pred: 90#     
+✗ $51+24=    True: 75#      Pred: 79#     
+✗ $47*39=    True: 1833#    Pred: 1478#   
+✗ $88+67=    True: 155#     Pred: 157#    
+✗ $38*15=    True: 570#     Pred: 400#    
+✗ $76+86=    True: 162#     Pred: 145#    
+
+Batch 149 Results:
+✗ $48*25=    True: 1200#    Pred: 1820#   
+✗ $64+76=    True: 140#     Pred: 134#    
+✗ $95+32=    True: 127#     Pred: 125#    
+✗ $74*92=    True: 6808#    Pred: 7644#   
+✗ $48*18=    True: 864#     Pred: 980#    
+✗ $23*55=    True: 1265#    Pred: 1222#   
+✗ $14*19=    True: 266#     Pred: 156#    
+✓ $90+44=    True: 134#     Pred: 134#    
+✗ $51+32=    True: 83#      Pred: 86#     
+✗ $58+63=    True: 121#     Pred: 123#    
+
+Batch 150 Results:
+✗ $25*40=    True: 1000#    Pred: 1200#   
+✗ $13+47=    True: 60#      Pred: 74#     
+✗ $60+44=    True: 104#     Pred: 102#    
+✗ $31+99=    True: 130#     Pred: 129#    
+✗ $15*48=    True: 720#     Pred: 704#    
+✗ $11*75=    True: 825#     Pred: 1252#   
+✗ $18*18=    True: 324#     Pred: 344#    
+✗ $34+87=    True: 121#     Pred: 115#    
+✗ $93*62=    True: 5766#    Pred: 5396#   
+✓ $91+34=    True: 125#     Pred: 125#    
+
+Batch 151 Results:
+✗ $65+83=    True: 148#     Pred: 149#    
+✗ $77*42=    True: 3234#    Pred: 3224#   
+✗ $78*66=    True: 5148#    Pred: 5246#   
+✗ $19+45=    True: 64#      Pred: 60#     
+✗ $15+27=    True: 42#      Pred: 44#     
+✓ $16+71=    True: 87#      Pred: 87#     
+✗ $30+75=    True: 105#     Pred: 107#    
+✗ $64*63=    True: 4032#    Pred: 4252#   
+✗ $52*96=    True: 4992#    Pred: 5044#   
+✗ $94*88=    True: 8272#    Pred: 8354#   
+
+Batch 152 Results:
+✗ $49*44=    True: 2156#    Pred: 1979#   
+✗ $57+73=    True: 130#     Pred: 124#    
+✗ $82+97=    True: 179#     Pred: 184#    
+✗ $94+19=    True: 113#     Pred: 111#    
+✗ $69+31=    True: 100#     Pred: 106#    
+✗ $25*38=    True: 950#     Pred: 912#    
+✗ $45*66=    True: 2970#    Pred: 3070#   
+✓ $41+90=    True: 131#     Pred: 131#    
+✗ $51*11=    True: 561#     Pred: 525#    
+✗ $86*19=    True: 1634#    Pred: 1244#   
+
+Batch 153 Results:
+✗ $61+27=    True: 88#      Pred: 82#     
+✗ $81*95=    True: 7695#    Pred: 7230#   
+✗ $14+32=    True: 46#      Pred: 53#     
+✗ $84+96=    True: 180#     Pred: 174#    
+✗ $13*19=    True: 247#     Pred: 275#    
+✗ $92*42=    True: 3864#    Pred: 3296#   
+✗ $53+74=    True: 127#     Pred: 125#    
+✗ $11*38=    True: 418#     Pred: 344#    
+✗ $49+77=    True: 126#     Pred: 122#    
+✗ $78*91=    True: 7098#    Pred: 7633#   
+
+Batch 154 Results:
+✗ $55+29=    True: 84#      Pred: 87#     
+✗ $32*14=    True: 448#     Pred: 551#    
+✗ $17*18=    True: 306#     Pred: 1544#   
+✗ $75*81=    True: 6075#    Pred: 6040#   
+✗ $71+46=    True: 117#     Pred: 112#    
+✗ $74*22=    True: 1628#    Pred: 1738#   
+✗ $94*46=    True: 4324#    Pred: 4188#   
+✗ $11+31=    True: 42#      Pred: 46#     
+✗ $86+91=    True: 177#     Pred: 181#    
+✗ $80+66=    True: 146#     Pred: 144#    
+
+Batch 155 Results:
+✗ $98*31=    True: 3038#    Pred: 3699#   
+✗ $57+88=    True: 145#     Pred: 142#    
+✗ $44*68=    True: 2992#    Pred: 3724#   
+✗ $11*30=    True: 330#     Pred: 350#    
+✗ $40*92=    True: 3680#    Pred: 3060#   
+✗ $56+14=    True: 70#      Pred: 79#     
+✗ $98*88=    True: 8624#    Pred: 8646#   
+✗ $35*22=    True: 770#     Pred: 788#    
+✗ $76+54=    True: 130#     Pred: 138#    
+✗ $73*32=    True: 2336#    Pred: 2234#   
+
+Batch 156 Results:
+✗ $62*82=    True: 5084#    Pred: 5724#   
+✗ $17*20=    True: 340#     Pred: 272#    
+✗ $21+32=    True: 53#      Pred: 52#     
+✗ $74+14=    True: 88#      Pred: 92#     
+✗ $59+88=    True: 147#     Pred: 140#    
+✓ $81+75=    True: 156#     Pred: 156#    
+✗ $39+55=    True: 94#      Pred: 109#    
+✗ $79*64=    True: 5056#    Pred: 5538#   
+✗ $74*67=    True: 4958#    Pred: 4014#   
+✗ $75*82=    True: 6150#    Pred: 6025#   
+
+Batch 157 Results:
+✗ $64*97=    True: 6208#    Pred: 6076#   
+✗ $38*75=    True: 2850#    Pred: 2885#   
+✗ $13+12=    True: 25#      Pred: 37#     
+✗ $68*53=    True: 3604#    Pred: 4084#   
+✗ $49*82=    True: 4018#    Pred: 4183#   
+✗ $60+60=    True: 120#     Pred: 122#    
+✗ $96+80=    True: 176#     Pred: 172#    
+✗ $45*68=    True: 3060#    Pred: 3270#   
+✓ $36+62=    True: 98#      Pred: 98#     
+✗ $51+31=    True: 82#      Pred: 84#     
+
+Batch 158 Results:
+✗ $41+98=    True: 139#     Pred: 135#    
+✗ $68+82=    True: 150#     Pred: 154#    
+✗ $20*61=    True: 1220#    Pred: 1320#   
+✗ $89+20=    True: 109#     Pred: 117#    
+✗ $61*68=    True: 4148#    Pred: 4748#   
+✗ $97+75=    True: 172#     Pred: 174#    
+✗ $85*34=    True: 2890#    Pred: 2330#   
+✗ $47*28=    True: 1316#    Pred: 1398#   
+✗ $78+46=    True: 124#     Pred: 128#    
+✗ $39+81=    True: 120#     Pred: 122#    
+
+Batch 159 Results:
+✗ $32*48=    True: 1536#    Pred: 1573#   
+✗ $90*44=    True: 3960#    Pred: 3720#   
+✗ $72*32=    True: 2304#    Pred: 2246#   
+✗ $61*15=    True: 915#     Pred: 620#    
+✗ $68*46=    True: 3128#    Pred: 3184#   
+✓ $79+73=    True: 152#     Pred: 152#    
+✗ $78*52=    True: 4056#    Pred: 4364#   
+✗ $82+33=    True: 115#     Pred: 113#    
+✗ $38+37=    True: 75#      Pred: 67#     
+✗ $13*50=    True: 650#     Pred: 600#    
+
+Batch 160 Results:
+✗ $56*43=    True: 2408#    Pred: 2795#   
+✗ $21*69=    True: 1449#    Pred: 1726#   
+✗ $36*24=    True: 864#     Pred: 822#    
+✗ $29+31=    True: 60#      Pred: 63#     
+✓ $68+23=    True: 91#      Pred: 91#     
+✗ $31*24=    True: 744#     Pred: 804#    
+✗ $72*67=    True: 4824#    Pred: 4726#   
+✗ $24*10=    True: 240#     Pred: 400#    
+✗ $56*31=    True: 1736#    Pred: 1715#   
+✗ $36+84=    True: 120#     Pred: 122#    
+
+Batch 161 Results:
+✗ $69*65=    True: 4485#    Pred: 4325#   
+✗ $37*88=    True: 3256#    Pred: 2756#   
+✗ $46+34=    True: 80#      Pred: 78#     
+✗ $21+14=    True: 35#      Pred: 37#     
+✗ $17*60=    True: 1020#    Pred: 1060#   
+✗ $45+51=    True: 96#      Pred: 99#     
+✗ $90*17=    True: 1530#    Pred: 1040#   
+✗ $97+16=    True: 113#     Pred: 125#    
+✗ $37*45=    True: 1665#    Pred: 1775#   
+✗ $89*55=    True: 4895#    Pred: 4714#   
+
+Batch 162 Results:
+✗ $91+74=    True: 165#     Pred: 160#    
+✗ $81*87=    True: 7047#    Pred: 7813#   
+✗ $19+11=    True: 30#      Pred: 31#     
+✗ $76*72=    True: 5472#    Pred: 5242#   
+✗ $53*62=    True: 3286#    Pred: 3136#   
+✗ $67+21=    True: 88#      Pred: 86#     
+✗ $99+44=    True: 143#     Pred: 147#    
+✗ $13*48=    True: 624#     Pred: 546#    
+✗ $98*84=    True: 8232#    Pred: 8554#   
+✗ $28*81=    True: 2268#    Pred: 2324#   
+
+Batch 163 Results:
+✗ $79*40=    True: 3160#    Pred: 3480#   
+✗ $69+60=    True: 129#     Pred: 131#    
+✗ $97+94=    True: 191#     Pred: 180#    
+✗ $14*13=    True: 182#     Pred: 154#    
+✗ $59*67=    True: 3953#    Pred: 4392#   
+✗ $39+43=    True: 82#      Pred: 87#     
+✗ $67*97=    True: 6499#    Pred: 6674#   
+✗ $69+84=    True: 153#     Pred: 135#    
+✗ $68+41=    True: 109#     Pred: 118#    
+✗ $60+76=    True: 136#     Pred: 132#    
+
+Batch 164 Results:
+✗ $85*40=    True: 3400#    Pred: 3650#   
+✗ $97*60=    True: 5820#    Pred: 5240#   
+✗ $23+84=    True: 107#     Pred: 118#    
+✗ $39*99=    True: 3861#    Pred: 3454#   
+✗ $83+93=    True: 176#     Pred: 185#    
+✗ $60*28=    True: 1680#    Pred: 1840#   
+✗ $44+67=    True: 111#     Pred: 114#    
+✗ $39+40=    True: 79#      Pred: 87#     
+✗ $31*45=    True: 1395#    Pred: 1590#   
+✗ $18+51=    True: 69#      Pred: 70#     
+
+Batch 165 Results:
+✗ $78*54=    True: 4212#    Pred: 4084#   
+✗ $91*58=    True: 5278#    Pred: 5034#   
+✗ $97+79=    True: 176#     Pred: 175#    
+✗ $94+50=    True: 144#     Pred: 142#    
+✗ $48+75=    True: 123#     Pred: 129#    
+✗ $33+85=    True: 118#     Pred: 115#    
+✗ $78*20=    True: 1560#    Pred: 2590#   
+✗ $57*83=    True: 4731#    Pred: 4334#   
+✗ $63+97=    True: 160#     Pred: 169#    
+✗ $67+33=    True: 100#     Pred: 102#    
+
+Batch 166 Results:
+✗ $13*29=    True: 377#     Pred: 344#    
+✗ $80+75=    True: 155#     Pred: 153#    
+✗ $18*31=    True: 558#     Pred: 684#    
+✗ $78+51=    True: 129#     Pred: 133#    
+✗ $92+11=    True: 103#     Pred: 102#    
+✗ $99+12=    True: 111#     Pred: 131#    
+✗ $67*28=    True: 1876#    Pred: 1942#   
+✗ $30*22=    True: 660#     Pred: 704#    
+✓ $75+57=    True: 132#     Pred: 132#    
+✗ $20*65=    True: 1300#    Pred: 1460#   
+
+Batch 167 Results:
+✗ $13*97=    True: 1261#    Pred: 1343#   
+✗ $63+92=    True: 155#     Pred: 164#    
+✗ $45*58=    True: 2610#    Pred: 2792#   
+✗ $67+27=    True: 94#      Pred: 92#     
+✗ $64*88=    True: 5632#    Pred: 5768#   
+✗ $77+82=    True: 159#     Pred: 168#    
+✗ $25+34=    True: 59#      Pred: 53#     
+✗ $54*81=    True: 4374#    Pred: 4182#   
+✗ $86+45=    True: 131#     Pred: 134#    
+✗ $17*74=    True: 1258#    Pred: 1121#   
+
+Batch 168 Results:
+✗ $24+72=    True: 96#      Pred: 101#    
+✗ $31*11=    True: 341#     Pred: 486#    
+✗ $17+43=    True: 60#      Pred: 62#     
+✗ $27*39=    True: 1053#    Pred: 999#    
+✗ $80+89=    True: 169#     Pred: 167#    
+✗ $69+20=    True: 89#      Pred: 91#     
+✗ $84+67=    True: 151#     Pred: 148#    
+✓ $13*40=    True: 520#     Pred: 520#    
+✗ $45*49=    True: 2205#    Pred: 1900#   
+✗ $79*94=    True: 7426#    Pred: 8336#   
+
+Batch 169 Results:
+✗ $59*64=    True: 3776#    Pred: 3594#   
+✗ $44+36=    True: 80#      Pred: 73#     
+✗ $84+11=    True: 95#      Pred: 100#    
+✗ $75*90=    True: 6750#    Pred: 6080#   
+✗ $21+73=    True: 94#      Pred: 105#    
+✗ $45+22=    True: 67#      Pred: 65#     
+✗ $31*40=    True: 1240#    Pred: 820#    
+✗ $61*78=    True: 4758#    Pred: 5162#   
+✗ $99*51=    True: 5049#    Pred: 5035#   
+✗ $73+19=    True: 92#      Pred: 91#     
+
+Batch 170 Results:
+✗ $53+13=    True: 66#      Pred: 67#     
+✗ $67+60=    True: 127#     Pred: 132#    
+✗ $85*38=    True: 3230#    Pred: 2735#   
+✓ $87+78=    True: 165#     Pred: 165#    
+✓ $49+69=    True: 118#     Pred: 118#    
+✗ $17*73=    True: 1241#    Pred: 1251#   
+✗ $50+53=    True: 103#     Pred: 104#    
+✗ $45*89=    True: 4005#    Pred: 4586#   
+✗ $95*54=    True: 5130#    Pred: 4715#   
+✓ $19+23=    True: 42#      Pred: 42#     
+
+Batch 171 Results:
+✗ $98+80=    True: 178#     Pred: 180#    
+✗ $80*98=    True: 7840#    Pred: 7720#   
+✗ $82+46=    True: 128#     Pred: 121#    
+✗ $65+67=    True: 132#     Pred: 133#    
+✗ $92+66=    True: 158#     Pred: 161#    
+✗ $26*93=    True: 2418#    Pred: 2733#   
+✗ $92+80=    True: 172#     Pred: 180#    
+✗ $25+32=    True: 57#      Pred: 54#     
+✗ $73*55=    True: 4015#    Pred: 3792#   
+✗ $78*43=    True: 3354#    Pred: 3202#   
+
+Batch 172 Results:
+✓ $53+13=    True: 66#      Pred: 66#     
+✗ $30*31=    True: 930#     Pred: 990#    
+✗ $67*35=    True: 2345#    Pred: 2310#   
+✗ $59+42=    True: 101#     Pred: 103#    
+✗ $32+89=    True: 121#     Pred: 135#    
+✗ $27*36=    True: 972#     Pred: 992#    
+✗ $50+52=    True: 102#     Pred: 107#    
+✗ $33*38=    True: 1254#    Pred: 1026#   
+✗ $74*89=    True: 6586#    Pred: 6924#   
+✗ $54+15=    True: 69#      Pred: 64#     
+
+Batch 173 Results:
+✓ $19+17=    True: 36#      Pred: 36#     
+✗ $88*63=    True: 5544#    Pred: 5722#   
+✗ $28+92=    True: 120#     Pred: 121#    
+✗ $96+23=    True: 119#     Pred: 125#    
+✗ $47*60=    True: 2820#    Pred: 2720#   
+✗ $41+48=    True: 89#      Pred: 90#     
+✗ $68*68=    True: 4624#    Pred: 4644#   
+✗ $38*89=    True: 3382#    Pred: 2984#   
+✗ $93+24=    True: 117#     Pred: 121#    
+✗ $79*97=    True: 7663#    Pred: 7683#   
+
+Batch 174 Results:
+✗ $14*25=    True: 350#     Pred: 405#    
+✗ $65*22=    True: 1430#    Pred: 1460#   
+✗ $73+71=    True: 144#     Pred: 149#    
+✓ $75+39=    True: 114#     Pred: 114#    
+✗ $36*40=    True: 1440#    Pred: 1780#   
+✗ $53*65=    True: 3445#    Pred: 3664#   
+✗ $72*96=    True: 6912#    Pred: 6820#   
+✗ $69*68=    True: 4692#    Pred: 4047#   
+✗ $66+63=    True: 129#     Pred: 128#    
+✗ $49*51=    True: 2499#    Pred: 2672#   
+
+Batch 175 Results:
+✗ $75*82=    True: 6150#    Pred: 6025#   
+✗ $77*53=    True: 4081#    Pred: 4073#   
+✗ $67+56=    True: 123#     Pred: 129#    
+✗ $55+83=    True: 138#     Pred: 143#    
+✗ $45*23=    True: 1035#    Pred: 1280#   
+✗ $43*94=    True: 4042#    Pred: 4083#   
+✗ $44+25=    True: 69#      Pred: 73#     
+✗ $69*32=    True: 2208#    Pred: 2546#   
+✗ $70+32=    True: 102#     Pred: 100#    
+✗ $87*32=    True: 2784#    Pred: 2726#   
+
+Batch 176 Results:
+✗ $94*77=    True: 7238#    Pred: 6492#   
+✗ $42*32=    True: 1344#    Pred: 1346#   
+✗ $36*48=    True: 1728#    Pred: 1749#   
+✗ $10+23=    True: 33#      Pred: 31#     
+✗ $70+13=    True: 83#      Pred: 82#     
+✗ $52*59=    True: 3068#    Pred: 2799#   
+✗ $19*59=    True: 1121#    Pred: 1275#   
+✗ $66+45=    True: 111#     Pred: 114#    
+✗ $12+55=    True: 67#      Pred: 71#     
+✗ $14+28=    True: 42#      Pred: 59#     
+
+Batch 177 Results:
+✗ $50*82=    True: 4100#    Pred: 4290#   
+✗ $88+87=    True: 175#     Pred: 172#    
+✗ $70+53=    True: 123#     Pred: 121#    
+✗ $89*71=    True: 6319#    Pred: 6038#   
+✗ $41*42=    True: 1722#    Pred: 1960#   
+✓ $88+95=    True: 183#     Pred: 183#    
+✗ $85+25=    True: 110#     Pred: 102#    
+✗ $64+32=    True: 96#      Pred: 102#    
+✗ $82+55=    True: 137#     Pred: 132#    
+✗ $51+39=    True: 90#      Pred: 83#     
+
+Batch 178 Results:
+✗ $11+38=    True: 49#      Pred: 48#     
+✗ $72*18=    True: 1296#    Pred: 1218#   
+✗ $26*13=    True: 338#     Pred: 544#    
+✗ $17+53=    True: 70#      Pred: 81#     
+✗ $92+83=    True: 175#     Pred: 185#    
+✗ $78*69=    True: 5382#    Pred: 5444#   
+✗ $26*30=    True: 780#     Pred: 920#    
+✗ $27*65=    True: 1755#    Pred: 1720#   
+✗ $12*24=    True: 288#     Pred: 340#    
+✗ $70*22=    True: 1540#    Pred: 1720#   
+
+Batch 179 Results:
+✗ $97*35=    True: 3395#    Pred: 3480#   
+✗ $81+92=    True: 173#     Pred: 187#    
+✗ $14+72=    True: 86#      Pred: 90#     
+✗ $80+35=    True: 115#     Pred: 116#    
+✗ $39*22=    True: 858#     Pred: 1194#   
+✗ $65+89=    True: 154#     Pred: 156#    
+✗ $32+17=    True: 49#      Pred: 45#     
+✗ $85*91=    True: 7735#    Pred: 7730#   
+✗ $91*68=    True: 6188#    Pred: 5856#   
+✗ $70*17=    True: 1190#    Pred: 922#    
+
+Batch 180 Results:
+✗ $67*70=    True: 4690#    Pred: 5040#   
+✗ $47*97=    True: 4559#    Pred: 4736#   
+✗ $14*24=    True: 336#     Pred: 346#    
+✗ $51+57=    True: 108#     Pred: 117#    
+✓ $82+33=    True: 115#     Pred: 115#    
+✗ $26+13=    True: 39#      Pred: 37#     
+✗ $18+49=    True: 67#      Pred: 60#     
+✗ $25*43=    True: 1075#    Pred: 1035#   
+✗ $95*43=    True: 4085#    Pred: 4076#   
+✗ $58+36=    True: 94#      Pred: 97#     
+
+Batch 181 Results:
+✗ $67+44=    True: 111#     Pred: 114#    
+✗ $35+75=    True: 110#     Pred: 127#    
+✗ $27+86=    True: 113#     Pred: 119#    
+✗ $21+63=    True: 84#      Pred: 90#     
+✗ $50+82=    True: 132#     Pred: 130#    
+✓ $12*50=    True: 600#     Pred: 600#    
+✗ $16+65=    True: 81#      Pred: 87#     
+✗ $20+97=    True: 117#     Pred: 127#    
+✗ $75*60=    True: 4500#    Pred: 4140#   
+✗ $34*80=    True: 2720#    Pred: 3580#   
+
+Batch 182 Results:
+✗ $21+64=    True: 85#      Pred: 87#     
+✗ $50+28=    True: 78#      Pred: 81#     
+✗ $74*95=    True: 7030#    Pred: 8495#   
+✗ $84*18=    True: 1512#    Pred: 1248#   
+✗ $23*98=    True: 2254#    Pred: 2733#   
+✗ $27+46=    True: 73#      Pred: 75#     
+✗ $18+12=    True: 30#      Pred: 39#     
+✗ $62+90=    True: 152#     Pred: 161#    
+✓ $10+50=    True: 60#      Pred: 60#     
+✗ $52+65=    True: 117#     Pred: 118#    
+
+Batch 183 Results:
+✗ $75*41=    True: 3075#    Pred: 3030#   
+✗ $28*37=    True: 1036#    Pred: 912#    
+✗ $38*91=    True: 3458#    Pred: 3082#   
+✗ $84*36=    True: 3024#    Pred: 3524#   
+✗ $24+98=    True: 122#     Pred: 121#    
+✗ $96*30=    True: 2880#    Pred: 2440#   
+✗ $47+84=    True: 131#     Pred: 124#    
+✗ $64+20=    True: 84#      Pred: 82#     
+✗ $14+94=    True: 108#     Pred: 121#    
+✗ $53+40=    True: 93#      Pred: 99#     
+
+Batch 184 Results:
+✗ $15*24=    True: 360#     Pred: 350#    
+✗ $13+93=    True: 106#     Pred: 111#    
+✗ $17*31=    True: 527#     Pred: 524#    
+✗ $38*39=    True: 1482#    Pred: 1703#   
+✗ $46*60=    True: 2760#    Pred: 2660#   
+✗ $81*56=    True: 4536#    Pred: 4792#   
+✗ $46*47=    True: 2162#    Pred: 1964#   
+✗ $15*13=    True: 195#     Pred: 305#    
+✗ $53*32=    True: 1696#    Pred: 1793#   
+✗ $96*38=    True: 3648#    Pred: 3678#   
+
+Batch 185 Results:
+✗ $95+44=    True: 139#     Pred: 130#    
+✗ $16*96=    True: 1536#    Pred: 1546#   
+✗ $80*43=    True: 3440#    Pred: 3600#   
+✗ $24*40=    True: 960#     Pred: 1000#   
+✗ $75*60=    True: 4500#    Pred: 5040#   
+✗ $74*36=    True: 2664#    Pred: 2442#   
+✗ $34*33=    True: 1122#    Pred: 1100#   
+✗ $41*89=    True: 3649#    Pred: 3658#   
+✗ $37*62=    True: 2294#    Pred: 2524#   
+✗ $16*73=    True: 1168#    Pred: 1242#   
+
+Batch 186 Results:
+✗ $34*34=    True: 1156#    Pred: 1020#   
+✗ $93*62=    True: 5766#    Pred: 4699#   
+✗ $79*18=    True: 1422#    Pred: 1178#   
+✗ $67*16=    True: 1072#    Pred: 1242#   
+✗ $77*74=    True: 5698#    Pred: 5208#   
+✗ $94*93=    True: 8742#    Pred: 9400#   
+✗ $99+34=    True: 133#     Pred: 129#    
+✗ $25*52=    True: 1300#    Pred: 1685#   
+✗ $71*25=    True: 1775#    Pred: 2820#   
+✗ $82+58=    True: 140#     Pred: 148#    
+
+Batch 187 Results:
+✗ $73*80=    True: 5840#    Pred: 5920#   
+✗ $65+13=    True: 78#      Pred: 66#     
+✗ $52*81=    True: 4212#    Pred: 4524#   
+✓ $68+18=    True: 86#      Pred: 86#     
+✗ $90+25=    True: 115#     Pred: 117#    
+✗ $40+38=    True: 78#      Pred: 73#     
+✗ $29*30=    True: 870#     Pred: 850#    
+✗ $37*30=    True: 1110#    Pred: 1700#   
+✗ $97*84=    True: 8148#    Pred: 8374#   
+✗ $93*21=    True: 1953#    Pred: 2242#   
+
+Batch 188 Results:
+✗ $52*49=    True: 2548#    Pred: 2798#   
+✗ $37*84=    True: 3108#    Pred: 3144#   
+✗ $26+93=    True: 119#     Pred: 120#    
+✗ $78*49=    True: 3822#    Pred: 3082#   
+✓ $10*30=    True: 300#     Pred: 300#    
+✗ $31*94=    True: 2914#    Pred: 3033#   
+✗ $61*88=    True: 5368#    Pred: 5326#   
+✗ $33*81=    True: 2673#    Pred: 2442#   
+✗ $59*35=    True: 2065#    Pred: 1902#   
+✗ $51+42=    True: 93#      Pred: 97#     
+
+Batch 189 Results:
+✗ $92+95=    True: 187#     Pred: 186#    
+✗ $28*23=    True: 644#     Pred: 572#    
+✗ $22*73=    True: 1606#    Pred: 2024#   
+✗ $80+39=    True: 119#     Pred: 114#    
+✗ $24*23=    True: 552#     Pred: 702#    
+✗ $97*67=    True: 6499#    Pred: 6346#   
+✗ $52+25=    True: 77#      Pred: 78#     
+✗ $72*84=    True: 6048#    Pred: 6274#   
+✗ $96+96=    True: 192#     Pred: 161#    
+✗ $91+28=    True: 119#     Pred: 122#    
+
+Batch 190 Results:
+✗ $30+20=    True: 50#      Pred: 54#     
+✗ $90+75=    True: 165#     Pred: 160#    
+✗ $17*24=    True: 408#     Pred: 504#    
+✓ $55+19=    True: 74#      Pred: 74#     
+✗ $58*46=    True: 2668#    Pred: 2772#   
+✗ $59*15=    True: 885#     Pred: 534#    
+✗ $21+40=    True: 61#      Pred: 67#     
+✗ $45+28=    True: 73#      Pred: 70#     
+✗ $13+74=    True: 87#      Pred: 93#     
+✗ $48*63=    True: 3024#    Pred: 3794#   
+
+Batch 191 Results:
+✗ $62+52=    True: 114#     Pred: 113#    
+✗ $80*14=    True: 1120#    Pred: 1220#   
+✗ $13+79=    True: 92#      Pred: 95#     
+✗ $14*27=    True: 378#     Pred: 476#    
+✗ $26*25=    True: 650#     Pred: 600#    
+✗ $46*30=    True: 1380#    Pred: 1960#   
+✗ $72*17=    True: 1224#    Pred: 1198#   
+✗ $89+54=    True: 143#     Pred: 142#    
+✗ $14*12=    True: 168#     Pred: 144#    
+✗ $33*29=    True: 957#     Pred: 704#    
+
+Batch 192 Results:
+✗ $40+31=    True: 71#      Pred: 73#     
+✗ $96*92=    True: 8832#    Pred: 8344#   
+✗ $31+31=    True: 62#      Pred: 63#     
+✗ $82*31=    True: 2542#    Pred: 2494#   
+✗ $37+49=    True: 86#      Pred: 82#     
+✗ $17+29=    True: 46#      Pred: 55#     
+✗ $98+23=    True: 121#     Pred: 124#    
+✗ $87+66=    True: 153#     Pred: 147#    
+✗ $49*98=    True: 4802#    Pred: 4608#   
+✗ $50+30=    True: 80#      Pred: 86#     
+
+Batch 193 Results:
+✗ $94*99=    True: 9306#    Pred: 8832#   
+✗ $18+18=    True: 36#      Pred: 26#     
+✗ $72*16=    True: 1152#    Pred: 1122#   
+✗ $52*31=    True: 1612#    Pred: 1722#   
+✗ $54+30=    True: 84#      Pred: 87#     
+✗ $11*58=    True: 638#     Pred: 600#    
+✗ $58+42=    True: 100#     Pred: 102#    
+✗ $98+57=    True: 155#     Pred: 150#    
+✗ $41*27=    True: 1107#    Pred: 1210#   
+✗ $97+71=    True: 168#     Pred: 174#    
+
+Batch 194 Results:
+✗ $57*14=    True: 798#     Pred: 529#    
+✗ $44*66=    True: 2904#    Pred: 2842#   
+✗ $38*74=    True: 2812#    Pred: 2462#   
+✗ $34*55=    True: 1870#    Pred: 1739#   
+✗ $61+86=    True: 147#     Pred: 157#    
+✗ $75*32=    True: 2400#    Pred: 2240#   
+✗ $93*58=    True: 5394#    Pred: 5073#   
+✗ $67+77=    True: 144#     Pred: 147#    
+✗ $90+74=    True: 164#     Pred: 160#    
+✗ $98+81=    True: 179#     Pred: 182#    
+
+Batch 195 Results:
+✗ $16*73=    True: 1168#    Pred: 1241#   
+✗ $99+91=    True: 190#     Pred: 188#    
+✗ $75+71=    True: 146#     Pred: 149#    
+✗ $87+84=    True: 171#     Pred: 174#    
+✗ $82*73=    True: 5986#    Pred: 6174#   
+✗ $55+14=    True: 69#      Pred: 67#     
+✗ $42+15=    True: 57#      Pred: 56#     
+✗ $27*35=    True: 945#     Pred: 920#    
+✗ $37*41=    True: 1517#    Pred: 1973#   
+✗ $50*61=    True: 3050#    Pred: 3200#   
+
+Batch 196 Results:
+✗ $65+49=    True: 114#     Pred: 117#    
+✗ $95*41=    True: 3895#    Pred: 4505#   
+✗ $76+94=    True: 170#     Pred: 164#    
+✗ $50+88=    True: 138#     Pred: 130#    
+✗ $17+27=    True: 44#      Pred: 49#     
+✗ $35+39=    True: 74#      Pred: 61#     
+✗ $36*24=    True: 864#     Pred: 902#    
+✗ $70+91=    True: 161#     Pred: 165#    
+✗ $78*79=    True: 6162#    Pred: 6324#   
+✗ $28*54=    True: 1512#    Pred: 1212#   
+
+Batch 197 Results:
+✗ $98+71=    True: 169#     Pred: 174#    
+✗ $33+13=    True: 46#      Pred: 48#     
+✗ $81*57=    True: 4617#    Pred: 4796#   
+✗ $44*28=    True: 1232#    Pred: 1282#   
+✗ $80*61=    True: 4880#    Pred: 4480#   
+✗ $52*23=    True: 1196#    Pred: 1605#   
+✗ $34*79=    True: 2686#    Pred: 2474#   
+✗ $74*80=    True: 5920#    Pred: 5660#   
+✗ $48*64=    True: 3072#    Pred: 2924#   
+✗ $71+87=    True: 158#     Pred: 155#    
+
+Batch 198 Results:
+✗ $91+86=    True: 177#     Pred: 172#    
+✗ $73+17=    True: 90#      Pred: 91#     
+✗ $70+11=    True: 81#      Pred: 87#     
+✗ $74*23=    True: 1702#    Pred: 2186#   
+✗ $79+54=    True: 133#     Pred: 130#    
+✗ $88+93=    True: 181#     Pred: 184#    
+✗ $98*39=    True: 3822#    Pred: 3284#   
+✗ $91*65=    True: 5915#    Pred: 5185#   
+✗ $67*62=    True: 4154#    Pred: 4764#   
+✗ $31*98=    True: 3038#    Pred: 3082#   
+
+Batch 199 Results:
+✗ $81+96=    True: 177#     Pred: 185#    
+✗ $25*11=    True: 275#     Pred: 225#    
+✗ $79*41=    True: 3239#    Pred: 3536#   
+✗ $89+11=    True: 100#     Pred: 98#     
+✗ $18*95=    True: 1710#    Pred: 1395#   
+✗ $44+65=    True: 109#     Pred: 102#    
+✗ $36*61=    True: 2196#    Pred: 2041#   
+✗ $81*57=    True: 4617#    Pred: 4791#   
+✗ $43+74=    True: 117#     Pred: 114#    
+✗ $34*50=    True: 1700#    Pred: 1710#   
+
+Batch 200 Results:
+✗ $17*82=    True: 1394#    Pred: 1547#   
+✗ $81*56=    True: 4536#    Pred: 4854#   
+✗ $91+63=    True: 154#     Pred: 161#    
+✗ $14*23=    True: 322#     Pred: 394#    
+✗ $13*11=    True: 143#     Pred: 154#    
+✗ $30*49=    True: 1470#    Pred: 1830#   
+✗ $99*65=    True: 6435#    Pred: 6700#   
+✗ $65+94=    True: 159#     Pred: 164#    
+✗ $69+51=    True: 120#     Pred: 124#    
+✗ $76*67=    True: 5092#    Pred: 5334#   
+
+Final Accuracy: 4.70% (94/2000)

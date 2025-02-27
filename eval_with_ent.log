@@ -1,0 +1,2404 @@
+Using device: cuda
+Loaded model from ./best_model_with_ent.pth
+
+Batch 1 Results:
+✗ $3*38=     True: 114#     Pred: 154#    
+✓ $4*1=      True: 4#       Pred: 4#      
+✗ $9+98=     True: 107#     Pred: 102#    
+✗ $98*55=    True: 5390#    Pred: 4130#   
+✓ $46+2=     True: 48#      Pred: 48#     
+✓ $5+23=     True: 28#      Pred: 28#     
+✓ $6*22=     True: 132#     Pred: 132#    
+✗ $34*3=     True: 102#     Pred: 11#     
+✓ $1*7=      True: 7#       Pred: 7#      
+✗ $57+90=    True: 147#     Pred: 127#    
+
+Batch 2 Results:
+✓ $4*68=     True: 272#     Pred: 272#    
+✓ $5*1=      True: 5#       Pred: 5#      
+✓ $9+55=     True: 64#      Pred: 64#     
+✗ $24+53=    True: 77#      Pred: 72#     
+✓ $1+16=     True: 17#      Pred: 17#     
+✓ $3*1=      True: 3#       Pred: 3#      
+✓ $5*1=      True: 5#       Pred: 5#      
+✗ $32*1=     True: 32#      Pred: 33#     
+✗ $43*9=     True: 387#     Pred: 386#    
+✗ $18*72=    True: 1296#    Pred: 1121#   
+
+Batch 3 Results:
+✗ $61*80=    True: 4880#    Pred: 5640#   
+✗ $6*26=     True: 156#     Pred: 15#     
+✓ $2+60=     True: 62#      Pred: 62#     
+✗ $20*83=    True: 1660#    Pred: 2920#   
+✗ $78+41=    True: 119#     Pred: 114#    
+✗ $9+19=     True: 28#      Pred: 27#     
+✗ $98*8=     True: 784#     Pred: 892#    
+✓ $4*77=     True: 308#     Pred: 308#    
+✗ $51+28=    True: 79#      Pred: 75#     
+✗ $7+58=     True: 65#      Pred: 66#     
+
+Batch 4 Results:
+✓ $4*3=      True: 12#      Pred: 12#     
+✓ $49+9=     True: 58#      Pred: 58#     
+✓ $3+9=      True: 12#      Pred: 12#     
+✓ $2+7=      True: 9#       Pred: 9#      
+✗ $61+5=     True: 66#      Pred: 67#     
+✓ $6+93=     True: 99#      Pred: 99#     
+✓ $1*2=      True: 2#       Pred: 2#      
+✓ $3+3=      True: 6#       Pred: 6#      
+✓ $7+58=     True: 65#      Pred: 65#     
+✓ $5*5=      True: 25#      Pred: 25#     
+
+Batch 5 Results:
+✗ $30*8=     True: 240#     Pred: 246#    
+✗ $67+70=    True: 137#     Pred: 147#    
+✗ $98*73=    True: 7154#    Pred: 7522#   
+✓ $68*5=     True: 340#     Pred: 340#    
+✗ $38+92=    True: 130#     Pred: 126#    
+✗ $15+38=    True: 53#      Pred: 72#     
+✗ $49*5=     True: 245#     Pred: 220#    
+✓ $1*9=      True: 9#       Pred: 9#      
+✓ $3*6=      True: 18#      Pred: 18#     
+✗ $73*1=     True: 73#      Pred: 74#     
+
+Batch 6 Results:
+✓ $4*95=     True: 380#     Pred: 380#    
+✗ $31+8=     True: 39#      Pred: 30#     
+✓ $5+25=     True: 30#      Pred: 30#     
+✗ $43+4=     True: 47#      Pred: 48#     
+✗ $19+1=     True: 20#      Pred: 24#     
+✗ $93+24=    True: 117#     Pred: 114#    
+✗ $39*13=    True: 507#     Pred: 530#    
+✓ $7+9=      True: 16#      Pred: 16#     
+✓ $4+81=     True: 85#      Pred: 85#     
+✗ $71+2=     True: 73#      Pred: 74#     
+
+Batch 7 Results:
+✓ $9*4=      True: 36#      Pred: 36#     
+✗ $45+39=    True: 84#      Pred: 87#     
+✓ $9*99=     True: 891#     Pred: 891#    
+✗ $35+11=    True: 46#      Pred: 36#     
+✗ $27*7=     True: 189#     Pred: 242#    
+✓ $4+64=     True: 68#      Pred: 68#     
+✗ $52*7=     True: 364#     Pred: 371#    
+✗ $91*85=    True: 7735#    Pred: 4604#   
+✓ $1*72=     True: 72#      Pred: 72#     
+✗ $49+5=     True: 54#      Pred: 53#     
+
+Batch 8 Results:
+✗ $11+4=     True: 15#      Pred: 18#     
+✓ $40*6=     True: 240#     Pred: 240#    
+✗ $10+9=     True: 19#      Pred: 23#     
+✗ $70+4=     True: 74#      Pred: 75#     
+✗ $48+28=    True: 76#      Pred: 90#     
+✗ $91*57=    True: 5187#    Pred: 4710#   
+✓ $44+1=     True: 45#      Pred: 45#     
+✓ $76+7=     True: 83#      Pred: 83#     
+✓ $96*1=     True: 96#      Pred: 96#     
+✗ $72+14=    True: 86#      Pred: 92#     
+
+Batch 9 Results:
+✓ $1*59=     True: 59#      Pred: 59#     
+✓ $3*8=      True: 24#      Pred: 24#     
+✓ $5*1=      True: 5#       Pred: 5#      
+✗ $65+46=    True: 111#     Pred: 114#    
+✓ $5*7=      True: 35#      Pred: 35#     
+✓ $8+67=     True: 75#      Pred: 75#     
+✗ $6+59=     True: 65#      Pred: 64#     
+✓ $6+47=     True: 53#      Pred: 53#     
+✓ $4*46=     True: 184#     Pred: 184#    
+✗ $22+32=    True: 54#      Pred: 55#     
+
+Batch 10 Results:
+✓ $5*9=      True: 45#      Pred: 45#     
+✓ $2+2=      True: 4#       Pred: 4#      
+✓ $3+5=      True: 8#       Pred: 8#      
+✓ $53+4=     True: 57#      Pred: 57#     
+✓ $7+1=      True: 8#       Pred: 8#      
+✓ $8+69=     True: 77#      Pred: 77#     
+✗ $57+2=     True: 59#      Pred: 68#     
+✓ $1*40=     True: 40#      Pred: 40#     
+✗ $63*97=    True: 6111#    Pred: 5450#   
+✗ $13*29=    True: 377#     Pred: 200#    
+
+Batch 11 Results:
+✓ $6*6=      True: 36#      Pred: 36#     
+✓ $4*9=      True: 36#      Pred: 36#     
+✗ $47+65=    True: 112#     Pred: 107#    
+✗ $26+8=     True: 34#      Pred: 33#     
+✓ $9+3=      True: 12#      Pred: 12#     
+✓ $19+5=     True: 24#      Pred: 24#     
+✓ $93+6=     True: 99#      Pred: 99#     
+✓ $3*5=      True: 15#      Pred: 15#     
+✓ $3*5=      True: 15#      Pred: 15#     
+✓ $4*2=      True: 8#       Pred: 8#      
+
+Batch 12 Results:
+✓ $7*5=      True: 35#      Pred: 35#     
+✓ $4+5=      True: 9#       Pred: 9#      
+✗ $34*3=     True: 102#     Pred: 11#     
+✓ $5*7=      True: 35#      Pred: 35#     
+✓ $16+28=    True: 44#      Pred: 44#     
+✓ $1+5=      True: 6#       Pred: 6#      
+✗ $7*64=     True: 448#     Pred: 488#    
+✗ $79*56=    True: 4424#    Pred: 4116#   
+✓ $7*7=      True: 49#      Pred: 49#     
+✗ $64*65=    True: 4160#    Pred: 4309#   
+
+Batch 13 Results:
+✓ $7*8=      True: 56#      Pred: 56#     
+✓ $3+3=      True: 6#       Pred: 6#      
+✓ $8*9=      True: 72#      Pred: 72#     
+✗ $59*6=     True: 354#     Pred: 344#    
+✓ $1+6=      True: 7#       Pred: 7#      
+✓ $6*8=      True: 48#      Pred: 48#     
+✓ $1*3=      True: 3#       Pred: 3#      
+✗ $89*96=    True: 8544#    Pred: 7676#   
+✓ $4*6=      True: 24#      Pred: 24#     
+✗ $63*23=    True: 1449#    Pred: 1320#   
+
+Batch 14 Results:
+✗ $86*8=     True: 688#     Pred: 782#    
+✓ $9+91=     True: 100#     Pred: 100#    
+✗ $12+7=     True: 19#      Pred: 21#     
+✓ $8*6=      True: 48#      Pred: 48#     
+✗ $31*7=     True: 217#     Pred: 264#    
+✓ $3*58=     True: 174#     Pred: 174#    
+✗ $42+7=     True: 49#      Pred: 50#     
+✓ $2*92=     True: 184#     Pred: 184#    
+✗ $53+3=     True: 56#      Pred: 57#     
+✓ $40+2=     True: 42#      Pred: 42#     
+
+Batch 15 Results:
+✓ $9*33=     True: 297#     Pred: 297#    
+✓ $1*4=      True: 4#       Pred: 4#      
+✗ $8*26=     True: 208#     Pred: 200#    
+✓ $1*11=     True: 11#      Pred: 11#     
+✓ $5*9=      True: 45#      Pred: 45#     
+✓ $2*52=     True: 104#     Pred: 104#    
+✗ $27+88=    True: 115#     Pred: 111#    
+✗ $71+6=     True: 77#      Pred: 78#     
+✓ $8*9=      True: 72#      Pred: 72#     
+✗ $48+32=    True: 80#      Pred: 87#     
+
+Batch 16 Results:
+✓ $45*4=     True: 180#     Pred: 180#    
+✓ $8*8=      True: 64#      Pred: 64#     
+✗ $6*98=     True: 588#     Pred: 594#    
+✓ $47+5=     True: 52#      Pred: 52#     
+✓ $6*2=      True: 12#      Pred: 12#     
+✓ $6+9=      True: 15#      Pred: 15#     
+✓ $1*8=      True: 8#       Pred: 8#      
+✗ $9+48=     True: 57#      Pred: 58#     
+✗ $3+84=     True: 87#      Pred: 97#     
+✓ $4+20=     True: 24#      Pred: 24#     
+
+Batch 17 Results:
+✓ $4+5=      True: 9#       Pred: 9#      
+✓ $6*87=     True: 522#     Pred: 522#    
+✓ $2*68=     True: 136#     Pred: 136#    
+✓ $6*9=      True: 54#      Pred: 54#     
+✓ $2*8=      True: 16#      Pred: 16#     
+✗ $47*5=     True: 235#     Pred: 240#    
+✓ $7+7=      True: 14#      Pred: 14#     
+✓ $6+6=      True: 12#      Pred: 12#     
+✓ $69+1=     True: 70#      Pred: 70#     
+✓ $1*16=     True: 16#      Pred: 16#     
+
+Batch 18 Results:
+✗ $9*46=     True: 414#     Pred: 424#    
+✓ $7*2=      True: 14#      Pred: 14#     
+✓ $6+20=     True: 26#      Pred: 26#     
+✗ $11*62=    True: 682#     Pred: 840#    
+✓ $5+1=      True: 6#       Pred: 6#      
+✗ $46*15=    True: 690#     Pred: 868#    
+✓ $2*7=      True: 14#      Pred: 14#     
+✓ $6*2=      True: 12#      Pred: 12#     
+✓ $90+2=     True: 92#      Pred: 92#     
+✗ $34*8=     True: 272#     Pred: 286#    
+
+Batch 19 Results:
+✗ $78+89=    True: 167#     Pred: 161#    
+✓ $5+83=     True: 88#      Pred: 88#     
+✓ $1+70=     True: 71#      Pred: 71#     
+✓ $65*5=     True: 325#     Pred: 325#    
+✗ $87+2=     True: 89#      Pred: 90#     
+✓ $7+9=      True: 16#      Pred: 16#     
+✓ $3+76=     True: 79#      Pred: 79#     
+✗ $25*48=    True: 1200#    Pred: 1000#   
+✓ $1*25=     True: 25#      Pred: 25#     
+✓ $2+4=      True: 6#       Pred: 6#      
+
+Batch 20 Results:
+✓ $4+8=      True: 12#      Pred: 12#     
+✗ $38+90=    True: 128#     Pred: 123#    
+✓ $4*2=      True: 8#       Pred: 8#      
+✗ $13*80=    True: 1040#    Pred: 110#    
+✗ $9*26=     True: 234#     Pred: 224#    
+✗ $47*78=    True: 3666#    Pred: 3240#   
+✗ $7+95=     True: 102#     Pred: 103#    
+✗ $86*15=    True: 1290#    Pred: 1334#   
+✓ $8*80=     True: 640#     Pred: 640#    
+✗ $51+43=    True: 94#      Pred: 930#    
+
+Batch 21 Results:
+✗ $37*2=     True: 74#      Pred: 75#     
+✓ $91*4=     True: 364#     Pred: 364#    
+✓ $8+77=     True: 85#      Pred: 85#     
+✓ $17*9=     True: 153#     Pred: 153#    
+✓ $3*5=      True: 15#      Pred: 15#     
+✗ $70*23=    True: 1610#    Pred: 1720#   
+✗ $84+89=    True: 173#     Pred: 174#    
+✓ $2*65=     True: 130#     Pred: 130#    
+✓ $4*9=      True: 36#      Pred: 36#     
+✗ $6+29=     True: 35#      Pred: 34#     
+
+Batch 22 Results:
+✓ $3*6=      True: 18#      Pred: 18#     
+✗ $3+45=     True: 48#      Pred: 49#     
+✗ $76*10=    True: 760#     Pred: 110#    
+✗ $84*55=    True: 4620#    Pred: 4964#   
+✗ $16+91=    True: 107#     Pred: 105#    
+✓ $4*92=     True: 368#     Pred: 368#    
+✗ $1*43=     True: 43#      Pred: 44#     
+✓ $2*8=      True: 16#      Pred: 16#     
+✓ $60+4=     True: 64#      Pred: 64#     
+✗ $80+13=    True: 93#      Pred: 13#     
+
+Batch 23 Results:
+✗ $63*5=     True: 315#     Pred: 325#    
+✗ $32*3=     True: 96#      Pred: 99#     
+✓ $7*7=      True: 49#      Pred: 49#     
+✓ $5+9=      True: 14#      Pred: 14#     
+✗ $85*67=    True: 5695#    Pred: 5725#   
+✓ $5+82=     True: 87#      Pred: 87#     
+✓ $9*95=     True: 855#     Pred: 855#    
+✓ $19+2=     True: 21#      Pred: 21#     
+✗ $9*89=     True: 801#     Pred: 782#    
+✗ $47+48=    True: 95#      Pred: 104#    
+
+Batch 24 Results:
+✓ $3+9=      True: 12#      Pred: 12#     
+✗ $56*86=    True: 4816#    Pred: 4346#   
+✗ $48*48=    True: 2304#    Pred: 1976#   
+✗ $10+25=    True: 35#      Pred: 37#     
+✗ $35*9=     True: 315#     Pred: 352#    
+✓ $6*6=      True: 36#      Pred: 36#     
+✓ $8*7=      True: 56#      Pred: 56#     
+✗ $51*25=    True: 1275#    Pred: 1222#   
+✗ $49+73=    True: 122#     Pred: 137#    
+✗ $48+1=     True: 49#      Pred: 40#     
+
+Batch 25 Results:
+✗ $4*57=     True: 228#     Pred: 248#    
+✓ $78+34=    True: 112#     Pred: 112#    
+✓ $38*3=     True: 114#     Pred: 114#    
+✗ $82+71=    True: 153#     Pred: 154#    
+✗ $93*1=     True: 93#      Pred: 96#     
+✓ $9+71=     True: 80#      Pred: 80#     
+✓ $9+2=      True: 11#      Pred: 11#     
+✓ $7+28=     True: 35#      Pred: 35#     
+✗ $71+5=     True: 76#      Pred: 78#     
+✓ $1+4=      True: 5#       Pred: 5#      
+
+Batch 26 Results:
+✓ $9+62=     True: 71#      Pred: 71#     
+✓ $80+32=    True: 112#     Pred: 112#    
+✓ $8+22=     True: 30#      Pred: 30#     
+✓ $61+5=     True: 66#      Pred: 66#     
+✓ $9*41=     True: 369#     Pred: 369#    
+✗ $60+63=    True: 123#     Pred: 128#    
+✓ $9+7=      True: 16#      Pred: 16#     
+✓ $5*52=     True: 260#     Pred: 260#    
+✗ $63+5=     True: 68#      Pred: 69#     
+✓ $6+7=      True: 13#      Pred: 13#     
+
+Batch 27 Results:
+✓ $2*7=      True: 14#      Pred: 14#     
+✗ $73*86=    True: 6278#    Pred: 5430#   
+✗ $2+17=     True: 19#      Pred: 20#     
+✓ $1+16=     True: 17#      Pred: 17#     
+✓ $3+9=      True: 12#      Pred: 12#     
+✗ $55+83=    True: 138#     Pred: 141#    
+✗ $54+87=    True: 141#     Pred: 147#    
+✓ $4*7=      True: 28#      Pred: 28#     
+✗ $20+15=    True: 35#      Pred: 37#     
+✓ $4*5=      True: 20#      Pred: 20#     
+
+Batch 28 Results:
+✗ $77*88=    True: 6776#    Pred: 6766#   
+✗ $10*9=     True: 90#      Pred: 126#    
+✗ $4*76=     True: 304#     Pred: 204#    
+✗ $6*86=     True: 516#     Pred: 522#    
+✗ $19*8=     True: 152#     Pred: 122#    
+✓ $3+10=     True: 13#      Pred: 13#     
+✓ $5+63=     True: 68#      Pred: 68#     
+✗ $38+96=    True: 134#     Pred: 114#    
+✗ $95+31=    True: 126#     Pred: 131#    
+✗ $27*27=    True: 729#     Pred: 507#    
+
+Batch 29 Results:
+✓ $1+6=      True: 7#       Pred: 7#      
+✓ $5*67=     True: 335#     Pred: 335#    
+✓ $2+29=     True: 31#      Pred: 31#     
+✗ $20+23=    True: 43#      Pred: 47#     
+✗ $41*72=    True: 2952#    Pred: 3786#   
+✓ $8+72=     True: 80#      Pred: 80#     
+✓ $1+9=      True: 10#      Pred: 10#     
+✓ $4+3=      True: 7#       Pred: 7#      
+✓ $8+5=      True: 13#      Pred: 13#     
+✗ $78*1=     True: 78#      Pred: 76#     
+
+Batch 30 Results:
+✓ $4+6=      True: 10#      Pred: 10#     
+✓ $5+9=      True: 14#      Pred: 14#     
+✓ $8+67=     True: 75#      Pred: 75#     
+✓ $9+31=     True: 40#      Pred: 40#     
+✗ $47+2=     True: 49#      Pred: 48#     
+✗ $61+9=     True: 70#      Pred: 68#     
+✓ $4*2=      True: 8#       Pred: 8#      
+✓ $6+2=      True: 8#       Pred: 8#      
+✓ $84*6=     True: 504#     Pred: 504#    
+✗ $30*55=    True: 1650#    Pred: 1036#   
+
+Batch 31 Results:
+✗ $95+2=     True: 97#      Pred: 96#     
+✓ $30*1=     True: 30#      Pred: 30#     
+✗ $12*34=    True: 408#     Pred: 340#    
+✓ $2+9=      True: 11#      Pred: 11#     
+✗ $70*4=     True: 280#     Pred: 260#    
+✗ $3*85=     True: 255#     Pred: 250#    
+✗ $14+8=     True: 22#      Pred: 24#     
+✗ $81*29=    True: 2349#    Pred: 1720#   
+✗ $17*72=    True: 1224#    Pred: 1125#   
+✓ $3+82=     True: 85#      Pred: 85#     
+
+Batch 32 Results:
+✓ $8*43=     True: 344#     Pred: 344#    
+✓ $4*4=      True: 16#      Pred: 16#     
+✗ $55+28=    True: 83#      Pred: 82#     
+✓ $35*3=     True: 105#     Pred: 105#    
+✓ $8+75=     True: 83#      Pred: 83#     
+✗ $60*34=    True: 2040#    Pred: 2226#   
+✗ $97*5=     True: 485#     Pred: 495#    
+✗ $6*77=     True: 462#     Pred: 482#    
+✓ $2+8=      True: 10#      Pred: 10#     
+✓ $74*2=     True: 148#     Pred: 148#    
+
+Batch 33 Results:
+✓ $47*4=     True: 188#     Pred: 188#    
+✗ $33*4=     True: 132#     Pred: 122#    
+✓ $6+76=     True: 82#      Pred: 82#     
+✓ $7*5=      True: 35#      Pred: 35#     
+✓ $1*6=      True: 6#       Pred: 6#      
+✓ $6+4=      True: 10#      Pred: 10#     
+✗ $82*7=     True: 574#     Pred: 562#    
+✗ $43+89=    True: 132#     Pred: 141#    
+✓ $1*8=      True: 8#       Pred: 8#      
+✓ $1*95=     True: 95#      Pred: 95#     
+
+Batch 34 Results:
+✗ $26*51=    True: 1326#    Pred: 1740#   
+✓ $2*76=     True: 152#     Pred: 152#    
+✗ $6*80=     True: 480#     Pred: 440#    
+✗ $24*81=    True: 1944#    Pred: 2122#   
+✓ $2+2=      True: 4#       Pred: 4#      
+✓ $4+31=     True: 35#      Pred: 35#     
+✗ $20*92=    True: 1840#    Pred: 2422#   
+✓ $1+19=     True: 20#      Pred: 20#     
+✗ $94*99=    True: 9306#    Pred: 8075#   
+✗ $79*36=    True: 2844#    Pred: 3728#   
+
+Batch 35 Results:
+✓ $6+42=     True: 48#      Pred: 48#     
+✓ $5*1=      True: 5#       Pred: 5#      
+✓ $20*6=     True: 120#     Pred: 120#    
+✗ $47+50=    True: 97#      Pred: 107#    
+✗ $94*2=     True: 188#     Pred: 19#     
+✗ $9*27=     True: 243#     Pred: 263#    
+✗ $52+64=    True: 116#     Pred: 127#    
+✓ $1+92=     True: 93#      Pred: 93#     
+✓ $17+3=     True: 20#      Pred: 20#     
+✓ $4*7=      True: 28#      Pred: 28#     
+
+Batch 36 Results:
+✗ $62*13=    True: 806#     Pred: 130#    
+✓ $27+1=     True: 28#      Pred: 28#     
+✗ $3*96=     True: 288#     Pred: 284#    
+✗ $16*75=    True: 1200#    Pred: 1070#   
+✗ $25+93=    True: 118#     Pred: 110#    
+✗ $83*4=     True: 332#     Pred: 336#    
+✓ $46+6=     True: 52#      Pred: 52#     
+✓ $15*4=     True: 60#      Pred: 60#     
+✗ $89+49=    True: 138#     Pred: 137#    
+✓ $2+5=      True: 7#       Pred: 7#      
+
+Batch 37 Results:
+✗ $3+95=     True: 98#      Pred: 99#     
+✗ $68+83=    True: 151#     Pred: 164#    
+✓ $5+62=     True: 67#      Pred: 67#     
+✓ $6*7=      True: 42#      Pred: 42#     
+✗ $88*73=    True: 6424#    Pred: 6548#   
+✗ $7*31=     True: 217#     Pred: 227#    
+✓ $9+74=     True: 83#      Pred: 83#     
+✗ $44*54=    True: 2376#    Pred: 2900#   
+✓ $1*90=     True: 90#      Pred: 90#     
+✗ $28*26=    True: 728#     Pred: 770#    
+
+Batch 38 Results:
+✗ $7*65=     True: 455#     Pred: 495#    
+✓ $52*7=     True: 364#     Pred: 364#    
+✗ $95+95=    True: 190#     Pred: 187#    
+✗ $43*1=     True: 43#      Pred: 46#     
+✗ $26*60=    True: 1560#    Pred: 2000#   
+✓ $7*37=     True: 259#     Pred: 259#    
+✗ $51+43=    True: 94#      Pred: 90#     
+✓ $1+17=     True: 18#      Pred: 18#     
+✗ $80*39=    True: 3120#    Pred: 2640#   
+✗ $54+1=     True: 55#      Pred: 56#     
+
+Batch 39 Results:
+✗ $73+3=     True: 76#      Pred: 78#     
+✓ $7*4=      True: 28#      Pred: 28#     
+✓ $6*5=      True: 30#      Pred: 30#     
+✓ $28+7=     True: 35#      Pred: 35#     
+✗ $26+40=    True: 66#      Pred: 79#     
+✗ $14*16=    True: 224#     Pred: 242#    
+✓ $9*7=      True: 63#      Pred: 63#     
+✗ $94+4=     True: 98#      Pred: 97#     
+✗ $38*9=     True: 342#     Pred: 332#    
+✓ $3+7=      True: 10#      Pred: 10#     
+
+Batch 40 Results:
+✓ $74*4=     True: 296#     Pred: 296#    
+✓ $3+78=     True: 81#      Pred: 81#     
+✓ $1*9=      True: 9#       Pred: 9#      
+✗ $64+96=    True: 160#     Pred: 164#    
+✗ $37*8=     True: 296#     Pred: 333#    
+✗ $43+3=     True: 46#      Pred: 48#     
+✓ $19+2=     True: 21#      Pred: 21#     
+✓ $5+54=     True: 59#      Pred: 59#     
+✓ $7+42=     True: 49#      Pred: 49#     
+✓ $9+42=     True: 51#      Pred: 51#     
+
+Batch 41 Results:
+✓ $5+3=      True: 8#       Pred: 8#      
+✗ $13+32=    True: 45#      Pred: 42#     
+✓ $9+9=      True: 18#      Pred: 18#     
+✓ $8+9=      True: 17#      Pred: 17#     
+✓ $1+66=     True: 67#      Pred: 67#     
+✗ $27*8=     True: 216#     Pred: 253#    
+✗ $1+18=     True: 19#      Pred: 20#     
+✓ $8*9=      True: 72#      Pred: 72#     
+✗ $11*70=    True: 770#     Pred: 9050#   
+✓ $3*50=     True: 150#     Pred: 150#    
+
+Batch 42 Results:
+✓ $2+28=     True: 30#      Pred: 30#     
+✗ $3+94=     True: 97#      Pred: 102#    
+✗ $31*9=     True: 279#     Pred: 226#    
+✗ $9+97=     True: 106#     Pred: 105#    
+✓ $25*3=     True: 75#      Pred: 75#     
+✓ $5*59=     True: 295#     Pred: 295#    
+✓ $5+7=      True: 12#      Pred: 12#     
+✗ $44+81=    True: 125#     Pred: 130#    
+✗ $65+2=     True: 67#      Pred: 68#     
+✓ $8*4=      True: 32#      Pred: 32#     
+
+Batch 43 Results:
+✓ $5+3=      True: 8#       Pred: 8#      
+✗ $11+5=     True: 16#      Pred: 26#     
+✓ $30+7=     True: 37#      Pred: 37#     
+✓ $1*5=      True: 5#       Pred: 5#      
+✓ $85*5=     True: 425#     Pred: 425#    
+✓ $3+2=      True: 5#       Pred: 5#      
+✗ $31*77=    True: 2387#    Pred: 2330#   
+✓ $2+4=      True: 6#       Pred: 6#      
+✓ $5*1=      True: 5#       Pred: 5#      
+✓ $3+63=     True: 66#      Pred: 66#     
+
+Batch 44 Results:
+✓ $6+60=     True: 66#      Pred: 66#     
+✓ $5+62=     True: 67#      Pred: 67#     
+✓ $8*9=      True: 72#      Pred: 72#     
+✓ $2+61=     True: 63#      Pred: 63#     
+✗ $52+16=    True: 68#      Pred: 71#     
+✓ $5+15=     True: 20#      Pred: 20#     
+✓ $6+74=     True: 80#      Pred: 80#     
+✓ $1*44=     True: 44#      Pred: 44#     
+✓ $5+3=      True: 8#       Pred: 8#      
+✗ $98+6=     True: 104#     Pred: 102#    
+
+Batch 45 Results:
+✗ $26+32=    True: 58#      Pred: 52#     
+✗ $62+3=     True: 65#      Pred: 66#     
+✗ $97*49=    True: 4753#    Pred: 4630#   
+✗ $21+7=     True: 28#      Pred: 24#     
+✓ $8+75=     True: 83#      Pred: 83#     
+✓ $2*5=      True: 10#      Pred: 10#     
+✓ $6+10=     True: 16#      Pred: 16#     
+✓ $23*3=     True: 69#      Pred: 69#     
+✓ $3*20=     True: 60#      Pred: 60#     
+✓ $4+9=      True: 13#      Pred: 13#     
+
+Batch 46 Results:
+✗ $90+84=    True: 174#     Pred: 170#    
+✓ $33+2=     True: 35#      Pred: 35#     
+✗ $43*59=    True: 2537#    Pred: 2723#   
+✗ $34*7=     True: 238#     Pred: 208#    
+✗ $76+27=    True: 103#     Pred: 105#    
+✓ $5*62=     True: 310#     Pred: 310#    
+✓ $6*4=      True: 24#      Pred: 24#     
+✗ $46*6=     True: 276#     Pred: 284#    
+✓ $8*4=      True: 32#      Pred: 32#     
+✗ $67*9=     True: 603#     Pred: 622#    
+
+Batch 47 Results:
+✓ $1+34=     True: 35#      Pred: 35#     
+✓ $8+26=     True: 34#      Pred: 34#     
+✓ $32*5=     True: 160#     Pred: 160#    
+✓ $4*1=      True: 4#       Pred: 4#      
+✗ $43+6=     True: 49#      Pred: 50#     
+✓ $2+3=      True: 5#       Pred: 5#      
+✗ $27+40=    True: 67#      Pred: 70#     
+✓ $9+6=      True: 15#      Pred: 15#     
+✓ $8*8=      True: 64#      Pred: 64#     
+✓ $8*6=      True: 48#      Pred: 48#     
+
+Batch 48 Results:
+✓ $1*9=      True: 9#       Pred: 9#      
+✓ $1*4=      True: 4#       Pred: 4#      
+✗ $87+6=     True: 93#      Pred: 95#     
+✗ $41+95=    True: 136#     Pred: 135#    
+✗ $94+74=    True: 168#     Pred: 164#    
+✓ $3*1=      True: 3#       Pred: 3#      
+✓ $2*3=      True: 6#       Pred: 6#      
+✗ $80+6=     True: 86#      Pred: 88#     
+✓ $78+5=     True: 83#      Pred: 83#     
+✓ $5+7=      True: 12#      Pred: 12#     
+
+Batch 49 Results:
+✓ $2*2=      True: 4#       Pred: 4#      
+✓ $1+4=      True: 5#       Pred: 5#      
+✓ $5+42=     True: 47#      Pred: 47#     
+✗ $35*1=     True: 35#      Pred: 25#     
+✓ $70*6=     True: 420#     Pred: 420#    
+✓ $8+30=     True: 38#      Pred: 38#     
+✓ $5+79=     True: 84#      Pred: 84#     
+✓ $6+8=      True: 14#      Pred: 14#     
+✓ $2+2=      True: 4#       Pred: 4#      
+✓ $90*7=     True: 630#     Pred: 630#    
+
+Batch 50 Results:
+✗ $19*80=    True: 1520#    Pred: 101#    
+✓ $6+13=     True: 19#      Pred: 19#     
+✗ $40+3=     True: 43#      Pred: 45#     
+✗ $89*6=     True: 534#     Pred: 524#    
+✓ $4*5=      True: 20#      Pred: 20#     
+✗ $53*75=    True: 3975#    Pred: 4020#   
+✓ $2+9=      True: 11#      Pred: 11#     
+✓ $27*6=     True: 162#     Pred: 162#    
+✗ $89*73=    True: 6497#    Pred: 6925#   
+✓ $2+31=     True: 33#      Pred: 33#     
+
+Batch 51 Results:
+✓ $9*3=      True: 27#      Pred: 27#     
+✓ $1+38=     True: 39#      Pred: 39#     
+✓ $3+66=     True: 69#      Pred: 69#     
+✓ $8*52=     True: 416#     Pred: 416#    
+✗ $9*98=     True: 882#     Pred: 891#    
+✗ $38+9=     True: 47#      Pred: 46#     
+✓ $2+3=      True: 5#       Pred: 5#      
+✓ $13+5=     True: 18#      Pred: 18#     
+✓ $1+4=      True: 5#       Pred: 5#      
+✓ $4*8=      True: 32#      Pred: 32#     
+
+Batch 52 Results:
+✓ $9+7=      True: 16#      Pred: 16#     
+✗ $84*1=     True: 84#      Pred: 85#     
+✗ $96+2=     True: 98#      Pred: 99#     
+✗ $4*87=     True: 348#     Pred: 358#    
+✗ $73+38=    True: 111#     Pred: 103#    
+✗ $67*1=     True: 67#      Pred: 63#     
+✓ $1+74=     True: 75#      Pred: 75#     
+✗ $20*7=     True: 140#     Pred: 160#    
+✗ $91+46=    True: 137#     Pred: 128#    
+✗ $66*7=     True: 462#     Pred: 402#    
+
+Batch 53 Results:
+✓ $4+1=      True: 5#       Pred: 5#      
+✓ $2*1=      True: 2#       Pred: 2#      
+✓ $2+6=      True: 8#       Pred: 8#      
+✓ $2*10=     True: 20#      Pred: 20#     
+✗ $18*5=     True: 90#      Pred: 94#     
+✗ $1*76=     True: 76#      Pred: 78#     
+✓ $3+63=     True: 66#      Pred: 66#     
+✗ $42+25=    True: 67#      Pred: 61#     
+✓ $60*3=     True: 180#     Pred: 180#    
+✗ $86*8=     True: 688#     Pred: 602#    
+
+Batch 54 Results:
+✗ $46+8=     True: 54#      Pred: 53#     
+✓ $5*44=     True: 220#     Pred: 220#    
+✗ $76+86=    True: 162#     Pred: 167#    
+✗ $86+95=    True: 181#     Pred: 175#    
+✓ $4+8=      True: 12#      Pred: 12#     
+✗ $22+24=    True: 46#      Pred: 44#     
+✗ $61+1=     True: 62#      Pred: 63#     
+✓ $74+2=     True: 76#      Pred: 76#     
+✓ $3*8=      True: 24#      Pred: 24#     
+✓ $1+91=     True: 92#      Pred: 92#     
+
+Batch 55 Results:
+✓ $2+4=      True: 6#       Pred: 6#      
+✓ $8*8=      True: 64#      Pred: 64#     
+✓ $1*20=     True: 20#      Pred: 20#     
+✗ $83+56=    True: 139#     Pred: 144#    
+✗ $59*8=     True: 472#     Pred: 476#    
+✓ $3+57=     True: 60#      Pred: 60#     
+✗ $22*27=    True: 594#     Pred: 502#    
+✓ $2*58=     True: 116#     Pred: 116#    
+✓ $7+74=     True: 81#      Pred: 81#     
+✓ $4+8=      True: 12#      Pred: 12#     
+
+Batch 56 Results:
+✗ $56*68=    True: 3808#    Pred: 4100#   
+✓ $9+2=      True: 11#      Pred: 11#     
+✗ $80+6=     True: 86#      Pred: 87#     
+✓ $8+5=      True: 13#      Pred: 13#     
+✗ $6+79=     True: 85#      Pred: 84#     
+✗ $78*32=    True: 2496#    Pred: 2727#   
+✗ $23*52=    True: 1196#    Pred: 1710#   
+✓ $77+8=     True: 85#      Pred: 85#     
+✗ $20*9=     True: 180#     Pred: 280#    
+✓ $1*13=     True: 13#      Pred: 13#     
+
+Batch 57 Results:
+✗ $1+85=     True: 86#      Pred: 87#     
+✓ $3+79=     True: 82#      Pred: 82#     
+✓ $2+20=     True: 22#      Pred: 22#     
+✓ $9*28=     True: 252#     Pred: 252#    
+✗ $91*64=    True: 5824#    Pred: 5464#   
+✗ $60+7=     True: 67#      Pred: 68#     
+✓ $1+9=      True: 10#      Pred: 10#     
+✓ $8*8=      True: 64#      Pred: 64#     
+✓ $2+6=      True: 8#       Pred: 8#      
+✗ $31*5=     True: 155#     Pred: 120#    
+
+Batch 58 Results:
+✗ $96*8=     True: 768#     Pred: 822#    
+✓ $1*3=      True: 3#       Pred: 3#      
+✓ $6+64=     True: 70#      Pred: 70#     
+✓ $16+2=     True: 18#      Pred: 18#     
+✗ $1*96=     True: 96#      Pred: 97#     
+✗ $11*5=     True: 55#      Pred: 50#     
+✓ $6*4=      True: 24#      Pred: 24#     
+✓ $8+9=      True: 17#      Pred: 17#     
+✗ $62+5=     True: 67#      Pred: 68#     
+✓ $8*4=      True: 32#      Pred: 32#     
+
+Batch 59 Results:
+✓ $1*9=      True: 9#       Pred: 9#      
+✗ $95+15=    True: 110#     Pred: 111#    
+✗ $42+85=    True: 127#     Pred: 141#    
+✓ $2*4=      True: 8#       Pred: 8#      
+✓ $1+5=      True: 6#       Pred: 6#      
+✗ $31+26=    True: 57#      Pred: 61#     
+✓ $4+60=     True: 64#      Pred: 64#     
+✓ $5*1=      True: 5#       Pred: 5#      
+✗ $95*77=    True: 7315#    Pred: 7722#   
+✓ $3+17=     True: 20#      Pred: 20#     
+
+Batch 60 Results:
+✗ $80*90=    True: 7200#    Pred: 6626#   
+✗ $33+58=    True: 91#      Pred: 98#     
+✓ $36+7=     True: 43#      Pred: 43#     
+✓ $3+14=     True: 17#      Pred: 17#     
+✓ $7*81=     True: 567#     Pred: 567#    
+✓ $62*3=     True: 186#     Pred: 186#    
+✓ $27*5=     True: 135#     Pred: 135#    
+✓ $6*7=      True: 42#      Pred: 42#     
+✗ $26+69=    True: 95#      Pred: 90#     
+✓ $3+10=     True: 13#      Pred: 13#     
+
+Batch 61 Results:
+✓ $86+46=    True: 132#     Pred: 132#    
+✗ $85*7=     True: 595#     Pred: 505#    
+✗ $41*25=    True: 1025#    Pred: 124#    
+✓ $7+47=     True: 54#      Pred: 54#     
+✓ $4*23=     True: 92#      Pred: 92#     
+✓ $5*5=      True: 25#      Pred: 25#     
+✗ $34*72=    True: 2448#    Pred: 2450#   
+✓ $5+97=     True: 102#     Pred: 102#    
+✓ $5+9=      True: 14#      Pred: 14#     
+✗ $9*16=     True: 144#     Pred: 104#    
+
+Batch 62 Results:
+✓ $9*5=      True: 45#      Pred: 45#     
+✗ $37+31=    True: 68#      Pred: 81#     
+✗ $29*1=     True: 29#      Pred: 25#     
+✗ $85*6=     True: 510#     Pred: 504#    
+✗ $10+16=    True: 26#      Pred: 21#     
+✓ $6*1=      True: 6#       Pred: 6#      
+✓ $1+64=     True: 65#      Pred: 65#     
+✗ $25+45=    True: 70#      Pred: 72#     
+✓ $7+9=      True: 16#      Pred: 16#     
+✓ $6+1=      True: 7#       Pred: 7#      
+
+Batch 63 Results:
+✓ $2+9=      True: 11#      Pred: 11#     
+✓ $27+7=     True: 34#      Pred: 34#     
+✗ $83*8=     True: 664#     Pred: 735#    
+✓ $4+46=     True: 50#      Pred: 50#     
+✗ $77*24=    True: 1848#    Pred: 2720#   
+✗ $97*28=    True: 2716#    Pred: 2292#   
+✓ $9+4=      True: 13#      Pred: 13#     
+✓ $52+4=     True: 56#      Pred: 56#     
+✗ $58+2=     True: 60#      Pred: 61#     
+✓ $1*6=      True: 6#       Pred: 6#      
+
+Batch 64 Results:
+✓ $1*6=      True: 6#       Pred: 6#      
+✓ $9+4=      True: 13#      Pred: 13#     
+✓ $2+51=     True: 53#      Pred: 53#     
+✓ $5*8=      True: 40#      Pred: 40#     
+✓ $3*83=     True: 249#     Pred: 249#    
+✓ $7*72=     True: 504#     Pred: 504#    
+✓ $5+4=      True: 9#       Pred: 9#      
+✓ $8+2=      True: 10#      Pred: 10#     
+✓ $8+6=      True: 14#      Pred: 14#     
+✓ $8+7=      True: 15#      Pred: 15#     
+
+Batch 65 Results:
+✓ $4*7=      True: 28#      Pred: 28#     
+✓ $90*5=     True: 450#     Pred: 450#    
+✗ $77*52=    True: 4004#    Pred: 4745#   
+✓ $2+22=     True: 24#      Pred: 24#     
+✓ $9+1=      True: 10#      Pred: 10#     
+✗ $7*20=     True: 140#     Pred: 160#    
+✓ $7+7=      True: 14#      Pred: 14#     
+✗ $16*65=    True: 1040#    Pred: 894#    
+✓ $2+16=     True: 18#      Pred: 18#     
+✗ $34*29=    True: 986#     Pred: 892#    
+
+Batch 66 Results:
+✓ $6+7=      True: 13#      Pred: 13#     
+✗ $96*65=    True: 6240#    Pred: 6761#   
+✗ $75+6=     True: 81#      Pred: 80#     
+✓ $4*15=     True: 60#      Pred: 60#     
+✓ $8*7=      True: 56#      Pred: 56#     
+✓ $6*72=     True: 432#     Pred: 432#    
+✓ $3+3=      True: 6#       Pred: 6#      
+✗ $5+59=     True: 64#      Pred: 63#     
+✗ $57*21=    True: 1197#    Pred: 1224#   
+✗ $60*58=    True: 3480#    Pred: 3474#   
+
+Batch 67 Results:
+✗ $3+69=     True: 72#      Pred: 71#     
+✓ $2*9=      True: 18#      Pred: 18#     
+✓ $5*31=     True: 155#     Pred: 155#    
+✓ $1+4=      True: 5#       Pred: 5#      
+✗ $11*1=     True: 11#      Pred: 12#     
+✗ $87*4=     True: 348#     Pred: 356#    
+✗ $36*91=    True: 3276#    Pred: 3000#   
+✓ $29*4=     True: 116#     Pred: 116#    
+✗ $66*12=    True: 792#     Pred: 120#    
+✓ $2+2=      True: 4#       Pred: 4#      
+
+Batch 68 Results:
+✓ $5*77=     True: 385#     Pred: 385#    
+✓ $1+6=      True: 7#       Pred: 7#      
+✗ $68*6=     True: 408#     Pred: 402#    
+✓ $9*9=      True: 81#      Pred: 81#     
+✓ $6*9=      True: 54#      Pred: 54#     
+✗ $6*66=     True: 396#     Pred: 39#     
+✗ $82*19=    True: 1558#    Pred: 130#    
+✗ $18+36=    True: 54#      Pred: 42#     
+✗ $77+8=     True: 85#      Pred: 86#     
+✗ $55*86=    True: 4730#    Pred: 5652#   
+
+Batch 69 Results:
+✓ $6*2=      True: 12#      Pred: 12#     
+✓ $3+6=      True: 9#       Pred: 9#      
+✗ $62*39=    True: 2418#    Pred: 2120#   
+✗ $78+7=     True: 85#      Pred: 86#     
+✓ $6*90=     True: 540#     Pred: 540#    
+✗ $97*8=     True: 776#     Pred: 781#    
+✓ $1+92=     True: 93#      Pred: 93#     
+✗ $37*1=     True: 37#      Pred: 26#     
+✗ $31+12=    True: 43#      Pred: 44#     
+✗ $68+34=    True: 102#     Pred: 107#    
+
+Batch 70 Results:
+✗ $66+35=    True: 101#     Pred: 102#    
+✗ $91*73=    True: 6643#    Pred: 6022#   
+✓ $57+1=     True: 58#      Pred: 58#     
+✓ $1+79=     True: 80#      Pred: 80#     
+✗ $73+9=     True: 82#      Pred: 81#     
+✓ $5+3=      True: 8#       Pred: 8#      
+✓ $7+37=     True: 44#      Pred: 44#     
+✓ $6*7=      True: 42#      Pred: 42#     
+✓ $5*1=      True: 5#       Pred: 5#      
+✓ $4*51=     True: 204#     Pred: 204#    
+
+Batch 71 Results:
+✓ $6*8=      True: 48#      Pred: 48#     
+✓ $1*2=      True: 2#       Pred: 2#      
+✗ $13*1=     True: 13#      Pred: 12#     
+✓ $78+3=     True: 81#      Pred: 81#     
+✗ $15+81=    True: 96#      Pred: 100#    
+✗ $15*4=     True: 60#      Pred: 67#     
+✓ $9+91=     True: 100#     Pred: 100#    
+✗ $73+68=    True: 141#     Pred: 143#    
+✓ $3+7=      True: 10#      Pred: 10#     
+✓ $3*1=      True: 3#       Pred: 3#      
+
+Batch 72 Results:
+✗ $55*45=    True: 2475#    Pred: 2673#   
+✗ $65*9=     True: 585#     Pred: 555#    
+✓ $6*2=      True: 12#      Pred: 12#     
+✗ $46+9=     True: 55#      Pred: 53#     
+✗ $4+79=     True: 83#      Pred: 82#     
+✓ $6*9=      True: 54#      Pred: 54#     
+✗ $36+87=    True: 123#     Pred: 121#    
+✓ $9*6=      True: 54#      Pred: 54#     
+✗ $34*5=     True: 170#     Pred: 240#    
+✓ $6*7=      True: 42#      Pred: 42#     
+
+Batch 73 Results:
+✓ $6+10=     True: 16#      Pred: 16#     
+✗ $49+51=    True: 100#     Pred: 104#    
+✓ $9+24=     True: 33#      Pred: 33#     
+✓ $5+87=     True: 92#      Pred: 92#     
+✓ $9+34=     True: 43#      Pred: 43#     
+✓ $8*4=      True: 32#      Pred: 32#     
+✓ $31+3=     True: 34#      Pred: 34#     
+✓ $2+9=      True: 11#      Pred: 11#     
+✗ $5*79=     True: 395#     Pred: 390#    
+✓ $5+68=     True: 73#      Pred: 73#     
+
+Batch 74 Results:
+✗ $21+97=    True: 118#     Pred: 124#    
+✓ $4+79=     True: 83#      Pred: 83#     
+✓ $6*6=      True: 36#      Pred: 36#     
+✗ $5+55=     True: 60#      Pred: 59#     
+✓ $7*9=      True: 63#      Pred: 63#     
+✗ $77+8=     True: 85#      Pred: 86#     
+✓ $44+9=     True: 53#      Pred: 53#     
+✓ $9*2=      True: 18#      Pred: 18#     
+✓ $5+5=      True: 10#      Pred: 10#     
+✗ $21+9=     True: 30#      Pred: 39#     
+
+Batch 75 Results:
+✓ $3*1=      True: 3#       Pred: 3#      
+✓ $6+3=      True: 9#       Pred: 9#      
+✓ $9+31=     True: 40#      Pred: 40#     
+✗ $9*45=     True: 405#     Pred: 495#    
+✗ $57+4=     True: 61#      Pred: 62#     
+✗ $67+1=     True: 68#      Pred: 70#     
+✗ $97*7=     True: 679#     Pred: 693#    
+✗ $51+5=     True: 56#      Pred: 58#     
+✓ $5*33=     True: 165#     Pred: 165#    
+✓ $4+88=     True: 92#      Pred: 92#     
+
+Batch 76 Results:
+✓ $1+3=      True: 4#       Pred: 4#      
+✓ $5+31=     True: 36#      Pred: 36#     
+✓ $84*3=     True: 252#     Pred: 252#    
+✓ $39+1=     True: 40#      Pred: 40#     
+✓ $4*60=     True: 240#     Pred: 240#    
+✗ $42*7=     True: 294#     Pred: 281#    
+✗ $11*9=     True: 99#      Pred: 107#    
+✗ $37*8=     True: 296#     Pred: 231#    
+✓ $3+5=      True: 8#       Pred: 8#      
+✓ $7+10=     True: 17#      Pred: 17#     
+
+Batch 77 Results:
+✓ $7*5=      True: 35#      Pred: 35#     
+✓ $6+2=      True: 8#       Pred: 8#      
+✗ $6+83=     True: 89#      Pred: 99#     
+✓ $4*4=      True: 16#      Pred: 16#     
+✗ $64+68=    True: 132#     Pred: 130#    
+✓ $3*24=     True: 72#      Pred: 72#     
+✗ $73+29=    True: 102#     Pred: 103#    
+✓ $7+8=      True: 15#      Pred: 15#     
+✓ $20+84=    True: 104#     Pred: 104#    
+✓ $8*9=      True: 72#      Pred: 72#     
+
+Batch 78 Results:
+✗ $62*28=    True: 1736#    Pred: 1320#   
+✓ $3+7=      True: 10#      Pred: 10#     
+✗ $83+93=    True: 176#     Pred: 180#    
+✓ $7+74=     True: 81#      Pred: 81#     
+✓ $5*82=     True: 410#     Pred: 410#    
+✓ $6*2=      True: 12#      Pred: 12#     
+✓ $5+1=      True: 6#       Pred: 6#      
+✓ $7*44=     True: 308#     Pred: 308#    
+✗ $81*33=    True: 2673#    Pred: 2440#   
+✗ $72*63=    True: 4536#    Pred: 4396#   
+
+Batch 79 Results:
+✓ $2+6=      True: 8#       Pred: 8#      
+✓ $4+7=      True: 11#      Pred: 11#     
+✓ $2*8=      True: 16#      Pred: 16#     
+✗ $58+71=    True: 129#     Pred: 131#    
+✓ $3*6=      True: 18#      Pred: 18#     
+✗ $17*1=     True: 17#      Pred: 15#     
+✗ $50+4=     True: 54#      Pred: 55#     
+✓ $8+2=      True: 10#      Pred: 10#     
+✓ $7+80=     True: 87#      Pred: 87#     
+✗ $35*45=    True: 1575#    Pred: 1200#   
+
+Batch 80 Results:
+✗ $3+73=     True: 76#      Pred: 77#     
+✗ $75*9=     True: 675#     Pred: 666#    
+✓ $96+3=     True: 99#      Pred: 99#     
+✓ $7+5=      True: 12#      Pred: 12#     
+✓ $8+2=      True: 10#      Pred: 10#     
+✗ $17+75=    True: 92#      Pred: 89#     
+✓ $31*4=     True: 124#     Pred: 124#    
+✓ $93+6=     True: 99#      Pred: 99#     
+✓ $9*8=      True: 72#      Pred: 72#     
+✗ $41*56=    True: 2296#    Pred: 2773#   
+
+Batch 81 Results:
+✓ $1*9=      True: 9#       Pred: 9#      
+✗ $90*7=     True: 630#     Pred: 635#    
+✓ $8+1=      True: 9#       Pred: 9#      
+✗ $11+7=     True: 18#      Pred: 28#     
+✓ $5+4=      True: 9#       Pred: 9#      
+✗ $10*1=     True: 10#      Pred: 12#     
+✓ $3*88=     True: 264#     Pred: 264#    
+✓ $9+3=      True: 12#      Pred: 12#     
+✓ $41+36=    True: 77#      Pred: 77#     
+✓ $2*5=      True: 10#      Pred: 10#     
+
+Batch 82 Results:
+✓ $7*2=      True: 14#      Pred: 14#     
+✓ $37*7=     True: 259#     Pred: 259#    
+✓ $6+2=      True: 8#       Pred: 8#      
+✓ $8*87=     True: 696#     Pred: 696#    
+✓ $1+41=     True: 42#      Pred: 42#     
+✗ $9*82=     True: 738#     Pred: 778#    
+✗ $52*68=    True: 3536#    Pred: 3200#   
+✓ $6+6=      True: 12#      Pred: 12#     
+✗ $87*75=    True: 6525#    Pred: 6522#   
+✗ $45*6=     True: 270#     Pred: 250#    
+
+Batch 83 Results:
+✓ $3+96=     True: 99#      Pred: 99#     
+✓ $8+85=     True: 93#      Pred: 93#     
+✓ $4+32=     True: 36#      Pred: 36#     
+✗ $2+76=     True: 78#      Pred: 79#     
+✓ $4+87=     True: 91#      Pred: 91#     
+✓ $1+9=      True: 10#      Pred: 10#     
+✗ $59+3=     True: 62#      Pred: 61#     
+✓ $3+9=      True: 12#      Pred: 12#     
+✗ $98+82=    True: 180#     Pred: 181#    
+✗ $83+8=     True: 91#      Pred: 90#     
+
+Batch 84 Results:
+✗ $30*74=    True: 2220#    Pred: 2940#   
+✗ $36*9=     True: 324#     Pred: 202#    
+✗ $11+9=     True: 20#      Pred: 24#     
+✓ $2*52=     True: 104#     Pred: 104#    
+✓ $8*2=      True: 16#      Pred: 16#     
+✗ $57+59=    True: 116#     Pred: 107#    
+✓ $6+3=      True: 9#       Pred: 9#      
+✗ $41+32=    True: 73#      Pred: 77#     
+✓ $2*3=      True: 6#       Pred: 6#      
+✗ $73*38=    True: 2774#    Pred: 2520#   
+
+Batch 85 Results:
+✓ $2+1=      True: 3#       Pred: 3#      
+✗ $56+6=     True: 62#      Pred: 63#     
+✓ $76+9=     True: 85#      Pred: 85#     
+✓ $1+9=      True: 10#      Pred: 10#     
+✗ $11*95=    True: 1045#    Pred: 945#    
+✓ $20+6=     True: 26#      Pred: 26#     
+✗ $53*18=    True: 954#     Pred: 600#    
+✓ $52+4=     True: 56#      Pred: 56#     
+✓ $4+96=     True: 100#     Pred: 100#    
+✓ $7+7=      True: 14#      Pred: 14#     
+
+Batch 86 Results:
+✗ $74*82=    True: 6068#    Pred: 6025#   
+✓ $7*2=      True: 14#      Pred: 14#     
+✗ $3+99=     True: 102#     Pred: 100#    
+✗ $41+5=     True: 46#      Pred: 48#     
+✓ $5+5=      True: 10#      Pred: 10#     
+✓ $4+22=     True: 26#      Pred: 26#     
+✓ $1*47=     True: 47#      Pred: 47#     
+✓ $9*1=      True: 9#       Pred: 9#      
+✗ $24+71=    True: 95#      Pred: 99#     
+✗ $13*7=     True: 91#      Pred: 104#    
+
+Batch 87 Results:
+✗ $7*28=     True: 196#     Pred: 206#    
+✓ $38*6=     True: 228#     Pred: 228#    
+✓ $8+2=      True: 10#      Pred: 10#     
+✓ $1+1=      True: 2#       Pred: 2#      
+✗ $42+6=     True: 48#      Pred: 50#     
+✓ $1*2=      True: 2#       Pred: 2#      
+✓ $8*8=      True: 64#      Pred: 64#     
+✓ $1*8=      True: 8#       Pred: 8#      
+✓ $8*85=     True: 680#     Pred: 680#    
+✗ $27*9=     True: 243#     Pred: 232#    
+
+Batch 88 Results:
+✓ $1*2=      True: 2#       Pred: 2#      
+✗ $30*23=    True: 690#     Pred: 802#    
+✗ $50*22=    True: 1100#    Pred: 1200#   
+✗ $24+44=    True: 68#      Pred: 77#     
+✗ $71*94=    True: 6674#    Pred: 5450#   
+✓ $2*8=      True: 16#      Pred: 16#     
+✓ $6*74=     True: 444#     Pred: 444#    
+✓ $5+2=      True: 7#       Pred: 7#      
+✓ $1*57=     True: 57#      Pred: 57#     
+✓ $1*5=      True: 5#       Pred: 5#      
+
+Batch 89 Results:
+✗ $31*81=    True: 2511#    Pred: 2424#   
+✗ $5*20=     True: 100#     Pred: 10#     
+✗ $91+2=     True: 93#      Pred: 92#     
+✓ $6*6=      True: 36#      Pred: 36#     
+✓ $7*8=      True: 56#      Pred: 56#     
+✓ $9+8=      True: 17#      Pred: 17#     
+✗ $96+55=    True: 151#     Pred: 154#    
+✓ $7+57=     True: 64#      Pred: 64#     
+✗ $23+8=     True: 31#      Pred: 32#     
+✗ $51+17=    True: 68#      Pred: 74#     
+
+Batch 90 Results:
+✗ $69*17=    True: 1173#    Pred: 120#    
+✗ $9+78=     True: 87#      Pred: 88#     
+✗ $1*14=     True: 14#      Pred: 15#     
+✗ $91+78=    True: 169#     Pred: 168#    
+✓ $7+25=     True: 32#      Pred: 32#     
+✗ $3*80=     True: 240#     Pred: 250#    
+✗ $42*8=     True: 336#     Pred: 366#    
+✓ $21*2=     True: 42#      Pred: 42#     
+✓ $3*1=      True: 3#       Pred: 3#      
+✗ $81*30=    True: 2430#    Pred: 2624#   
+
+Batch 91 Results:
+✓ $8+71=     True: 79#      Pred: 79#     
+✗ $78*7=     True: 546#     Pred: 556#    
+✓ $1+7=      True: 8#       Pred: 8#      
+✓ $3+8=      True: 11#      Pred: 11#     
+✗ $7*48=     True: 336#     Pred: 343#    
+✓ $5*85=     True: 425#     Pred: 425#    
+✗ $98+8=     True: 106#     Pred: 105#    
+✗ $37*22=    True: 814#     Pred: 772#    
+✗ $9*46=     True: 414#     Pred: 424#    
+✗ $68*2=     True: 136#     Pred: 134#    
+
+Batch 92 Results:
+✗ $29*65=    True: 1885#    Pred: 1211#   
+✓ $2*8=      True: 16#      Pred: 16#     
+✗ $53+9=     True: 62#      Pred: 61#     
+✓ $3+29=     True: 32#      Pred: 32#     
+✓ $7*5=      True: 35#      Pred: 35#     
+✗ $52+7=     True: 59#      Pred: 60#     
+✗ $15*5=     True: 75#      Pred: 70#     
+✓ $27+7=     True: 34#      Pred: 34#     
+✗ $69+16=    True: 85#      Pred: 91#     
+✗ $41+99=    True: 140#     Pred: 131#    
+
+Batch 93 Results:
+✗ $14+45=    True: 59#      Pred: 55#     
+✓ $14*9=     True: 126#     Pred: 126#    
+✓ $2+3=      True: 5#       Pred: 5#      
+✓ $59+6=     True: 65#      Pred: 65#     
+✓ $3+11=     True: 14#      Pred: 14#     
+✓ $8+8=      True: 16#      Pred: 16#     
+✓ $6*4=      True: 24#      Pred: 24#     
+✓ $52+9=     True: 61#      Pred: 61#     
+✗ $58+82=    True: 140#     Pred: 147#    
+✓ $4+3=      True: 7#       Pred: 7#      
+
+Batch 94 Results:
+✓ $5+9=      True: 14#      Pred: 14#     
+✓ $4*21=     True: 84#      Pred: 84#     
+✓ $8+4=      True: 12#      Pred: 12#     
+✗ $94*43=    True: 4042#    Pred: 4162#   
+✗ $92*99=    True: 9108#    Pred: 8620#   
+✓ $1*24=     True: 24#      Pred: 24#     
+✗ $76+35=    True: 111#     Pred: 108#    
+✗ $32+8=     True: 40#      Pred: 33#     
+✓ $4+8=      True: 12#      Pred: 12#     
+✗ $3*96=     True: 288#     Pred: 284#    
+
+Batch 95 Results:
+✓ $6+98=     True: 104#     Pred: 104#    
+✗ $1+85=     True: 86#      Pred: 87#     
+✗ $71*56=    True: 3976#    Pred: 3722#   
+✗ $15+77=    True: 92#      Pred: 95#     
+✗ $30*9=     True: 270#     Pred: 176#    
+✓ $5+29=     True: 34#      Pred: 34#     
+✓ $9+9=      True: 18#      Pred: 18#     
+✗ $23*93=    True: 2139#    Pred: 2130#   
+✗ $1+78=     True: 79#      Pred: 80#     
+✗ $16*7=     True: 112#     Pred: 122#    
+
+Batch 96 Results:
+✓ $7*1=      True: 7#       Pred: 7#      
+✗ $20*48=    True: 960#     Pred: 120#    
+✓ $3*9=      True: 27#      Pred: 27#     
+✓ $2+96=     True: 98#      Pred: 98#     
+✓ $2+40=     True: 42#      Pred: 42#     
+✗ $70*7=     True: 490#     Pred: 594#    
+✓ $3+1=      True: 4#       Pred: 4#      
+✗ $3+88=     True: 91#      Pred: 90#     
+✗ $10*3=     True: 30#      Pred: 33#     
+✓ $5+41=     True: 46#      Pred: 46#     
+
+Batch 97 Results:
+✗ $76*17=    True: 1292#    Pred: 120#    
+✗ $52*6=     True: 312#     Pred: 316#    
+✗ $23+4=     True: 27#      Pred: 26#     
+✓ $4*1=      True: 4#       Pred: 4#      
+✗ $80+85=    True: 165#     Pred: 170#    
+✓ $3*75=     True: 225#     Pred: 225#    
+✓ $9*5=      True: 45#      Pred: 45#     
+✗ $7*65=     True: 455#     Pred: 485#    
+✓ $6*4=      True: 24#      Pred: 24#     
+✗ $58*11=    True: 638#     Pred: 110#    
+
+Batch 98 Results:
+✗ $60+11=    True: 71#      Pred: 74#     
+✗ $69+57=    True: 126#     Pred: 127#    
+✗ $60+1=     True: 61#      Pred: 67#     
+✓ $17*6=     True: 102#     Pred: 102#    
+✓ $29+1=     True: 30#      Pred: 30#     
+✗ $58+70=    True: 128#     Pred: 125#    
+✗ $92+8=     True: 100#     Pred: 102#    
+✓ $9*9=      True: 81#      Pred: 81#     
+✓ $2+33=     True: 35#      Pred: 35#     
+✓ $1*57=     True: 57#      Pred: 57#     
+
+Batch 99 Results:
+✗ $25*24=    True: 600#     Pred: 540#    
+✓ $2+85=     True: 87#      Pred: 87#     
+✗ $19+69=    True: 88#      Pred: 71#     
+✗ $58*5=     True: 290#     Pred: 295#    
+✗ $53+67=    True: 120#     Pred: 127#    
+✓ $9*8=      True: 72#      Pred: 72#     
+✓ $7+1=      True: 8#       Pred: 8#      
+✓ $7+4=      True: 11#      Pred: 11#     
+✓ $1+2=      True: 3#       Pred: 3#      
+✓ $3+7=      True: 10#      Pred: 10#     
+
+Batch 100 Results:
+✗ $60+5=     True: 65#      Pred: 66#     
+✓ $4*5=      True: 20#      Pred: 20#     
+✓ $8*69=     True: 552#     Pred: 552#    
+✗ $11*23=    True: 253#     Pred: 202#    
+✓ $9+2=      True: 11#      Pred: 11#     
+✓ $3*12=     True: 36#      Pred: 36#     
+✓ $7+81=     True: 88#      Pred: 88#     
+✗ $66*21=    True: 1386#    Pred: 2320#   
+✓ $9+18=     True: 27#      Pred: 27#     
+✓ $2+3=      True: 5#       Pred: 5#      
+
+Batch 101 Results:
+✓ $8+37=     True: 45#      Pred: 45#     
+✗ $64*74=    True: 4736#    Pred: 5520#   
+✗ $2+41=     True: 43#      Pred: 42#     
+✓ $24+71=    True: 95#      Pred: 95#     
+✓ $37+9=     True: 46#      Pred: 46#     
+✓ $7*92=     True: 644#     Pred: 644#    
+✓ $9+21=     True: 30#      Pred: 30#     
+✓ $4+3=      True: 7#       Pred: 7#      
+✓ $29+4=     True: 33#      Pred: 33#     
+✗ $37+4=     True: 41#      Pred: 42#     
+
+Batch 102 Results:
+✓ $5*66=     True: 330#     Pred: 330#    
+✓ $67+1=     True: 68#      Pred: 68#     
+✓ $2*7=      True: 14#      Pred: 14#     
+✗ $80*90=    True: 7200#    Pred: 7620#   
+✓ $89*4=     True: 356#     Pred: 356#    
+✓ $5+80=     True: 85#      Pred: 85#     
+✓ $3*6=      True: 18#      Pred: 18#     
+✗ $23*7=     True: 161#     Pred: 268#    
+✓ $9+87=     True: 96#      Pred: 96#     
+✗ $25*8=     True: 200#     Pred: 222#    
+
+Batch 103 Results:
+✗ $62*4=     True: 248#     Pred: 254#    
+✓ $8+24=     True: 32#      Pred: 32#     
+✓ $6+9=      True: 15#      Pred: 15#     
+✗ $12*92=    True: 1104#    Pred: 940#    
+✗ $25+56=    True: 81#      Pred: 71#     
+✗ $69*99=    True: 6831#    Pred: 6365#   
+✓ $5*9=      True: 45#      Pred: 45#     
+✓ $7*2=      True: 14#      Pred: 14#     
+✗ $80*8=     True: 640#     Pred: 660#    
+✗ $14+31=    True: 45#      Pred: 48#     
+
+Batch 104 Results:
+✓ $7+61=     True: 68#      Pred: 68#     
+✓ $2*4=      True: 8#       Pred: 8#      
+✗ $96*63=    True: 6048#    Pred: 6696#   
+✓ $86+78=    True: 164#     Pred: 164#    
+✗ $41*61=    True: 2501#    Pred: 2754#   
+✓ $46+4=     True: 50#      Pred: 50#     
+✓ $1+1=      True: 2#       Pred: 2#      
+✗ $5*18=     True: 90#      Pred: 95#     
+✗ $76*54=    True: 4104#    Pred: 3033#   
+✓ $9*3=      True: 27#      Pred: 27#     
+
+Batch 105 Results:
+✓ $6+76=     True: 82#      Pred: 82#     
+✗ $40+8=     True: 48#      Pred: 50#     
+✗ $74+3=     True: 77#      Pred: 78#     
+✓ $5+2=      True: 7#       Pred: 7#      
+✗ $44+8=     True: 52#      Pred: 51#     
+✗ $15*1=     True: 15#      Pred: 22#     
+✗ $71+79=    True: 150#     Pred: 141#    
+✗ $50*29=    True: 1450#    Pred: 1200#   
+✗ $99*5=     True: 495#     Pred: 490#    
+✗ $5+18=     True: 23#      Pred: 24#     
+
+Batch 106 Results:
+✓ $2*7=      True: 14#      Pred: 14#     
+✓ $5*44=     True: 220#     Pred: 220#    
+✗ $36+74=    True: 110#     Pred: 101#    
+✓ $3*24=     True: 72#      Pred: 72#     
+✓ $6+7=      True: 13#      Pred: 13#     
+✗ $70*5=     True: 350#     Pred: 250#    
+✗ $80*2=     True: 160#     Pred: 162#    
+✓ $6*5=      True: 30#      Pred: 30#     
+✗ $72+2=     True: 74#      Pred: 75#     
+✗ $94+12=    True: 106#     Pred: 101#    
+
+Batch 107 Results:
+✓ $3*51=     True: 153#     Pred: 153#    
+✗ $91+25=    True: 116#     Pred: 132#    
+✗ $78*58=    True: 4524#    Pred: 4127#   
+✓ $4+9=      True: 13#      Pred: 13#     
+✗ $18*6=     True: 108#     Pred: 102#    
+✓ $3+1=      True: 4#       Pred: 4#      
+✓ $6*87=     True: 522#     Pred: 522#    
+✗ $85+1=     True: 86#      Pred: 85#     
+✓ $7*24=     True: 168#     Pred: 168#    
+✓ $5*2=      True: 10#      Pred: 10#     
+
+Batch 108 Results:
+✓ $9*5=      True: 45#      Pred: 45#     
+✓ $9*95=     True: 855#     Pred: 855#    
+✓ $4+8=      True: 12#      Pred: 12#     
+✗ $48*6=     True: 288#     Pred: 282#    
+✓ $5+29=     True: 34#      Pred: 34#     
+✗ $77+75=    True: 152#     Pred: 147#    
+✓ $6*2=      True: 12#      Pred: 12#     
+✓ $4+24=     True: 28#      Pred: 28#     
+✓ $8*7=      True: 56#      Pred: 56#     
+✗ $10+8=     True: 18#      Pred: 28#     
+
+Batch 109 Results:
+✓ $5+8=      True: 13#      Pred: 13#     
+✓ $7*5=      True: 35#      Pred: 35#     
+✓ $9+91=     True: 100#     Pred: 100#    
+✗ $79+94=    True: 173#     Pred: 167#    
+✗ $99*9=     True: 891#     Pred: 895#    
+✓ $2+2=      True: 4#       Pred: 4#      
+✗ $40+79=    True: 119#     Pred: 120#    
+✗ $16+22=    True: 38#      Pred: 49#     
+✗ $33*96=    True: 3168#    Pred: 3050#   
+✓ $5*9=      True: 45#      Pred: 45#     
+
+Batch 110 Results:
+✓ $9+7=      True: 16#      Pred: 16#     
+✗ $25*86=    True: 2150#    Pred: 2720#   
+✓ $2*65=     True: 130#     Pred: 130#    
+✗ $31+86=    True: 117#     Pred: 111#    
+✓ $1*7=      True: 7#       Pred: 7#      
+✗ $84+92=    True: 176#     Pred: 175#    
+✗ $19*7=     True: 133#     Pred: 112#    
+✓ $88+6=     True: 94#      Pred: 94#     
+✓ $3+3=      True: 6#       Pred: 6#      
+✗ $7*65=     True: 455#     Pred: 585#    
+
+Batch 111 Results:
+✗ $62*44=    True: 2728#    Pred: 2520#   
+✗ $41+8=     True: 49#      Pred: 50#     
+✓ $46+3=     True: 49#      Pred: 49#     
+✗ $37+48=    True: 85#      Pred: 87#     
+✓ $8+2=      True: 10#      Pred: 10#     
+✗ $43*67=    True: 2881#    Pred: 2790#   
+✓ $9*2=      True: 18#      Pred: 18#     
+✗ $1*28=     True: 28#      Pred: 29#     
+✗ $83*2=     True: 166#     Pred: 168#    
+✓ $60*3=     True: 180#     Pred: 180#    
+
+Batch 112 Results:
+✓ $4*7=      True: 28#      Pred: 28#     
+✓ $7+1=      True: 8#       Pred: 8#      
+✓ $8*7=      True: 56#      Pred: 56#     
+✓ $1+89=     True: 90#      Pred: 90#     
+✓ $7+8=      True: 15#      Pred: 15#     
+✓ $4*7=      True: 28#      Pred: 28#     
+✓ $7*85=     True: 595#     Pred: 595#    
+✓ $80*7=     True: 560#     Pred: 560#    
+✓ $1*35=     True: 35#      Pred: 35#     
+✓ $6+7=      True: 13#      Pred: 13#     
+
+Batch 113 Results:
+✗ $35+42=    True: 77#      Pred: 70#     
+✗ $22*2=     True: 44#      Pred: 42#     
+✗ $65*8=     True: 520#     Pred: 555#    
+✗ $62*5=     True: 310#     Pred: 325#    
+✓ $27+5=     True: 32#      Pred: 32#     
+✓ $1+30=     True: 31#      Pred: 31#     
+✓ $3+68=     True: 71#      Pred: 71#     
+✗ $74+9=     True: 83#      Pred: 82#     
+✗ $54+8=     True: 62#      Pred: 63#     
+✓ $8*1=      True: 8#       Pred: 8#      
+
+Batch 114 Results:
+✗ $20+9=     True: 29#      Pred: 31#     
+✗ $62+3=     True: 65#      Pred: 66#     
+✗ $83*77=    True: 6391#    Pred: 6325#   
+✓ $1+5=      True: 6#       Pred: 6#      
+✗ $85+66=    True: 151#     Pred: 140#    
+✓ $53+4=     True: 57#      Pred: 57#     
+✓ $9*57=     True: 513#     Pred: 513#    
+✗ $55+38=    True: 93#      Pred: 97#     
+✗ $52*7=     True: 364#     Pred: 374#    
+✗ $14+54=    True: 68#      Pred: 61#     
+
+Batch 115 Results:
+✓ $4*3=      True: 12#      Pred: 12#     
+✗ $39*82=    True: 3198#    Pred: 3040#   
+✗ $10*88=    True: 880#     Pred: 200#    
+✗ $87+50=    True: 137#     Pred: 144#    
+✗ $7*45=     True: 315#     Pred: 325#    
+✗ $23+42=    True: 65#      Pred: 64#     
+✗ $38*84=    True: 3192#    Pred: 4125#   
+✗ $93+8=     True: 101#     Pred: 104#    
+✓ $3+1=      True: 4#       Pred: 4#      
+✓ $19+3=     True: 22#      Pred: 22#     
+
+Batch 116 Results:
+✓ $9+36=     True: 45#      Pred: 45#     
+✓ $9*9=      True: 81#      Pred: 81#     
+✓ $45*3=     True: 135#     Pred: 135#    
+✗ $74*76=    True: 5624#    Pred: 5225#   
+✓ $3*1=      True: 3#       Pred: 3#      
+✗ $56*3=     True: 168#     Pred: 166#    
+✗ $68*58=    True: 3944#    Pred: 3576#   
+✗ $78*15=    True: 1170#    Pred: 1128#   
+✗ $1+78=     True: 79#      Pred: 80#     
+✗ $33*9=     True: 297#     Pred: 272#    
+
+Batch 117 Results:
+✗ $12*74=    True: 888#     Pred: 9023#   
+✓ $80+3=     True: 83#      Pred: 83#     
+✗ $43+81=    True: 124#     Pred: 135#    
+✗ $60*31=    True: 1860#    Pred: 1540#   
+✓ $1+2=      True: 3#       Pred: 3#      
+✓ $1+46=     True: 47#      Pred: 47#     
+✓ $7+49=     True: 56#      Pred: 56#     
+✓ $9*69=     True: 621#     Pred: 621#    
+✗ $73*6=     True: 438#     Pred: 445#    
+✗ $85+84=    True: 169#     Pred: 177#    
+
+Batch 118 Results:
+✗ $31+5=     True: 36#      Pred: 37#     
+✗ $98*6=     True: 588#     Pred: 584#    
+✗ $18*9=     True: 162#     Pred: 122#    
+✓ $4*23=     True: 92#      Pred: 92#     
+✓ $7*7=      True: 49#      Pred: 49#     
+✗ $83+2=     True: 85#      Pred: 86#     
+✓ $2*7=      True: 14#      Pred: 14#     
+✗ $24*81=    True: 1944#    Pred: 2022#   
+✓ $7*44=     True: 308#     Pred: 308#    
+✗ $54*40=    True: 2160#    Pred: 2032#   
+
+Batch 119 Results:
+✓ $2+2=      True: 4#       Pred: 4#      
+✓ $8*2=      True: 16#      Pred: 16#     
+✓ $2*81=     True: 162#     Pred: 162#    
+✓ $6+35=     True: 41#      Pred: 41#     
+✗ $57*62=    True: 3534#    Pred: 4035#   
+✗ $77+55=    True: 132#     Pred: 130#    
+✓ $39*2=     True: 78#      Pred: 78#     
+✓ $5*1=      True: 5#       Pred: 5#      
+✗ $72*16=    True: 1152#    Pred: 120#    
+✗ $51*67=    True: 3417#    Pred: 3825#   
+
+Batch 120 Results:
+✗ $61+6=     True: 67#      Pred: 68#     
+✓ $1*10=     True: 10#      Pred: 10#     
+✓ $4*40=     True: 160#     Pred: 160#    
+✗ $6*82=     True: 492#     Pred: 432#    
+✓ $7*8=      True: 56#      Pred: 56#     
+✓ $2+58=     True: 60#      Pred: 60#     
+✓ $9*8=      True: 72#      Pred: 72#     
+✓ $66+5=     True: 71#      Pred: 71#     
+✓ $5*3=      True: 15#      Pred: 15#     
+✗ $31*71=    True: 2201#    Pred: 2900#   
+
+Batch 121 Results:
+✗ $98*9=     True: 882#     Pred: 772#    
+✓ $6+4=      True: 10#      Pred: 10#     
+✓ $1*63=     True: 63#      Pred: 63#     
+✓ $3+34=     True: 37#      Pred: 37#     
+✓ $9*63=     True: 567#     Pred: 567#    
+✗ $94+99=    True: 193#     Pred: 187#    
+✓ $1*9=      True: 9#       Pred: 9#      
+✗ $8*76=     True: 608#     Pred: 628#    
+✗ $67*97=    True: 6499#    Pred: 5260#   
+✗ $51*47=    True: 2397#    Pred: 2270#   
+
+Batch 122 Results:
+✓ $64*3=     True: 192#     Pred: 192#    
+✗ $2*19=     True: 38#      Pred: 31#     
+✗ $46*72=    True: 3312#    Pred: 3123#   
+✗ $61*7=     True: 427#     Pred: 434#    
+✗ $67+76=    True: 143#     Pred: 147#    
+✓ $9*90=     True: 810#     Pred: 810#    
+✗ $94*33=    True: 3102#    Pred: 3700#   
+✓ $8*9=      True: 72#      Pred: 72#     
+✓ $6+5=      True: 11#      Pred: 11#     
+✓ $35+7=     True: 42#      Pred: 42#     
+
+Batch 123 Results:
+✗ $94*1=     True: 94#      Pred: 96#     
+✓ $7+30=     True: 37#      Pred: 37#     
+✗ $44+47=    True: 91#      Pred: 107#    
+✓ $3*4=      True: 12#      Pred: 12#     
+✗ $12+86=    True: 98#      Pred: 107#    
+✗ $1+65=     True: 66#      Pred: 67#     
+✗ $47*27=    True: 1269#    Pred: 1122#   
+✓ $6+54=     True: 60#      Pred: 60#     
+✓ $9+7=      True: 16#      Pred: 16#     
+✗ $19+98=    True: 117#     Pred: 111#    
+
+Batch 124 Results:
+✓ $4+5=      True: 9#       Pred: 9#      
+✗ $49+42=    True: 91#      Pred: 90#     
+✓ $7*8=      True: 56#      Pred: 56#     
+✓ $9*9=      True: 81#      Pred: 81#     
+✓ $7+7=      True: 14#      Pred: 14#     
+✓ $7+90=     True: 97#      Pred: 97#     
+✗ $96+20=    True: 116#     Pred: 114#    
+✓ $6+84=     True: 90#      Pred: 90#     
+✗ $66+90=    True: 156#     Pred: 154#    
+✓ $7+63=     True: 70#      Pred: 70#     
+
+Batch 125 Results:
+✓ $7*49=     True: 343#     Pred: 343#    
+✓ $9*4=      True: 36#      Pred: 36#     
+✓ $8*4=      True: 32#      Pred: 32#     
+✗ $94+39=    True: 133#     Pred: 134#    
+✗ $90+75=    True: 165#     Pred: 169#    
+✓ $34+9=     True: 43#      Pred: 43#     
+✗ $60*8=     True: 480#     Pred: 540#    
+✓ $67+8=     True: 75#      Pred: 75#     
+✓ $4*3=      True: 12#      Pred: 12#     
+✓ $9+1=      True: 10#      Pred: 10#     
+
+Batch 126 Results:
+✗ $46+86=    True: 132#     Pred: 131#    
+✓ $1+7=      True: 8#       Pred: 8#      
+✓ $52+9=     True: 61#      Pred: 61#     
+✗ $68+97=    True: 165#     Pred: 161#    
+✓ $6+48=     True: 54#      Pred: 54#     
+✗ $28*7=     True: 196#     Pred: 252#    
+✗ $59*6=     True: 354#     Pred: 344#    
+✗ $47*58=    True: 2726#    Pred: 2732#   
+✓ $7*7=      True: 49#      Pred: 49#     
+✓ $11+6=     True: 17#      Pred: 17#     
+
+Batch 127 Results:
+✗ $79*7=     True: 553#     Pred: 556#    
+✗ $69*43=    True: 2967#    Pred: 2695#   
+✓ $2*90=     True: 180#     Pred: 180#    
+✗ $20*2=     True: 40#      Pred: 42#     
+✓ $7*8=      True: 56#      Pred: 56#     
+✓ $7+21=     True: 28#      Pred: 28#     
+✗ $53+67=    True: 120#     Pred: 126#    
+✗ $2*20=     True: 40#      Pred: 42#     
+✓ $1*9=      True: 9#       Pred: 9#      
+✗ $93*43=    True: 3999#    Pred: 4108#   
+
+Batch 128 Results:
+✗ $77*8=     True: 616#     Pred: 634#    
+✓ $9+3=      True: 12#      Pred: 12#     
+✓ $3+42=     True: 45#      Pred: 45#     
+✓ $2+14=     True: 16#      Pred: 16#     
+✓ $6*6=      True: 36#      Pred: 36#     
+✓ $6+3=      True: 9#       Pred: 9#      
+✓ $10*5=     True: 50#      Pred: 50#     
+✗ $57+4=     True: 61#      Pred: 62#     
+✓ $1+9=      True: 10#      Pred: 10#     
+✓ $8*64=     True: 512#     Pred: 512#    
+
+Batch 129 Results:
+✓ $8+7=      True: 15#      Pred: 15#     
+✓ $3*33=     True: 99#      Pred: 99#     
+✓ $3*93=     True: 279#     Pred: 279#    
+✗ $60+67=    True: 127#     Pred: 132#    
+✗ $41+1=     True: 42#      Pred: 43#     
+✗ $73*6=     True: 438#     Pred: 464#    
+✓ $2+58=     True: 60#      Pred: 60#     
+✓ $11*3=     True: 33#      Pred: 33#     
+✓ $8*7=      True: 56#      Pred: 56#     
+✗ $93+3=     True: 96#      Pred: 97#     
+
+Batch 130 Results:
+✓ $4+9=      True: 13#      Pred: 13#     
+✗ $93+1=     True: 94#      Pred: 96#     
+✗ $80+85=    True: 165#     Pred: 170#    
+✗ $11+1=     True: 12#      Pred: 14#     
+✓ $5+3=      True: 8#       Pred: 8#      
+✓ $3*9=      True: 27#      Pred: 27#     
+✗ $11*7=     True: 77#      Pred: 70#     
+✗ $70+38=    True: 108#     Pred: 112#    
+✓ $2+78=     True: 80#      Pred: 80#     
+✓ $5+7=      True: 12#      Pred: 12#     
+
+Batch 131 Results:
+✓ $53+49=    True: 102#     Pred: 102#    
+✓ $9*1=      True: 9#       Pred: 9#      
+✗ $89+59=    True: 148#     Pred: 147#    
+✗ $42+57=    True: 99#      Pred: 103#    
+✗ $40*1=     True: 40#      Pred: 41#     
+✗ $41+4=     True: 45#      Pred: 44#     
+✓ $6+9=      True: 15#      Pred: 15#     
+✗ $34+94=    True: 128#     Pred: 135#    
+✓ $5*40=     True: 200#     Pred: 200#    
+✓ $25*4=     True: 100#     Pred: 100#    
+
+Batch 132 Results:
+✗ $74+3=     True: 77#      Pred: 78#     
+✓ $2*5=      True: 10#      Pred: 10#     
+✓ $1+1=      True: 2#       Pred: 2#      
+✗ $90*7=     True: 630#     Pred: 635#    
+✓ $6*84=     True: 504#     Pred: 504#    
+✗ $93+84=    True: 177#     Pred: 187#    
+✓ $9*2=      True: 18#      Pred: 18#     
+✗ $96+85=    True: 181#     Pred: 180#    
+✓ $94+5=     True: 99#      Pred: 99#     
+✓ $1+1=      True: 2#       Pred: 2#      
+
+Batch 133 Results:
+✓ $2*1=      True: 2#       Pred: 2#      
+✓ $2*56=     True: 112#     Pred: 112#    
+✗ $46*7=     True: 322#     Pred: 325#    
+✗ $49*58=    True: 2842#    Pred: 2778#   
+✓ $3*20=     True: 60#      Pred: 60#     
+✗ $13*66=    True: 858#     Pred: 702#    
+✓ $2*3=      True: 6#       Pred: 6#      
+✗ $93*73=    True: 6789#    Pred: 6725#   
+✓ $19+27=    True: 46#      Pred: 46#     
+✓ $3+7=      True: 10#      Pred: 10#     
+
+Batch 134 Results:
+✓ $5*73=     True: 365#     Pred: 365#    
+✓ $35+7=     True: 42#      Pred: 42#     
+✓ $9*61=     True: 549#     Pred: 549#    
+✗ $81+26=    True: 107#     Pred: 112#    
+✗ $85+93=    True: 178#     Pred: 164#    
+✓ $70*2=     True: 140#     Pred: 140#    
+✓ $4*1=      True: 4#       Pred: 4#      
+✓ $4+9=      True: 13#      Pred: 13#     
+✗ $98+37=    True: 135#     Pred: 134#    
+✓ $54+6=     True: 60#      Pred: 60#     
+
+Batch 135 Results:
+✗ $3*31=     True: 93#      Pred: 92#     
+✓ $8+2=      True: 10#      Pred: 10#     
+✗ $40*81=    True: 3240#    Pred: 3110#   
+✗ $64*66=    True: 4224#    Pred: 4220#   
+✓ $3+1=      True: 4#       Pred: 4#      
+✗ $34*4=     True: 136#     Pred: 140#    
+✗ $86*39=    True: 3354#    Pred: 3420#   
+✗ $88*44=    True: 3872#    Pred: 4696#   
+✗ $95+74=    True: 169#     Pred: 164#    
+✓ $3+5=      True: 8#       Pred: 8#      
+
+Batch 136 Results:
+✓ $5+83=     True: 88#      Pred: 88#     
+✗ $70+91=    True: 161#     Pred: 155#    
+✓ $1+22=     True: 23#      Pred: 23#     
+✗ $98+90=    True: 188#     Pred: 182#    
+✗ $58*60=    True: 3480#    Pred: 4202#   
+✗ $28+92=    True: 120#     Pred: 114#    
+✗ $14*3=     True: 42#      Pred: 44#     
+✓ $3*5=      True: 15#      Pred: 15#     
+✓ $1*7=      True: 7#       Pred: 7#      
+✗ $19*20=    True: 380#     Pred: 477#    
+
+Batch 137 Results:
+✗ $46+65=    True: 111#     Pred: 100#    
+✓ $2+1=      True: 3#       Pred: 3#      
+✗ $74*6=     True: 444#     Pred: 404#    
+✗ $57*5=     True: 285#     Pred: 270#    
+✗ $30*99=    True: 2970#    Pred: 2000#   
+✗ $7+99=     True: 106#     Pred: 105#    
+✓ $9*28=     True: 252#     Pred: 252#    
+✗ $77*87=    True: 6699#    Pred: 6644#   
+✓ $7*85=     True: 595#     Pred: 595#    
+✗ $27*48=    True: 1296#    Pred: 1723#   
+
+Batch 138 Results:
+✗ $90*75=    True: 6750#    Pred: 6230#   
+✗ $8*33=     True: 264#     Pred: 244#    
+✓ $5+4=      True: 9#       Pred: 9#      
+✓ $7*2=      True: 14#      Pred: 14#     
+✓ $3+5=      True: 8#       Pred: 8#      
+✗ $28+50=    True: 78#      Pred: 74#     
+✗ $2+37=     True: 39#      Pred: 40#     
+✓ $7+3=      True: 10#      Pred: 10#     
+✗ $85*80=    True: 6800#    Pred: 7044#   
+✓ $6+27=     True: 33#      Pred: 33#     
+
+Batch 139 Results:
+✗ $47+37=    True: 84#      Pred: 87#     
+✓ $2*59=     True: 118#     Pred: 118#    
+✓ $16+5=     True: 21#      Pred: 21#     
+✓ $9+5=      True: 14#      Pred: 14#     
+✗ $34+83=    True: 117#     Pred: 121#    
+✓ $5+5=      True: 10#      Pred: 10#     
+✗ $50+86=    True: 136#     Pred: 134#    
+✗ $80*5=     True: 400#     Pred: 410#    
+✓ $6+2=      True: 8#       Pred: 8#      
+✓ $8*57=     True: 456#     Pred: 456#    
+
+Batch 140 Results:
+✓ $44+7=     True: 51#      Pred: 51#     
+✗ $44*8=     True: 352#     Pred: 360#    
+✓ $3*70=     True: 210#     Pred: 210#    
+✓ $8*5=      True: 40#      Pred: 40#     
+✗ $61*86=    True: 5246#    Pred: 5020#   
+✗ $5*20=     True: 100#     Pred: 10#     
+✗ $96*6=     True: 576#     Pred: 584#    
+✓ $3*3=      True: 9#       Pred: 9#      
+✓ $3+45=     True: 48#      Pred: 48#     
+✓ $26+2=     True: 28#      Pred: 28#     
+
+Batch 141 Results:
+✓ $1+5=      True: 6#       Pred: 6#      
+✓ $84*3=     True: 252#     Pred: 252#    
+✓ $1+4=      True: 5#       Pred: 5#      
+✗ $62*36=    True: 2232#    Pred: 2720#   
+✓ $2*7=      True: 14#      Pred: 14#     
+✗ $86*9=     True: 774#     Pred: 602#    
+✓ $4+2=      True: 6#       Pred: 6#      
+✗ $96*3=     True: 288#     Pred: 294#    
+✓ $2*93=     True: 186#     Pred: 186#    
+✗ $18+8=     True: 26#      Pred: 27#     
+
+Batch 142 Results:
+✗ $47*15=    True: 705#     Pred: 830#    
+✓ $5+5=      True: 10#      Pred: 10#     
+✓ $6+24=     True: 30#      Pred: 30#     
+✓ $5*4=      True: 20#      Pred: 20#     
+✓ $1+95=     True: 96#      Pred: 96#     
+✗ $38*15=    True: 570#     Pred: 370#    
+✓ $9+86=     True: 95#      Pred: 95#     
+✗ $48*2=     True: 96#      Pred: 94#     
+✗ $64+76=    True: 140#     Pred: 137#    
+✓ $1+5=      True: 6#       Pred: 6#      
+
+Batch 143 Results:
+✗ $92+38=    True: 130#     Pred: 134#    
+✓ $2*35=     True: 70#      Pred: 70#     
+✓ $6+56=     True: 62#      Pred: 62#     
+✓ $2+8=      True: 10#      Pred: 10#     
+✓ $82+3=     True: 85#      Pred: 85#     
+✓ $3*3=      True: 9#       Pred: 9#      
+✗ $63*88=    True: 5544#    Pred: 5676#   
+✓ $1+9=      True: 10#      Pred: 10#     
+✓ $1+5=      True: 6#       Pred: 6#      
+✓ $7+5=      True: 12#      Pred: 12#     
+
+Batch 144 Results:
+✗ $3+99=     True: 102#     Pred: 100#    
+✓ $1*48=     True: 48#      Pred: 48#     
+✗ $11*75=    True: 825#     Pred: 901#    
+✓ $2*2=      True: 4#       Pred: 4#      
+✗ $34+87=    True: 121#     Pred: 111#    
+✗ $93*62=    True: 5766#    Pred: 6060#   
+✓ $3+4=      True: 7#       Pred: 7#      
+✗ $78*6=     True: 468#     Pred: 488#    
+✗ $42*66=    True: 2772#    Pred: 2700#   
+✓ $27+2=     True: 29#      Pred: 29#     
+
+Batch 145 Results:
+✗ $33+15=    True: 48#      Pred: 44#     
+✓ $4+1=      True: 5#       Pred: 5#      
+✗ $85*4=     True: 340#     Pred: 346#    
+✗ $75+20=    True: 95#      Pred: 99#     
+✗ $63*54=    True: 3402#    Pred: 3760#   
+✗ $96*62=    True: 5952#    Pred: 6872#   
+✗ $19*98=    True: 1862#    Pred: 121#    
+✗ $17*57=    True: 969#     Pred: 102#    
+✗ $17*82=    True: 1394#    Pred: 1122#   
+✓ $5+19=     True: 24#      Pred: 24#     
+
+Batch 146 Results:
+✓ $8+3=      True: 11#      Pred: 11#     
+✓ $2*4=      True: 8#       Pred: 8#      
+✓ $5*66=     True: 330#     Pred: 330#    
+✗ $41+90=    True: 131#     Pred: 123#    
+✗ $6*11=     True: 66#      Pred: 64#     
+✓ $4*2=      True: 8#       Pred: 8#      
+✗ $45*6=     True: 270#     Pred: 280#    
+✓ $2*1=      True: 2#       Pred: 2#      
+✓ $1+84=     True: 85#      Pred: 85#     
+✗ $13+7=     True: 20#      Pred: 22#     
+
+Batch 147 Results:
+✓ $38+5=     True: 43#      Pred: 43#     
+✓ $53+9=     True: 62#      Pred: 62#     
+✓ $1*38=     True: 38#      Pred: 38#     
+✗ $49+77=    True: 126#     Pred: 147#    
+✓ $9*91=     True: 819#     Pred: 819#    
+✗ $55+29=    True: 84#      Pred: 82#     
+✓ $3*1=      True: 3#       Pred: 3#      
+✗ $17*2=     True: 34#      Pred: 55#     
+✗ $75*81=    True: 6075#    Pred: 5666#   
+✗ $71+46=    True: 117#     Pred: 120#    
+
+Batch 148 Results:
+✓ $9*22=     True: 198#     Pred: 198#    
+✗ $94*5=     True: 470#     Pred: 475#    
+✓ $1+3=      True: 4#       Pred: 4#      
+✓ $86+1=     True: 87#      Pred: 87#     
+✗ $8*82=     True: 656#     Pred: 676#    
+✓ $3+7=      True: 10#      Pred: 10#     
+✗ $88*98=    True: 8624#    Pred: 7322#   
+✗ $95+8=     True: 103#     Pred: 104#    
+✗ $11*30=    True: 330#     Pred: 342#    
+✓ $4*4=      True: 16#      Pred: 16#     
+
+Batch 149 Results:
+✓ $74+1=     True: 75#      Pred: 75#     
+✗ $98*88=    True: 8624#    Pred: 8622#   
+✓ $35*2=     True: 70#      Pred: 70#     
+✓ $9+54=     True: 63#      Pred: 63#     
+✓ $8*32=     True: 256#     Pred: 256#    
+✗ $7*82=     True: 574#     Pred: 554#    
+✗ $17*20=    True: 340#     Pred: 545#    
+✓ $21+3=     True: 24#      Pred: 24#     
+✓ $9+14=     True: 23#      Pred: 23#     
+✗ $59+1=     True: 60#      Pred: 59#     
+
+Batch 150 Results:
+✓ $9*4=      True: 36#      Pred: 36#     
+✗ $55+30=    True: 85#      Pred: 87#     
+✗ $68*74=    True: 5032#    Pred: 5325#   
+✗ $42*75=    True: 3150#    Pred: 2920#   
+✗ $41+37=    True: 78#      Pred: 71#     
+✓ $4*9=      True: 36#      Pred: 36#     
+✓ $13+1=     True: 14#      Pred: 14#     
+✓ $8*6=      True: 48#      Pred: 48#     
+✗ $49*82=    True: 4018#    Pred: 4170#   
+✓ $7+7=      True: 14#      Pred: 14#     
+
+Batch 151 Results:
+✗ $96+80=    True: 176#     Pred: 186#    
+✓ $5*8=      True: 40#      Pred: 40#     
+✗ $4+62=     True: 66#      Pred: 67#     
+✓ $6+31=     True: 37#      Pred: 37#     
+✗ $4+98=     True: 102#     Pred: 103#    
+✓ $8+6=      True: 14#      Pred: 14#     
+✓ $9+7=      True: 16#      Pred: 16#     
+✗ $89+20=    True: 109#     Pred: 107#    
+✗ $61*68=    True: 4148#    Pred: 4240#   
+✓ $6+84=     True: 90#      Pred: 90#     
+
+Batch 152 Results:
+✓ $4+42=     True: 46#      Pred: 46#     
+✓ $28*1=     True: 28#      Pred: 28#     
+✗ $20*4=     True: 80#      Pred: 84#     
+✓ $24+9=     True: 33#      Pred: 33#     
+✓ $69+6=     True: 75#      Pred: 75#     
+✗ $72*45=    True: 3240#    Pred: 3378#   
+✗ $86+7=     True: 93#      Pred: 94#     
+✗ $7*68=     True: 476#     Pred: 473#    
+✗ $17+9=     True: 26#      Pred: 24#     
+✗ $79*44=    True: 3476#    Pred: 3075#   
+
+Batch 153 Results:
+✗ $13*82=    True: 1066#    Pred: 205#    
+✗ $3*38=     True: 114#     Pred: 144#    
+✓ $5*13=     True: 65#      Pred: 65#     
+✗ $65*56=    True: 3640#    Pred: 3740#   
+✗ $79*81=    True: 6399#    Pred: 6366#   
+✗ $9+69=     True: 78#      Pred: 77#     
+✓ $4*24=     True: 96#      Pred: 96#     
+✓ $3+3=      True: 6#       Pred: 6#      
+✓ $68+23=    True: 91#      Pred: 91#     
+✓ $3*2=      True: 6#       Pred: 6#      
+
+Batch 154 Results:
+✓ $8*67=     True: 536#     Pred: 536#    
+✓ $24*1=     True: 24#      Pred: 24#     
+✗ $56*31=    True: 1736#    Pred: 2710#   
+✓ $4+84=     True: 88#      Pred: 88#     
+✓ $8*65=     True: 520#     Pred: 520#    
+✗ $37*4=     True: 148#     Pred: 147#    
+✗ $85+4=     True: 89#      Pred: 88#     
+✗ $21+14=    True: 35#      Pred: 37#     
+✗ $17*7=     True: 119#     Pred: 112#    
+✓ $5+6=      True: 11#      Pred: 11#     
+
+Batch 155 Results:
+✓ $5*3=      True: 15#      Pred: 15#     
+✗ $16*53=    True: 848#     Pred: 710#    
+✗ $5+52=     True: 57#      Pred: 56#     
+✗ $40*9=     True: 360#     Pred: 320#    
+✓ $13+87=    True: 100#     Pred: 100#    
+✓ $2+11=     True: 13#      Pred: 13#     
+✗ $76*8=     True: 608#     Pred: 636#    
+✓ $6*7=      True: 42#      Pred: 42#     
+✗ $67+21=    True: 88#      Pred: 84#     
+✗ $99+5=     True: 104#     Pred: 103#    
+
+Batch 156 Results:
+✗ $13*5=     True: 65#      Pred: 15#     
+✗ $98*8=     True: 784#     Pred: 792#    
+✓ $6+51=     True: 57#      Pred: 57#     
+✓ $4+8=      True: 12#      Pred: 12#     
+✗ $21+5=     True: 26#      Pred: 28#     
+✓ $1*1=      True: 1#       Pred: 1#      
+✓ $7*67=     True: 469#     Pred: 469#    
+✓ $4+43=     True: 47#      Pred: 47#     
+✗ $67*97=    True: 6499#    Pred: 5420#   
+✓ $8+4=      True: 12#      Pred: 12#     
+
+Batch 157 Results:
+✗ $52*4=     True: 208#     Pred: 214#    
+✗ $96*9=     True: 864#     Pred: 754#    
+✓ $9*40=     True: 360#     Pred: 360#    
+✗ $97*60=    True: 5820#    Pred: 6650#   
+✗ $23+84=    True: 107#     Pred: 112#    
+✗ $4*99=     True: 396#     Pred: 392#    
+✓ $7+20=     True: 27#      Pred: 27#     
+✓ $3*6=      True: 18#      Pred: 18#     
+✗ $67*6=     True: 402#     Pred: 408#    
+✗ $40+44=    True: 84#      Pred: 80#     
+
+Batch 158 Results:
+✓ $5+7=      True: 12#      Pred: 12#     
+✓ $6+82=     True: 88#      Pred: 88#     
+✓ $6+94=     True: 100#     Pred: 100#    
+✗ $58+9=     True: 67#      Pred: 65#     
+✗ $79+9=     True: 88#      Pred: 86#     
+✓ $6+3=      True: 9#       Pred: 9#      
+✗ $75*9=     True: 675#     Pred: 596#    
+✓ $1+99=     True: 100#     Pred: 100#    
+✗ $20*90=    True: 1800#    Pred: 2280#   
+✓ $19*6=     True: 114#     Pred: 114#    
+
+Batch 159 Results:
+✓ $3*67=     True: 201#     Pred: 201#    
+✓ $6*1=      True: 6#       Pred: 6#      
+✓ $3*9=      True: 27#      Pred: 27#     
+✓ $14+4=     True: 18#      Pred: 18#     
+✓ $3+6=      True: 9#       Pred: 9#      
+✓ $6+3=      True: 9#       Pred: 9#      
+✗ $12*43=    True: 516#     Pred: 550#    
+✓ $3*93=     True: 279#     Pred: 279#    
+✓ $8+9=      True: 17#      Pred: 17#     
+✓ $9+6=      True: 15#      Pred: 15#     
+
+Batch 160 Results:
+✗ $20*7=     True: 140#     Pred: 160#    
+✓ $1*3=      True: 3#       Pred: 3#      
+✗ $55*91=    True: 5005#    Pred: 4442#   
+✗ $21*20=    True: 420#     Pred: 504#    
+✓ $15*6=     True: 90#      Pred: 90#     
+✓ $60+8=     True: 68#      Pred: 68#     
+✗ $9*25=     True: 225#     Pred: 205#    
+✓ $8*6=      True: 48#      Pred: 48#     
+✓ $9*1=      True: 9#       Pred: 9#      
+✗ $17*1=     True: 17#      Pred: 15#     
+
+Batch 161 Results:
+✗ $24+72=    True: 96#      Pred: 99#     
+✗ $31*1=     True: 31#      Pred: 33#     
+✓ $1+43=     True: 44#      Pred: 44#     
+✓ $3*39=     True: 117#     Pred: 117#    
+✓ $9+4=      True: 13#      Pred: 13#     
+✓ $61+2=     True: 63#      Pred: 63#     
+✓ $8+19=     True: 27#      Pred: 27#     
+✗ $40+80=    True: 120#     Pred: 130#    
+✗ $85*49=    True: 4165#    Pred: 3608#   
+✗ $79*94=    True: 7426#    Pred: 6636#   
+
+Batch 162 Results:
+✓ $7*7=      True: 49#      Pred: 49#     
+✓ $5+4=      True: 9#       Pred: 9#      
+✓ $5+5=      True: 10#      Pred: 10#     
+✓ $9+3=      True: 12#      Pred: 12#     
+✗ $73+6=     True: 79#      Pred: 80#     
+✗ $2*88=     True: 176#     Pred: 164#    
+✓ $1+6=      True: 7#       Pred: 7#      
+✗ $52*53=    True: 2756#    Pred: 2700#   
+✗ $97+9=     True: 106#     Pred: 105#    
+✗ $84+2=     True: 86#      Pred: 87#     
+
+Batch 163 Results:
+✓ $6+1=      True: 7#       Pred: 7#      
+✓ $67+60=    True: 127#     Pred: 127#    
+✓ $4*4=      True: 16#      Pred: 16#     
+✗ $78+7=     True: 85#      Pred: 86#     
+✓ $8*52=     True: 416#     Pred: 416#    
+✗ $8+3=      True: 11#      Pred: 12#     
+✗ $53*58=    True: 3074#    Pred: 2772#   
+✓ $6*95=     True: 570#     Pred: 570#    
+✓ $85+5=     True: 90#      Pred: 90#     
+✓ $2+8=      True: 10#      Pred: 10#     
+
+Batch 164 Results:
+✗ $73*98=    True: 7154#    Pred: 6316#   
+✗ $82+5=     True: 87#      Pred: 88#     
+✓ $7+8=      True: 15#      Pred: 15#     
+✓ $7+60=     True: 67#      Pred: 67#     
+✓ $6+4=      True: 10#      Pred: 10#     
+✓ $7+5=      True: 12#      Pred: 12#     
+✗ $15+93=    True: 108#     Pred: 106#    
+✗ $78*55=    True: 4290#    Pred: 5700#   
+✗ $10+53=    True: 63#      Pred: 62#     
+✓ $7+30=     True: 37#      Pred: 37#     
+
+Batch 165 Results:
+✓ $8*67=     True: 536#     Pred: 536#    
+✓ $4+7=      True: 11#      Pred: 11#     
+✗ $84+8=     True: 92#      Pred: 93#     
+✗ $89+35=    True: 124#     Pred: 131#    
+✗ $36+9=     True: 45#      Pred: 44#     
+✗ $75*6=     True: 450#     Pred: 468#    
+✓ $33*4=     True: 132#     Pred: 132#    
+✗ $9*89=     True: 801#     Pred: 792#    
+✓ $6+15=     True: 21#      Pred: 21#     
+✓ $2+1=      True: 3#       Pred: 3#      
+
+Batch 166 Results:
+✗ $88*7=     True: 616#     Pred: 622#    
+✓ $3+92=     True: 95#      Pred: 95#     
+✓ $1+7=      True: 8#       Pred: 8#      
+✗ $32*17=    True: 544#     Pred: 404#    
+✓ $9*5=      True: 45#      Pred: 45#     
+✗ $8*68=     True: 544#     Pred: 532#    
+✗ $38*4=     True: 152#     Pred: 156#    
+✓ $2*77=     True: 154#     Pred: 154#    
+✗ $7*14=     True: 98#      Pred: 916#    
+✓ $5*65=     True: 325#     Pred: 325#    
+
+Batch 167 Results:
+✓ $4*8=      True: 32#      Pred: 32#     
+✗ $15*9=     True: 135#     Pred: 182#    
+✗ $6*36=     True: 216#     Pred: 226#    
+✓ $5+6=      True: 11#      Pred: 11#     
+✗ $93*10=    True: 930#     Pred: 160#    
+✓ $7*69=     True: 483#     Pred: 483#    
+✗ $19+8=     True: 27#      Pred: 28#     
+✗ $85+32=    True: 117#     Pred: 118#    
+✗ $51*11=    True: 561#     Pred: 700#    
+✗ $66*6=     True: 396#     Pred: 302#    
+
+Batch 168 Results:
+✓ $8+6=      True: 14#      Pred: 14#     
+✓ $55+5=     True: 60#      Pred: 60#     
+✗ $38*8=     True: 304#     Pred: 332#    
+✗ $61*1=     True: 61#      Pred: 63#     
+✗ $25*90=    True: 2250#    Pred: 2100#   
+✗ $91+32=    True: 123#     Pred: 124#    
+✓ $8+3=      True: 11#      Pred: 11#     
+✓ $9*32=     True: 288#     Pred: 288#    
+✗ $94*9=     True: 846#     Pred: 755#    
+✓ $5*3=      True: 15#      Pred: 15#     
+
+Batch 169 Results:
+✓ $4*5=      True: 20#      Pred: 20#     
+✗ $10+23=    True: 33#      Pred: 36#     
+✗ $70+13=    True: 83#      Pred: 87#     
+✗ $6*59=     True: 354#     Pred: 348#    
+✗ $19*59=    True: 1121#    Pred: 1124#   
+✓ $66+5=     True: 71#      Pred: 71#     
+✓ $1+6=      True: 7#       Pred: 7#      
+✗ $14+28=    True: 42#      Pred: 59#     
+✗ $50*82=    True: 4100#    Pred: 4040#   
+✓ $88+3=     True: 91#      Pred: 91#     
+
+Batch 170 Results:
+✗ $56+52=    True: 108#     Pred: 107#    
+✗ $71+61=    True: 132#     Pred: 130#    
+✓ $5+1=      True: 6#       Pred: 6#      
+✓ $4+2=      True: 6#       Pred: 6#      
+✓ $7+3=      True: 10#      Pred: 10#     
+✓ $82+6=     True: 88#      Pred: 88#     
+✓ $51+4=     True: 55#      Pred: 55#     
+✓ $1+4=      True: 5#       Pred: 5#      
+✗ $8*18=     True: 144#     Pred: 162#    
+✓ $3*13=     True: 39#      Pred: 39#     
+
+Batch 171 Results:
+✓ $1+6=      True: 7#       Pred: 7#      
+✗ $92+83=    True: 175#     Pred: 180#    
+✓ $9*69=     True: 621#     Pred: 621#    
+✓ $26*3=     True: 78#      Pred: 78#     
+✗ $27*65=    True: 1755#    Pred: 1000#   
+✓ $12*2=     True: 24#      Pred: 24#     
+✗ $70*22=    True: 1540#    Pred: 1120#   
+✗ $97*4=     True: 388#     Pred: 396#    
+✓ $9+9=      True: 18#      Pred: 18#     
+✓ $1+72=     True: 73#      Pred: 73#     
+
+Batch 172 Results:
+✓ $80+4=     True: 84#      Pred: 84#     
+✓ $39*2=     True: 78#      Pred: 78#     
+✗ $65+89=    True: 154#     Pred: 147#    
+✓ $3+17=     True: 20#      Pred: 20#     
+✗ $7*83=     True: 581#     Pred: 501#    
+✗ $68+67=    True: 135#     Pred: 147#    
+✗ $1*67=     True: 67#      Pred: 78#     
+✗ $70*81=    True: 5670#    Pred: 5570#   
+✗ $11+98=    True: 109#     Pred: 110#    
+✓ $3*3=      True: 9#       Pred: 9#      
+
+Batch 173 Results:
+✗ $49+29=    True: 78#      Pred: 79#     
+✗ $33*1=     True: 33#      Pred: 34#     
+✗ $13+3=     True: 16#      Pred: 18#     
+✗ $49+39=    True: 88#      Pred: 105#    
+✗ $43+93=    True: 136#     Pred: 131#    
+✓ $5*3=      True: 15#      Pred: 15#     
+✓ $4*2=      True: 8#       Pred: 8#      
+✗ $44*9=     True: 396#     Pred: 385#    
+✓ $2*6=      True: 12#      Pred: 12#     
+✗ $86+8=     True: 94#      Pred: 95#     
+
+Batch 174 Results:
+✓ $7+6=      True: 13#      Pred: 13#     
+✗ $82*56=    True: 4592#    Pred: 4720#   
+✗ $50+4=     True: 54#      Pred: 55#     
+✓ $7+7=      True: 14#      Pred: 14#     
+✓ $5+75=     True: 80#      Pred: 80#     
+✓ $70*4=     True: 280#     Pred: 280#    
+✓ $3*3=      True: 9#       Pred: 9#      
+✓ $9*50=     True: 450#     Pred: 450#    
+✓ $6+9=      True: 15#      Pred: 15#     
+✗ $70+18=    True: 88#      Pred: 91#     
+
+Batch 175 Results:
+✗ $2*98=     True: 196#     Pred: 198#    
+✓ $3+46=     True: 49#      Pred: 49#     
+✗ $18+1=     True: 19#      Pred: 29#     
+✗ $62+3=     True: 65#      Pred: 66#     
+✓ $5*36=     True: 180#     Pred: 180#    
+✓ $88+7=     True: 95#      Pred: 95#     
+✓ $9*4=      True: 36#      Pred: 36#     
+✓ $3*4=      True: 12#      Pred: 12#     
+✗ $38*5=     True: 190#     Pred: 290#    
+✓ $36+4=     True: 40#      Pred: 40#     
+
+Batch 176 Results:
+✗ $98+40=    True: 138#     Pred: 131#    
+✓ $4*5=      True: 20#      Pred: 20#     
+✗ $3+88=     True: 91#      Pred: 90#     
+✓ $1*1=      True: 1#       Pred: 1#      
+✓ $8+62=     True: 70#      Pred: 70#     
+✗ $40+8=     True: 48#      Pred: 50#     
+✓ $6+8=      True: 14#      Pred: 14#     
+✓ $1*3=      True: 3#       Pred: 3#      
+✗ $4*39=     True: 156#     Pred: 152#    
+✓ $5*7=      True: 35#      Pred: 35#     
+
+Batch 177 Results:
+✗ $9*56=     True: 504#     Pred: 594#    
+✓ $5*47=     True: 235#     Pred: 235#    
+✓ $1*13=     True: 13#      Pred: 13#     
+✗ $53*3=     True: 159#     Pred: 162#    
+✓ $6*2=      True: 12#      Pred: 12#     
+✓ $5+31=     True: 36#      Pred: 36#     
+✓ $8+9=      True: 17#      Pred: 17#     
+✗ $44+24=    True: 68#      Pred: 67#     
+✓ $5+75=     True: 80#      Pred: 80#     
+✗ $93*92=    True: 8556#    Pred: 8504#   
+
+Batch 178 Results:
+✓ $4+10=     True: 14#      Pred: 14#     
+✗ $33+13=    True: 46#      Pred: 44#     
+✓ $6+4=      True: 10#      Pred: 10#     
+✗ $66+1=     True: 67#      Pred: 66#     
+✓ $69*4=     True: 276#     Pred: 276#    
+✓ $9*81=     True: 729#     Pred: 729#    
+✗ $62+97=    True: 159#     Pred: 147#    
+✓ $2*53=     True: 106#     Pred: 106#    
+✓ $1*57=     True: 57#      Pred: 57#     
+✗ $36*93=    True: 3348#    Pred: 3010#   
+
+Batch 179 Results:
+✓ $8+7=      True: 15#      Pred: 15#     
+✓ $2*85=     True: 170#     Pred: 170#    
+✓ $8*25=     True: 200#     Pred: 200#    
+✓ $82+7=     True: 89#      Pred: 89#     
+✓ $8*80=     True: 640#     Pred: 640#    
+✓ $65+1=     True: 66#      Pred: 66#     
+✗ $52*9=     True: 468#     Pred: 428#    
+✓ $68+2=     True: 70#      Pred: 70#     
+✗ $90+2=     True: 92#      Pred: 93#     
+✗ $4+38=     True: 42#      Pred: 43#     
+
+Batch 180 Results:
+✓ $3*3=      True: 9#       Pred: 9#      
+✗ $4*30=     True: 120#     Pred: 240#    
+✗ $97*84=    True: 8148#    Pred: 8320#   
+✓ $7*6=      True: 42#      Pred: 42#     
+✗ $25*66=    True: 1650#    Pred: 1060#   
+✓ $1*8=      True: 8#       Pred: 8#      
+✗ $93+29=    True: 122#     Pred: 121#    
+✗ $43+10=    True: 53#      Pred: 55#     
+✓ $8*3=      True: 24#      Pred: 24#     
+✗ $31*85=    True: 2635#    Pred: 2900#   
+
+Batch 181 Results:
+✗ $12*5=     True: 60#      Pred: 50#     
+✗ $7*35=     True: 245#     Pred: 265#    
+✓ $6+42=     True: 48#      Pred: 48#     
+✗ $92+8=     True: 100#     Pred: 102#    
+✓ $8+5=      True: 13#      Pred: 13#     
+✗ $7*20=     True: 140#     Pred: 160#    
+✓ $4+17=     True: 21#      Pred: 21#     
+✗ $2+40=     True: 42#      Pred: 43#     
+✗ $84*9=     True: 756#     Pred: 751#    
+✗ $83+2=     True: 85#      Pred: 86#     
+
+Batch 182 Results:
+✓ $8*2=      True: 16#      Pred: 16#     
+✓ $96+6=     True: 102#     Pred: 102#    
+✓ $1*30=     True: 30#      Pred: 30#     
+✓ $1+7=      True: 8#       Pred: 8#      
+✓ $1*24=     True: 24#      Pred: 24#     
+✗ $6+19=     True: 25#      Pred: 24#     
+✓ $7*5=      True: 35#      Pred: 35#     
+✓ $7*1=      True: 7#       Pred: 7#      
+✓ $2+4=      True: 6#       Pred: 6#      
+✓ $45+3=     True: 48#      Pred: 48#     
+
+Batch 183 Results:
+✗ $13+9=     True: 22#      Pred: 25#     
+✓ $5*63=     True: 315#     Pred: 315#    
+✓ $7+6=      True: 13#      Pred: 13#     
+✗ $80*14=    True: 1120#    Pred: 1640#   
+✓ $1+9=      True: 10#      Pred: 10#     
+✓ $1*3=      True: 3#       Pred: 3#      
+✓ $3*25=     True: 75#      Pred: 75#     
+✓ $5*30=     True: 150#     Pred: 150#    
+✗ $72*1=     True: 72#      Pred: 76#     
+✓ $5+62=     True: 67#      Pred: 67#     
+
+Batch 184 Results:
+✓ $3*5=      True: 15#      Pred: 15#     
+✓ $6*1=      True: 6#       Pred: 6#      
+✓ $9+31=     True: 40#      Pred: 40#     
+✓ $7*2=      True: 14#      Pred: 14#     
+✓ $3+23=     True: 26#      Pred: 26#     
+✓ $2*4=      True: 8#       Pred: 8#      
+✓ $29*1=     True: 29#      Pred: 29#     
+✗ $2*98=     True: 196#     Pred: 198#    
+✓ $4+87=     True: 91#      Pred: 91#     
+✗ $66*49=    True: 3234#    Pred: 2649#   
+
+Batch 185 Results:
+✓ $1+14=     True: 15#      Pred: 15#     
+✗ $63+99=    True: 162#     Pred: 150#    
+✓ $2+18=     True: 20#      Pred: 20#     
+✓ $8*1=      True: 8#       Pred: 8#      
+✗ $52*31=    True: 1612#    Pred: 1700#   
+✓ $6+30=     True: 36#      Pred: 36#     
+✗ $11*58=    True: 638#     Pred: 700#    
+✓ $7+5=      True: 12#      Pred: 12#     
+✗ $98+57=    True: 155#     Pred: 154#    
+✗ $4*27=     True: 108#     Pred: 18#     
+
+Batch 186 Results:
+✓ $97+71=    True: 168#     Pred: 168#    
+✗ $6*14=     True: 84#      Pred: 78#     
+✗ $44*66=    True: 2904#    Pred: 2740#   
+✗ $38*9=     True: 342#     Pred: 302#    
+✓ $4*55=     True: 220#     Pred: 220#    
+✓ $61+7=     True: 68#      Pred: 68#     
+✗ $32*54=    True: 1728#    Pred: 1340#   
+✗ $25+67=    True: 92#      Pred: 90#     
+✓ $5*74=     True: 370#     Pred: 370#    
+✗ $98+81=    True: 179#     Pred: 181#    
+
+Batch 187 Results:
+✓ $1*8=      True: 8#       Pred: 8#      
+✓ $2+5=      True: 7#       Pred: 7#      
+✗ $15*1=     True: 15#      Pred: 12#     
+✗ $82*8=     True: 656#     Pred: 652#    
+✗ $55+14=    True: 69#      Pred: 73#     
+✗ $42+15=    True: 57#      Pred: 55#     
+✗ $27*35=    True: 945#     Pred: 1150#   
+✗ $37*4=     True: 148#     Pred: 106#    
+✓ $6*61=     True: 366#     Pred: 366#    
+✗ $65+49=    True: 114#     Pred: 107#    
+
+Batch 188 Results:
+✓ $7*3=      True: 21#      Pred: 21#     
+✓ $4+50=     True: 54#      Pred: 54#     
+✓ $6+5=      True: 11#      Pred: 11#     
+✓ $6+6=      True: 12#      Pred: 12#     
+✗ $56+9=     True: 65#      Pred: 64#     
+✓ $9+5=      True: 14#      Pred: 14#     
+✗ $9*68=     True: 612#     Pred: 621#    
+✗ $89*3=     True: 267#     Pred: 264#    
+✓ $16+2=     True: 18#      Pred: 18#     
+✓ $7*5=      True: 35#      Pred: 35#     
+
+Batch 189 Results:
+✓ $50+6=     True: 56#      Pred: 56#     
+✓ $5*28=     True: 140#     Pred: 140#    
+✓ $80*7=     True: 560#     Pred: 560#    
+✗ $52*23=    True: 1196#    Pred: 1224#   
+✗ $34*9=     True: 306#     Pred: 202#    
+✗ $74*9=     True: 666#     Pred: 556#    
+✓ $5*64=     True: 320#     Pred: 320#    
+✓ $8+87=     True: 95#      Pred: 95#     
+✓ $9+86=     True: 95#      Pred: 95#     
+✓ $8+17=     True: 25#      Pred: 25#     
+
+Batch 190 Results:
+✗ $70+1=     True: 71#      Pred: 72#     
+✗ $9*23=     True: 207#     Pred: 297#    
+✓ $9+54=     True: 63#      Pred: 63#     
+✓ $4+88=     True: 92#      Pred: 92#     
+✗ $39+25=    True: 64#      Pred: 61#     
+✗ $95*58=    True: 5510#    Pred: 4320#   
+✗ $62*36=    True: 2232#    Pred: 2750#   
+✓ $4+81=     True: 85#      Pred: 85#     
+✗ $20+7=     True: 27#      Pred: 23#     
+✗ $98+79=    True: 177#     Pred: 172#    
+
+Batch 191 Results:
+✗ $4+89=     True: 93#      Pred: 92#     
+✓ $6+18=     True: 24#      Pred: 24#     
+✓ $2*70=     True: 140#     Pred: 140#    
+✗ $61*6=     True: 366#     Pred: 326#    
+✗ $55*57=    True: 3135#    Pred: 2730#   
+✗ $43+9=     True: 52#      Pred: 53#     
+✗ $34*50=    True: 1700#    Pred: 2100#   
+✓ $1*7=      True: 7#       Pred: 7#      
+✓ $56+7=     True: 63#      Pred: 63#     
+✗ $58+14=    True: 72#      Pred: 75#     
+
+Batch 192 Results:
+✗ $7*13=     True: 91#      Pred: 90#     
+✓ $8*3=      True: 24#      Pred: 24#     
+✗ $59+8=     True: 67#      Pred: 68#     
+✓ $1*70=     True: 70#      Pred: 70#     
+✗ $69+51=    True: 120#     Pred: 117#    
+✓ $9*8=      True: 72#      Pred: 72#     
+✓ $8*5=      True: 40#      Pred: 40#     
+✗ $80*18=    True: 1440#    Pred: 120#    
+✓ $4+33=     True: 37#      Pred: 37#     
+✗ $56+9=     True: 65#      Pred: 63#     
+
+Batch 193 Results:
+✓ $4*6=      True: 24#      Pred: 24#     
+✓ $94*5=     True: 470#     Pred: 470#    
+✓ $5+46=     True: 51#      Pred: 51#     
+✓ $5*5=      True: 25#      Pred: 25#     
+✓ $6+3=      True: 9#       Pred: 9#      
+✗ $8*78=     True: 624#     Pred: 634#    
+✗ $6*20=     True: 120#     Pred: 130#    
+✓ $2*4=      True: 8#       Pred: 8#      
+✓ $6*7=      True: 42#      Pred: 42#     
+✓ $6*57=     True: 342#     Pred: 342#    
+
+Batch 194 Results:
+✗ $40*36=    True: 1440#    Pred: 1510#   
+✓ $3*3=      True: 9#       Pred: 9#      
+✗ $10+7=     True: 17#      Pred: 28#     
+✓ $8+9=      True: 17#      Pred: 17#     
+✗ $41+20=    True: 61#      Pred: 65#     
+✗ $53+68=    True: 121#     Pred: 127#    
+✓ $5+3=      True: 8#       Pred: 8#      
+✓ $9*5=      True: 45#      Pred: 45#     
+✗ $9*97=     True: 873#     Pred: 893#    
+✓ $6+62=     True: 68#      Pred: 68#     
+
+Batch 195 Results:
+✓ $7*4=      True: 28#      Pred: 28#     
+✓ $9*3=      True: 27#      Pred: 27#     
+✗ $7*28=     True: 196#     Pred: 203#    
+✗ $28+83=    True: 111#     Pred: 112#    
+✓ $9*53=     True: 477#     Pred: 477#    
+✓ $4*12=     True: 48#      Pred: 48#     
+✗ $81*60=    True: 4860#    Pred: 4020#   
+✓ $5+29=     True: 34#      Pred: 34#     
+✓ $2*95=     True: 190#     Pred: 190#    
+✗ $36*2=     True: 72#      Pred: 74#     
+
+Batch 196 Results:
+✓ $9*7=      True: 63#      Pred: 63#     
+✓ $9+9=      True: 18#      Pred: 18#     
+✓ $9*6=      True: 54#      Pred: 54#     
+✗ $77*7=     True: 539#     Pred: 556#    
+✓ $99+4=     True: 103#     Pred: 103#    
+✗ $9*27=     True: 243#     Pred: 253#    
+✓ $2*14=     True: 28#      Pred: 28#     
+✗ $90*91=    True: 8190#    Pred: 8020#   
+✗ $37*3=     True: 111#     Pred: 101#    
+✓ $9+4=      True: 13#      Pred: 13#     
+
+Batch 197 Results:
+✓ $5+21=     True: 26#      Pred: 26#     
+✓ $8+31=     True: 39#      Pred: 39#     
+✗ $76*83=    True: 6308#    Pred: 6325#   
+✗ $39*5=     True: 195#     Pred: 295#    
+✓ $6+18=     True: 24#      Pred: 24#     
+✓ $2*1=      True: 2#       Pred: 2#      
+✗ $64+3=     True: 67#      Pred: 68#     
+✓ $9+17=     True: 26#      Pred: 26#     
+✓ $5*5=      True: 25#      Pred: 25#     
+✗ $31*37=    True: 1147#    Pred: 1000#   
+
+Batch 198 Results:
+✗ $88+17=    True: 105#     Pred: 100#    
+✓ $8*3=      True: 24#      Pred: 24#     
+✗ $36*88=    True: 3168#    Pred: 3060#   
+✓ $6*9=      True: 54#      Pred: 54#     
+✓ $9+83=     True: 92#      Pred: 92#     
+✗ $44+8=     True: 52#      Pred: 53#     
+✓ $9+19=     True: 28#      Pred: 28#     
+✗ $22*54=    True: 1188#    Pred: 1392#   
+✗ $83*8=     True: 664#     Pred: 755#    
+✗ $19*30=    True: 570#     Pred: 744#    
+
+Batch 199 Results:
+✗ $54+82=    True: 136#     Pred: 134#    
+✓ $4+4=      True: 8#       Pred: 8#      
+✗ $83*89=    True: 7387#    Pred: 7532#   
+✗ $22*85=    True: 1870#    Pred: 2126#   
+✓ $6+1=      True: 7#       Pred: 7#      
+✓ $64+8=     True: 72#      Pred: 72#     
+✓ $5+51=     True: 56#      Pred: 56#     
+✗ $76+76=    True: 152#     Pred: 150#    
+✓ $65*9=     True: 585#     Pred: 585#    
+✓ $8*2=      True: 16#      Pred: 16#     
+
+Batch 200 Results:
+✗ $27+86=    True: 113#     Pred: 101#    
+✓ $7+48=     True: 55#      Pred: 55#     
+✗ $62*64=    True: 3968#    Pred: 4200#   
+✗ $96*28=    True: 2688#    Pred: 2220#   
+✗ $77+58=    True: 135#     Pred: 132#    
+✓ $7+1=      True: 8#       Pred: 8#      
+✗ $8*22=     True: 176#     Pred: 17#     
+✓ $6+1=      True: 7#       Pred: 7#      
+✗ $61*76=    True: 4636#    Pred: 4400#   
+✗ $42*38=    True: 1596#    Pred: 1520#   
+
+Final Accuracy: 54.80% (1096/2000)

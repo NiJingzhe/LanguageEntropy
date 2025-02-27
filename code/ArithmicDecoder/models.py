@@ -124,7 +124,7 @@ class SequenceGenerator:
                 current_pos += 1
                 
                 # 如果生成了结束符，停止生成
-                if next_token == self.tokenizer.eoa_id:
+                if next_token == self.tokenizer.eos_id:
                     if verbose:
                         print("\n检测到结束符，停止生成")
                     break

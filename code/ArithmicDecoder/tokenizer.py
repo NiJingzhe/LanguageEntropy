@@ -18,7 +18,8 @@ class EnhancedTokenizer:
         self.stoi: Dict[str, int] = {token: i for i, token in enumerate(config.vocab)}
         self.itos: Dict[int, str] = {i: token for i, token in enumerate(config.vocab)}
         self.pad_id = self.stoi[config.pad_token]
-        self.eoa_id = self.stoi[config.eos_token]
+        self.sos_id = self.stoi[config.sos_token]   
+        self.eos_id = self.stoi[config.eos_token]
         self.vocab_size = len(config.vocab)
 
     def encode(self, s: str) -> List[int]:

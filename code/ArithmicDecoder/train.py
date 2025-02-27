@@ -59,7 +59,6 @@ def train_enhanced_model(
         continuity_weight=config.continuity_weight,
         continuity_type=config.continuity_type,
         normalize_embeddings=config.normalize_embeddings,
-        apply_to_digits_only=config.apply_to_digits_only,
         digit_tokens=config.digit_token_ids,
         entropy_weight=config.entropy_weight,
         entropy_temperature=config.entropy_temperature,
