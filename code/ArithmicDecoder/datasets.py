@@ -1,7 +1,14 @@
 import torch
-from torch.utils.data import Dataset
-from typing import Tuple, List
+import torch.nn as nn
+import torch.nn.functional as F
+from torch.utils.data import Dataset, DataLoader
+from torch.utils.tensorboard import SummaryWriter
+from typing import Tuple, List, Dict, Optional
 import random
+import numpy as np
+from tqdm.auto import tqdm
+import argparse
+import os
 from tokenizer import EnhancedTokenizer
 from config import Config
 
@@ -46,18 +53,6 @@ class EnhancedMathDataset(Dataset):
 
 class AnswerWithPrefixPadMathDataset(Dataset):
 
-    def __init__(
-        self,
-        tokenizer: EnhancedTokenizer,
-        config: Config,
-        dataset_size: int,
-        seed: int = 42,
-    ):
-        self.tokenizer = tokenizer
-        self.config = config
-        self.size = dataset_size
-        self.rng = random.Random(seed)
-
     def __len__(self) -> int:
         return self.size
 
@@ -80,8 +75,8 @@ class AnswerWithPrefixPadMathDataset(Dataset):
         answer = str(self._calculate(a, b, operator))
         full_seq = (
             f"{self.config.sos_token}{question}"
-            + (answer_len - len(answer)) * "@"
-            + f"{answer}{self.config.eos_token}"
+            + f"{self.config.pad_token}" * (answer_len - len(answer))
+            + f"{self.config.eos_token}"
         )
         answer_start = len(question)
         return full_seq, answer_start
@@ -91,18 +86,6 @@ class ReverseAnswerMathDataset(Dataset):
     """
     将Answer倒过来写的数据集
     """
-
-    def __init__(
-        self,
-        tokenizer: EnhancedTokenizer,
-        config: Config,
-        dataset_size: int,
-        seed: int = 42,
-    ):
-        self.tokenizer = tokenizer
-        self.config = config
-        self.size = dataset_size
-        self.rng = random.Random(seed)
 
     def __len__(self) -> int:
         return self.size
