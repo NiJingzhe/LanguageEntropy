@@ -116,3 +116,4 @@ total_loss = masked_ce_loss + continuity_weight * continuity_loss + entropy_weig
 ## 贡献
 
 欢迎贡献代码、提出问题或建议。请通过GitHub Issues提交问题或通过Pull Request贡献代码。
+请务必遵循git flow分支模型，所有特性分支采用`feat/`前缀
