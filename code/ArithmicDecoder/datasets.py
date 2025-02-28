@@ -84,7 +84,7 @@ class AnswerWithPrefixSpaceMathDataset(Dataset):
             answer_len = len(a_str) + len(b_str)
 
         # 将 a 和 b 前方加上空格，对齐两个操作数
-        operator_num_len = max(len(a_str), len(b_str))
+        operator_num_len = max(len(a_str), len(b_str)) + 1
         a_str = a_str.rjust(operator_num_len)
         b_str = b_str.rjust(operator_num_len)
         
