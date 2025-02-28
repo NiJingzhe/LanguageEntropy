@@ -92,6 +92,17 @@ class AnswerWithPrefixPadMathDataset(Dataset):
         )
         answer_start = len(question)
         return full_seq, answer_start
+    def _generate_number(self) -> int:
+        digits = self.rng.randint(self.config.min_digits, self.config.max_digits)
+        return self.rng.randint(10 ** (digits - 1), 10**digits - 1)
+
+    def _calculate(self, a: int, b: int, op: str) -> int:
+        if op == "+":
+            return a + b
+        if op == "*":
+            return a * b
+        raise ValueError(f"Unsupported operator: {op}")
+
 
 
 class ReverseAnswerMathDataset(Dataset):
@@ -109,8 +120,6 @@ class ReverseAnswerMathDataset(Dataset):
         self.config = config
         self.size = dataset_size
         self.rng = random.Random(seed)
-
-
 
 
     def __len__(self) -> int:
