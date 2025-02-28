@@ -53,6 +53,18 @@ class EnhancedMathDataset(Dataset):
 
 class AnswerWithPrefixPadMathDataset(Dataset):
 
+    def __init__(
+        self,
+        tokenizer: EnhancedTokenizer,
+        config: Config,
+        dataset_size: int,
+        seed: int = 42,
+    ):
+        self.tokenizer = tokenizer
+        self.config = config
+        self.size = dataset_size
+        self.rng = random.Random(seed)
+
     def __len__(self) -> int:
         return self.size
 
@@ -86,6 +98,20 @@ class ReverseAnswerMathDataset(Dataset):
     """
     将Answer倒过来写的数据集
     """
+    def __init__(
+        self,
+        tokenizer: EnhancedTokenizer,
+        config: Config,
+        dataset_size: int,
+        seed: int = 42,
+    ):
+        self.tokenizer = tokenizer
+        self.config = config
+        self.size = dataset_size
+        self.rng = random.Random(seed)
+
+
+
 
     def __len__(self) -> int:
         return self.size
