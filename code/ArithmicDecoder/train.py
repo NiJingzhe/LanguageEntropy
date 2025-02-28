@@ -10,9 +10,9 @@ from tqdm.auto import tqdm
 import argparse
 import os
 from tokenizer import EnhancedTokenizer
-from config import Config
+from config import Config, DatasetType
 from models import EnhancedTransformer
-from datasets import EnhancedMathDataset, improved_collate_fn
+from datasets import EnhancedMathDataset, improved_collate_fn, AnswerWithPrefixPadMathDataset, ReverseAnswerMathDataset
 from losses import CombinedLoss
 
 def train_enhanced_model(
@@ -22,8 +22,22 @@ def train_enhanced_model(
     writer = SummaryWriter()
 
     # 数据集
-    train_set = EnhancedMathDataset(tokenizer, config, config.train_size, seed=42)
-    valid_set = EnhancedMathDataset(tokenizer, config, config.valid_size, seed=43)
+    if config.dataset_type == DatasetType.NORMAL:
+    
+        train_set = EnhancedMathDataset(tokenizer, config, config.train_size, seed=42)
+        valid_set = EnhancedMathDataset(tokenizer, config, config.valid_size, seed=43)
+    
+    elif config.dataset_type == DatasetType.PAD_PREFIX:
+        
+        train_set = AnswerWithPrefixPadMathDataset(tokenizer, config, config.train_size, seed=42)
+        valid_set = AnswerWithPrefixPadMathDataset(tokenizer, config, config.valid_size, seed=43)
+
+    elif config.dataset_type == DatasetType.REVERSE:
+        
+        train_set = ReverseAnswerMathDataset(tokenizer, config, config.train_size, seed=42)
+        valid_set = ReverseAnswerMathDataset(tokenizer, config, config.valid_size, seed=43)
+        
+        
 
     # 使用优化后的collate_fn
     train_loader = DataLoader(

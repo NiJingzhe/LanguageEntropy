@@ -1,18 +1,17 @@
 import torch
-import torch.nn as nn
-import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
-from torch.utils.tensorboard import SummaryWriter
-from typing import Tuple, List, Dict, Optional
-import random
+from typing import Tuple, List, Dict, Optional, Enum
 import numpy as np
-from tqdm.auto import tqdm
-import argparse
-import os
 
 torch.set_printoptions(threshold=np.inf)
 
 
+class DatasetType(Enum):	
+    
+	NORMAL = "normal"
+	PAD_PREFIX = "pad_prefix"
+	REVERSE = "reverse"
+    
 # 配置类
 class Config:
     
@@ -47,6 +46,8 @@ class Config:
     log_interval: int = 20  # 日志间隔
     early_stop_patience: int = 5  # 早停耐心值
     grad_clip: float = 1.0  # 梯度裁剪
+    
+    dataset_type: DatasetType = DatasetType.NORMAL
     
     top_k: int = 5
     top_p: float = 0.8
