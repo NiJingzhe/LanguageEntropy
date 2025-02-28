@@ -145,3 +145,47 @@ def enhanced_collate_fn(
         torch.tensor(all_targets, dtype=torch.long),
         torch.tensor(all_masks, dtype=torch.float),
     )
+
+
+def improved_collate_fn(batch: List[Tuple[str, int]], tokenizer: EnhancedTokenizer, config: Config):
+    """
+    优化版collate函数，每个序列只创建一个样本，避免数据爆炸
+    
+    参数:
+        batch: 包含(序列, 答案起始位置)元组的列表
+        tokenizer: 分词器实例
+        config: 配置实例
+        
+    返回:
+        inputs: 形状为[batch_size, max_seq_len]的编码输入
+        targets: 形状为[batch_size, max_seq_len]的目标输出（右移一位）
+        masks: 形状为[batch_size, max_seq_len]的损失掩码
+    """
+    sequences, answer_starts = zip(*batch)
+    encoded = [tokenizer.encode(seq) for seq in sequences]
+    max_len = config.max_seq_len
+    
+    # 对序列进行padding
+    padded_seqs = [seq + [tokenizer.pad_id] * (max_len - len(seq)) for seq in encoded]
+    
+    # 创建输入和目标（右移一位）
+    inputs = [seq[:-1] + [tokenizer.pad_id] for seq in padded_seqs]
+    targets = [seq[1:] + [tokenizer.pad_id] for seq in padded_seqs]
+    
+    # 创建损失mask：只考虑答案部分和有效序列
+    masks = []
+    for seq, start_idx in zip(padded_seqs, answer_starts):
+        # 计算序列有效长度
+        valid_len = len([t for t in seq if t != tokenizer.pad_id])
+        # 对问题部分为0，答案部分为1，padding部分为0
+        # 由于right shift，mask也要相应调整
+        mask = [0.0] * start_idx + [1.0] * (valid_len - start_idx) + [0.0] * (max_len - valid_len)
+        # 由于right shift，mask也要前移一位
+        mask = mask[1:] + [0.0]
+        masks.append(mask)
+    
+    return (
+        torch.tensor(inputs, dtype=torch.long),
+        torch.tensor(targets, dtype=torch.long),
+        torch.tensor(masks, dtype=torch.float),
+    )

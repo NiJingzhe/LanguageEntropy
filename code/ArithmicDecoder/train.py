@@ -12,7 +12,7 @@ import os
 from tokenizer import EnhancedTokenizer
 from config import Config
 from models import EnhancedTransformer
-from datasets import EnhancedMathDataset, enhanced_collate_fn
+from datasets import EnhancedMathDataset, improved_collate_fn
 from losses import CombinedLoss
 
 def train_enhanced_model(
@@ -25,10 +25,11 @@ def train_enhanced_model(
     train_set = EnhancedMathDataset(tokenizer, config, config.train_size, seed=42)
     valid_set = EnhancedMathDataset(tokenizer, config, config.valid_size, seed=43)
 
+    # 使用优化后的collate_fn
     train_loader = DataLoader(
         train_set,
         batch_size=config.batch_size,
-        collate_fn=lambda b: enhanced_collate_fn(b, tokenizer, config),
+        collate_fn=lambda b: improved_collate_fn(b, tokenizer, config),
         shuffle=True,
         num_workers=4,
         pin_memory=True,
@@ -37,7 +38,7 @@ def train_enhanced_model(
     valid_loader = DataLoader(
         valid_set,
         batch_size=config.batch_size,
-        collate_fn=lambda b: enhanced_collate_fn(b, tokenizer, config),
+        collate_fn=lambda b: improved_collate_fn(b, tokenizer, config),
         shuffle=False,
         num_workers=4,
         pin_memory=True,
