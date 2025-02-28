@@ -29,16 +29,16 @@ class Config:
     
     # 两个操作数的位数范围
     min_digits: int = 1
-    max_digits: int = 2  # 扩展位数范围
+    max_digits: int = 3  # 扩展位数范围
     
     # 模型规模设置
-    max_seq_len: int = 35
+    max_seq_len: int = 25
     d_model: int = 1024  # 增大模型维度
-    nhead: int = 8
-    num_layers: int = 8  # 增加层数
+    nhead: int = 16
+    num_layers: int = 24  # 增加层数
     
     # 训练超参
-    batch_size: int = 256
+    batch_size: int = 768
     lr: float = 1e-4
     epochs: int = 1000
     train_size: int = 50000
