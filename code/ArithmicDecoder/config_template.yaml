@@ -1,0 +1,73 @@
+# 词表设置
+pad_token: "@"
+eos_token: "#"
+sos_token: "$"
+digits: "0123456789"
+alphabet: "abcdefghijklmnopqrstuvwxyz"
+operators:
+  - "+"
+  - "*"
+relation_operators:
+  - "="
+  - "!="
+  - ">"
+  - "<"
+  - ">="
+  - "<="
+logical_operators:
+  - "&"
+  - "|"
+  - "~"
+saparator:
+  - "("
+  - ")"
+  - "["
+  - "]"
+  - "{"
+  - "}"
+  - ","
+  - ":"
+  - "."
+  - ";"
+  - " "
+
+# 两个操作数的位数范围
+min_digits: 1
+max_digits: 3  # 扩展位数范围
+
+# 模型规模设置
+max_seq_len: 25
+d_model: 1024
+nhead: 16
+num_layers: 24
+
+# 训练超参
+batch_size: 768
+lr: 0.0001
+epochs: 1000
+train_size: 50000
+valid_size: 500
+test_size: 10000
+log_interval: 20
+early_stop_patience: 5
+grad_clip: 1.0
+
+# 数据集类型: "normal", "space_prefix", 或 "reverse"
+dataset_type: "normal"
+
+# 生成参数
+top_k: 5
+top_p: 0.8
+
+# 嵌入连续性损失相关参数
+continuity_weight: 0.01  # 连续性损失的权重
+continuity_type: "l2"    # 距离类型：'l1', 'l2', 或 'cosine'
+normalize_embeddings: false
+
+# 熵惩罚相关参数
+entropy_weight: 0.5      # 熵惩罚的权重系数
+entropy_temperature: 0.8  # 熵计算的温度系数
+
+# 设备配置
+device_type: "cuda"      # "cuda" 或 "cpu"
+gpu_id: "0,1,2"          # 使用的GPU ID，用逗号分隔

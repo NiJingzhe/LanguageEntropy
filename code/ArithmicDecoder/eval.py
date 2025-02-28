@@ -4,7 +4,7 @@ from config import Config, DatasetType
 from tokenizer import EnhancedTokenizer
 from datasets import (
     EnhancedMathDataset,
-    AnswerWithPrefixPadMathDataset,
+    AnswerWithPrefixSpaceMathDataset,
     ReverseAnswerMathDataset,
 )
 
@@ -20,8 +20,8 @@ def evaluate_model(
 
     if config.dataset_type == DatasetType.NORMAL:
         test_set = EnhancedMathDataset(tokenizer, config, num_samples, seed=44)
-    elif config.dataset_type == DatasetType.PAD_PREFIX:
-        test_set = AnswerWithPrefixPadMathDataset(
+    elif config.dataset_type == DatasetType.SPACE_PREFIX:
+        test_set = AnswerWithPrefixSpaceMathDataset(
             tokenizer, config, num_samples, seed=44
         )
     elif config.dataset_type == DatasetType.REVERSE:

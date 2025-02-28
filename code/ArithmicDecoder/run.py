@@ -10,7 +10,6 @@ from eval import evaluate_model
 from train import train_enhanced_model
 
 def main():
-    config = Config()
     parser = argparse.ArgumentParser(description="Arithmetic Expression Generator")
     parser.add_argument(
         "--mode",
@@ -28,7 +27,7 @@ def main():
     parser.add_argument(
         "--samples",
         type=int,
-        default=config.test_size,
+        default=100,
         help="Number of samples for evaluation (default: 100)",
     )
     parser.add_argument(
@@ -36,30 +35,48 @@ def main():
         action="store_true",
         help="Print detailed generation process",
     )
+    parser.add_argument(
+        "--config",
+        type=str,
+        default="config_local.yaml",
+        help="Path to config file (default: config_local.yaml)",
+    )
+    parser.add_argument(
+        "--save-config",
+        action="store_true",
+        help="Save default config template to config_template.yaml",
+    )
 
     parser.add_argument("--local-rank", "--local_rank", type=int)
     
     args = parser.parse_args()
-    print(f"Using device: {config.device}")
-
-    os.environ['CUDA_VISIBLE_DEVICES'] = config.gpu_id
-
+    
+    # 生成默认配置模板
+    if args.save_config:
+        Config.save_default_yaml("config_template.yaml")
+        print("默认配置模板已保存到 config_template.yaml")
+    
+    # 加载配置
+    config = Config.from_yaml(args.config)
+    
+    print(f"使用设备: {config.device}")
+    
     if args.mode == "train":
         model = train_enhanced_model(config, args.base)
-        print("Training completed. Model saved as 'best_model.pth'")
+        print("训练完成。模型已保存为 'best_model.pth'")
 
     elif args.mode == "eval":
         # 加载模型
         model_path = args.base if args.base else "best_model.pth"
         if not os.path.exists(model_path):
-            print(f"Error: Model file {model_path} not found!")
+            print(f"错误: 模型文件 {model_path} 不存在!")
             return
 
         model = EnhancedTransformer(config, EnhancedTokenizer(config))
         model = nn.DataParallel(model)
         model = model.to(config.device)
         model.load_state_dict(torch.load(model_path, map_location=config.device))
-        print(f"Loaded model from {model_path}")
+        print(f"已从 {model_path} 加载模型")
 
         # 评估模型
         accuracy, _ = evaluate_model(model, config, args.samples, verbose=args.verbose)

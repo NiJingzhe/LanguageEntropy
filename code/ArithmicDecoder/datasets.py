@@ -51,7 +51,7 @@ class EnhancedMathDataset(Dataset):
         raise ValueError(f"Unsupported operator: {op}")
 
 
-class AnswerWithPrefixPadMathDataset(Dataset):
+class AnswerWithPrefixSpaceMathDataset(Dataset):
 
     def __init__(
         self,
@@ -87,7 +87,7 @@ class AnswerWithPrefixPadMathDataset(Dataset):
         answer = str(self._calculate(a, b, operator))
         full_seq = (
             f"{self.config.sos_token}{question}"
-            + f"{self.config.pad_token}" * (answer_len - len(answer))
+            + f" " * (answer_len - len(answer))
             + answer
             + f"{self.config.eos_token}"
         )
