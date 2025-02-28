@@ -111,7 +111,7 @@ class AnswerWithPrefixSpaceMathDataset(Dataset):
 
 
 
-class ReverseAnswerMathDataset(Dataset):
+class ReverseAnswerWithSpacePadMathDataset(Dataset):
     """
     将Answer倒过来写的数据集
     """
@@ -136,7 +136,24 @@ class ReverseAnswerMathDataset(Dataset):
         operator = self.rng.choice(list(self.config.operators))
         a = self._generate_number()
         b = self._generate_number()
-        question = f"{a}{operator}{b}="
+
+        a_str = str(a)
+        b_str = str(b)
+        answer_len = 0
+
+        if operator == "+":
+            answer_len = max(len(a_str), len(b_str)) + 1
+
+        if operator == "*":
+            answer_len = len(a_str) + len(b_str)
+
+        # 将 a 和 b 前方加上空格，对齐两个操作数
+        operator_num_len = max(len(a_str), len(b_str)) + 1
+        a_str = a_str.rjust(operator_num_len)
+        b_str = b_str.rjust(operator_num_len)
+        
+        question = f"{a_str}{operator}{b_str}="
+        
         answer = str(self._calculate(a, b, operator))
         answer = answer[::-1]
         full_seq = f"{self.config.sos_token}{question}{answer}{self.config.eos_token}"

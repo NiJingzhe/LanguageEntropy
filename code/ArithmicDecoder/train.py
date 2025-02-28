@@ -12,7 +12,7 @@ import os
 from tokenizer import EnhancedTokenizer
 from config import Config, DatasetType
 from models import EnhancedTransformer
-from datasets import EnhancedMathDataset, improved_collate_fn, AnswerWithPrefixSpaceMathDataset, ReverseAnswerMathDataset
+from datasets import EnhancedMathDataset, improved_collate_fn, AnswerWithPrefixSpaceMathDataset, ReverseAnswerWithSpacePadMathDataset
 from losses import CombinedLoss
 
 def train_enhanced_model(
@@ -34,8 +34,8 @@ def train_enhanced_model(
 
     elif config.dataset_type == DatasetType.REVERSE:
         
-        train_set = ReverseAnswerMathDataset(tokenizer, config, config.train_size, seed=42)
-        valid_set = ReverseAnswerMathDataset(tokenizer, config, config.valid_size, seed=43)
+        train_set = ReverseAnswerWithSpacePadMathDataset(tokenizer, config, config.train_size, seed=42)
+        valid_set = ReverseAnswerWithSpacePadMathDataset(tokenizer, config, config.valid_size, seed=43)
         
         
 

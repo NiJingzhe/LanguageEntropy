@@ -2,7 +2,7 @@ from tqdm.auto import tqdm
 from models import EnhancedTransformer, SequenceGenerator
 from config import Config, DatasetType
 from tokenizer import EnhancedTokenizer
-from datasets import EnhancedMathDataset, AnswerWithPrefixSpaceMathDataset, ReverseAnswerMathDataset
+from datasets import EnhancedMathDataset, AnswerWithPrefixSpaceMathDataset, ReverseAnswerWithSpacePadMathDataset
 
 def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int = 100, verbose: bool = False):
 	"""评估模型性能，并按操作类型和答案长度统计逐位正确率"""
@@ -13,7 +13,7 @@ def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int 
 	elif config.dataset_type == DatasetType.SPACE_PREFIX:
 		test_set = AnswerWithPrefixSpaceMathDataset(tokenizer, config, num_samples, seed=44)
 	elif config.dataset_type == DatasetType.REVERSE:
-		test_set = ReverseAnswerMathDataset(tokenizer, config, num_samples, seed=44)
+		test_set = ReverseAnswerWithSpacePadMathDataset(tokenizer, config, num_samples, seed=44)
 	
 	correct = 0
 	total = 0
