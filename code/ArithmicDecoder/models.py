@@ -98,8 +98,8 @@ class SequenceGenerator:
                 next_token = self._sample_next_token(
                     next_token_logits, 
                     temperature=temperature, 
-                    top_k=top_k,
-                    top_p=top_p,
+                    top_k=self.config.top_k,
+                    top_p=self.config.top_p,
                     verbose=verbose
                 )
                 

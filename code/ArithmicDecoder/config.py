@@ -48,6 +48,9 @@ class Config:
     early_stop_patience: int = 5  # 早停耐心值
     grad_clip: float = 1.0  # 梯度裁剪
     
+    top_k: int = 5
+    top_p: float = 0.8
+    
     # device
     device: torch.device = torch.device("cuda")
     # 请记得更改id，如果不一致的话
