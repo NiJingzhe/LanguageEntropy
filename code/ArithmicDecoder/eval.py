@@ -10,7 +10,7 @@ def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int 
 	
 	if config.dataset_type == DatasetType.NORMAL:
 		test_set = EnhancedMathDataset(tokenizer, config, num_samples, seed=44)
-	elif config.dataset_type == DatasetType.PAD_PREFIX:
+	elif config.dataset_type == DatasetType.SPACE_PREFIX:
 		test_set = AnswerWithPrefixSpaceMathDataset(tokenizer, config, num_samples, seed=44)
 	elif config.dataset_type == DatasetType.REVERSE:
 		test_set = ReverseAnswerMathDataset(tokenizer, config, num_samples, seed=44)
