@@ -88,6 +88,7 @@ class AnswerWithPrefixPadMathDataset(Dataset):
         full_seq = (
             f"{self.config.sos_token}{question}"
             + f"{self.config.pad_token}" * (answer_len - len(answer))
+            + answer
             + f"{self.config.eos_token}"
         )
         answer_start = len(question)
