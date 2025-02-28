@@ -58,7 +58,7 @@ class SequenceGenerator:
         self.model.eval()
 
     def generate(
-        self, prompt: str, temperature: float = 0.8, verbose: bool = False
+        self, prompt: str, temperature: float = 0.8, verbose: bool = False, top_k: int = 0, top_p: float = 0.0
     ) -> str:
         with torch.no_grad():
             # 编码输入序列
@@ -76,10 +76,10 @@ class SequenceGenerator:
             
             # 初始化输入张量，使用pad token填充到最大长度
             padded_input = input_seq.copy()  # 复制输入序列
-            current_pos = answer_start_pos
+            current_pos = answer_start_pos - 1  # 修改：从答案开始位置的前一个位置开始预测
             
             # 生成答案
-            while current_pos < max_length - 1:  # 保留一个位置给结束符
+            while current_pos < max_length - 2:  # 修改：保留两个位置，一个给预测token一个给结束符
                 # 准备当前输入
                 current_input = padded_input + [self.tokenizer.pad_id] * (max_length - len(padded_input))
                 input_tensor = torch.tensor([current_input], dtype=torch.long, device=self.config.device)
@@ -91,29 +91,26 @@ class SequenceGenerator:
                 
                 # 获取模型输出
                 logits = self.model(input_tensor)
-                next_token_logits = logits[0, current_pos]  # 使用current_pos而不是-1
+                # 修改：现在我们使用current_pos预测下一个位置
+                next_token_logits = logits[0, current_pos]
                 
-                # 应用temperature并计算概率
-                probs = F.softmax(next_token_logits / temperature, dim=-1)
+                # 应用sampling策略
+                next_token = self._sample_next_token(
+                    next_token_logits, 
+                    temperature=temperature, 
+                    top_k=top_k,
+                    top_p=top_p,
+                    verbose=verbose
+                )
                 
-                if verbose:
-                    # 获取top-5概率和对应的token
-                    top_probs, top_indices = torch.topk(probs, min(5, len(probs)))
-                    print("\nTop-5候选词:")
-                    for prob, idx in zip(top_probs, top_indices):
-                        token = self.tokenizer.itos[idx.item()]
-                        print(f"Token: {token:<4} (id: {idx.item():<2}) 概率: {prob.item():.4f}")
+                # 更新序列 - 将预测的token放在当前位置的下一个位置
+                if len(padded_input) <= current_pos + 1:
+                    padded_input.append(next_token)
+                else:
+                    # 如果下一个位置已经有token，替换它
+                    padded_input[current_pos + 1] = next_token
                 
-                # 采样下一个token
-                next_token = torch.multinomial(probs, 1).item()
-                if verbose:
-                    chosen_prob = probs[next_token].item()
-                    chosen_token = self.tokenizer.itos[next_token]
-                    print(f"\n选择的token: {chosen_token} (id: {next_token}) 概率: {chosen_prob:.4f}")
-                
-                # 更新序列
-                padded_input.append(next_token)
-                current_pos += 1
+                current_pos += 1  # 向前移动位置
                 
                 # 如果生成了结束符，停止生成
                 if next_token == self.tokenizer.eos_id:
@@ -128,5 +125,67 @@ class SequenceGenerator:
                 print(f"最终生成结果: {final_output}")
                 print("=" * 50)
             return final_output
+            
+    def _sample_next_token(self, logits, temperature=0.8, top_k=0, top_p=0.0, verbose=False):
+        """
+        使用多种采样策略选择下一个token
+        
+        参数:
+            logits: 当前位置的logits
+            temperature: softmax的温度系数
+            top_k: 如果>0，只从概率最高的k个token中采样
+            top_p: 如果>0，使用nucleus sampling (只从累积概率达到p的token子集中采样)
+            verbose: 是否打印详细信息
+        """
+        # 应用temperature
+        scaled_logits = logits / temperature
+        
+        # 应用top_k采样
+        if top_k > 0:
+            top_k = min(top_k, scaled_logits.size(-1))
+            indices_to_remove = torch.topk(scaled_logits, top_k)[0][-1].unsqueeze(-1)
+            scaled_logits = torch.where(
+                scaled_logits < indices_to_remove,
+                torch.ones_like(scaled_logits) * float('-inf'),
+                scaled_logits
+            )
+        
+        # 应用top_p (nucleus) 采样
+        if top_p > 0.0:
+            sorted_logits, sorted_indices = torch.sort(scaled_logits, descending=True)
+            cumulative_probs = torch.cumsum(F.softmax(sorted_logits, dim=-1), dim=-1)
+            
+            # 移除累积概率超过阈值的token
+            sorted_indices_to_remove = cumulative_probs > top_p
+            # 保留第一个超过阈值的token
+            sorted_indices_to_remove[..., 1:] = sorted_indices_to_remove[..., :-1].clone()
+            sorted_indices_to_remove[..., 0] = 0
+            
+            # 散置回原始索引顺序
+            indices_to_remove = sorted_indices_to_remove.scatter(
+                -1, sorted_indices, sorted_indices_to_remove
+            )
+            scaled_logits = scaled_logits.masked_fill(indices_to_remove, float('-inf'))
+        
+        # 计算概率分布
+        probs = F.softmax(scaled_logits, dim=-1)
+        
+        if verbose:
+            # 获取top-5概率和对应的token
+            top_probs, top_indices = torch.topk(probs, min(5, len(probs)))
+            print("\nTop-5候选词:")
+            for prob, idx in zip(top_probs, top_indices):
+                token = self.tokenizer.itos[idx.item()]
+                print(f"Token: {token:<4} (id: {idx.item():<2}) 概率: {prob.item():.4f}")
+        
+        # 采样下一个token
+        next_token = torch.multinomial(probs, 1).item()
+        
+        if verbose:
+            chosen_prob = probs[next_token].item()
+            chosen_token = self.tokenizer.itos[next_token]
+            print(f"\n选择的token: {chosen_token} (id: {next_token}) 概率: {chosen_prob:.4f}")
+            
+        return next_token
 
 

@@ -114,37 +114,37 @@ class ReverseAnswerMathDataset(Dataset):
         return self.rng.randint(10 ** (digits - 1), 10**digits - 1)
 
 
-def enhanced_collate_fn(
-    batch: List[Tuple[str, int]], tokenizer: EnhancedTokenizer, config: Config
-):
-    sequences, answer_starts = zip(*batch)
+# def enhanced_collate_fn(
+#     batch: List[Tuple[str, int]], tokenizer: EnhancedTokenizer, config: Config
+# ):
+#     sequences, answer_starts = zip(*batch)
 
-    encoded = [tokenizer.encode(seq) for seq in sequences]
-    max_len = config.max_seq_len
+#     encoded = [tokenizer.encode(seq) for seq in sequences]
+#     max_len = config.max_seq_len
 
-    all_inputs, all_targets, all_masks = [], [], []
+#     all_inputs, all_targets, all_masks = [], [], []
 
-    for seq, start_idx in zip(encoded, answer_starts):
-        for pos in range(start_idx, len(seq)):
-            # 生成每个时间步的输入/目标
-            inputs = seq[:pos] + [tokenizer.pad_id] * (max_len - pos)
-            targets = seq[: pos + 1] + [tokenizer.pad_id] * (max_len - (pos + 1))
-            # 修改mask，只关注答案部分的loss
-            mask = (
-                [0.0] * start_idx
-                + [1.0] * (pos - start_idx + 1)
-                + [0.0] * (max_len - (pos + 1))
-            )
+#     for seq, start_idx in zip(encoded, answer_starts):
+#         for pos in range(start_idx, len(seq)):
+#             # 生成每个时间步的输入/目标
+#             inputs = seq[:pos] + [tokenizer.pad_id] * (max_len - pos)
+#             targets = seq[: pos + 1] + [tokenizer.pad_id] * (max_len - (pos + 1))
+#             # 修改mask，只关注答案部分的loss
+#             mask = (
+#                 [0.0] * start_idx
+#                 + [1.0] * (pos - start_idx + 1)
+#                 + [0.0] * (max_len - (pos + 1))
+#             )
 
-            all_inputs.append(inputs)
-            all_targets.append(targets)
-            all_masks.append(mask)
+#             all_inputs.append(inputs)
+#             all_targets.append(targets)
+#             all_masks.append(mask)
 
-    return (
-        torch.tensor(all_inputs, dtype=torch.long),
-        torch.tensor(all_targets, dtype=torch.long),
-        torch.tensor(all_masks, dtype=torch.float),
-    )
+#     return (
+#         torch.tensor(all_inputs, dtype=torch.long),
+#         torch.tensor(all_targets, dtype=torch.long),
+#         torch.tensor(all_masks, dtype=torch.float),
+#     )
 
 
 def improved_collate_fn(batch: List[Tuple[str, int]], tokenizer: EnhancedTokenizer, config: Config):
