@@ -1,6 +1,7 @@
 import torch
 from torch.utils.data import Dataset, DataLoader
-from typing import Tuple, List, Dict, Optional, Enum
+from typing import List
+from enum import Enum
 import numpy as np
 
 torch.set_printoptions(threshold=np.inf)
