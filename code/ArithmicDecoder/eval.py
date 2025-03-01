@@ -108,27 +108,27 @@ def evaluate_model(model: EnhancedTransformer, config: Config, num_samples: int 
     return accuracy, results
 
 def _plot_position_stats(position_stats):
-    """绘制位置统计图表"""
-    positions, entropies, energies = zip(*position_stats)
-    
-    plt.figure(figsize=(12, 6))
-    
-    # 绘制熵值曲线
-    plt.subplot(1, 2, 1)
-    plt.plot(positions, entropies, 'b-o', label='熵值')
-    plt.title('每个位置的平均熵值')
-    plt.xlabel('位置索引')
-    plt.ylabel('熵值')
-    plt.grid(True)
-    
-    # 绘制能量曲线
-    plt.subplot(1, 2, 2)
-    plt.plot(positions, energies, 'r-o', label='能量')
-    plt.title('每个位置的平均能量')
-    plt.xlabel('位置索引')
-    plt.ylabel('能量')
-    plt.grid(True)
-    
-    plt.tight_layout()
-    plt.savefig('position_stats.png')
-    print("统计图表已保存为 'position_stats.png'")
+	"""Plot statistics by position"""
+	positions, entropies, energies = zip(*position_stats)
+	
+	plt.figure(figsize=(12, 6))
+	
+	# Plot entropy curve
+	plt.subplot(1, 2, 1)
+	plt.plot(positions, entropies, 'b-o', label='Entropy')
+	plt.title('Average Entropy by Position')
+	plt.xlabel('Position Index')
+	plt.ylabel('Entropy')
+	plt.grid(True)
+	
+	# Plot energy curve
+	plt.subplot(1, 2, 2)
+	plt.plot(positions, energies, 'r-o', label='Energy')
+	plt.title('Average Energy by Position')
+	plt.xlabel('Position Index')
+	plt.ylabel('Energy')
+	plt.grid(True)
+	
+	plt.tight_layout()
+	plt.savefig('position_stats.png')
+	print("Statistics chart saved as 'position_stats.png'")
