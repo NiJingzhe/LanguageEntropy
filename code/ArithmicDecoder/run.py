@@ -79,7 +79,8 @@ def main():
         print(f"已从 {model_path} 加载模型")
 
         # 评估模型
-        accuracy, _ = evaluate_model(model, config, args.samples, verbose=args.verbose)
+        accuracy, results = evaluate_model(model, config, args.samples, verbose=args.verbose)
+        print(f"最终准确率: {accuracy:.2%}")
 
 
 if __name__ == "__main__":

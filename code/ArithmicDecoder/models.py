@@ -59,7 +59,7 @@ class SequenceGenerator:
 
     def generate(
         self, prompt: str, temperature: float = 0.8, verbose: bool = False, top_k: int = 0, top_p: float = 0.0
-    ) -> str:
+    ) -> tuple:
         with torch.no_grad():
             # 编码输入序列
             input_seq = self.tokenizer.encode(prompt)
@@ -78,6 +78,11 @@ class SequenceGenerator:
             padded_input = input_seq.copy()  # 复制输入序列
             current_pos = answer_start_pos - 1  # 修改：从答案开始位置的前一个位置开始预测
             
+            # 用于保存统计信息
+            entropy_values = []
+            energy_values = []
+            generation_probs = []
+            
             # 生成答案
             while current_pos < max_length - 2:  # 修改：保留两个位置，一个给预测token一个给结束符
                 # 准备当前输入
@@ -94,6 +99,16 @@ class SequenceGenerator:
                 # 修改：现在我们使用current_pos预测下一个位置
                 next_token_logits = logits[0, current_pos]
                 
+                # 应用temperature
+                scaled_logits = next_token_logits / temperature
+                
+                # 计算概率分布
+                probs = F.softmax(scaled_logits, dim=-1)
+                
+                # 计算熵值: -sum(p_i * log(p_i))
+                log_probs = F.log_softmax(scaled_logits, dim=-1)
+                entropy = -torch.sum(probs * log_probs).item()
+                
                 # 应用sampling策略
                 next_token = self._sample_next_token(
                     next_token_logits, 
@@ -102,6 +117,15 @@ class SequenceGenerator:
                     top_p=self.config.top_p,
                     verbose=verbose
                 )
+                
+                # 计算所选token的能量 (负对数似然)
+                token_prob = probs[next_token].item()
+                energy = -torch.log(probs[next_token]).item()
+                
+                # 保存统计信息
+                entropy_values.append(entropy)
+                energy_values.append(energy)
+                generation_probs.append(token_prob)
                 
                 # 更新序列 - 将预测的token放在当前位置的下一个位置
                 if len(padded_input) <= current_pos + 1:
@@ -124,8 +148,15 @@ class SequenceGenerator:
                 print("\n" + "=" * 50)
                 print(f"最终生成结果: {final_output}")
                 print("=" * 50)
-            return final_output
             
+            stats = {
+                "entropy_values": entropy_values,
+                "energy_values": energy_values,
+                "generation_probs": generation_probs
+            }
+            
+            return final_output, stats
+
     def _sample_next_token(self, logits, temperature=0.8, top_k=0, top_p=0.0, verbose=False):
         """
         使用多种采样策略选择下一个token
