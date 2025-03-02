@@ -96,7 +96,6 @@ class SequenceGenerator:
                 
                 # 获取模型输出
                 logits = self.model(input_tensor)
-                # 修改：现在我们使用current_pos预测下一个位置
                 next_token_logits = logits[0, current_pos]
                 
                 # 应用temperature

@@ -139,13 +139,6 @@ class ReverseAnswerWithSpacePadMathDataset(Dataset):
 
         a_str = str(a)
         b_str = str(b)
-        answer_len = 0
-
-        if operator == "+":
-            answer_len = max(len(a_str), len(b_str)) + 1
-
-        if operator == "*":
-            answer_len = len(a_str) + len(b_str)
 
         # 将 a 和 b 前方加上空格，对齐两个操作数
         operator_num_len = max(len(a_str), len(b_str)) + 1
